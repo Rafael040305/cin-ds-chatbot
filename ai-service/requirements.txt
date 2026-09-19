@@ -1,0 +1,6 @@
+chromadb
+langchain-text-splitters
+pypdf
+fastapi
+uvicorn
+python-dotenv
