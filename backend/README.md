@@ -48,6 +48,44 @@ dependencies in the final stage, and runs as the unprivileged `node` user.
 The API listens on port 3000 by default; when setting `PORT`, adjust the port
 mapping accordingly.
 
+## Integração com o ai-service
+
+`AiServiceModule` exporta `AiService.buscarContexto(consulta)` para a futura
+orquestração NestJS. O módulo está importado no `AppModule`; outros módulos que
+consumirem o serviço devem importar `AiServiceModule`. Nenhuma rota HTTP pública
+foi adicionada nesta etapa.
+
+Configure `AI_SERVICE_URL` no ambiente com a origem HTTP/HTTPS do ai-service
+(esquema, host e porta, sem caminho, query, fragmento ou credenciais). Por exemplo,
+para execução local do FastAPI na porta 8000:
+
+```bash
+AI_SERVICE_URL=http://localhost:8000 npm run start:dev
+```
+
+No Docker, passe `-e AI_SERVICE_URL=...` com o endereço acessível ao container.
+Não existe host padrão; arquivos `.env` não são carregados automaticamente.
+A configuração é verificada ao chamar a busca; sua ausência não impede o backend
+de iniciar, mas a busca retorna uma exceção de indisponibilidade.
+
+O serviço faz `POST /api/v1/buscar` com `pergunta` obrigatória e os opcionais
+`curso` (padrão `Geral`), `perfil` (`Todos`) e `top_k` (inteiro positivo, padrão 3).
+Retorna `contexto`, `fontes` (`arquivo`, `pagina` numérica e `curso`) e
+`distancia_minima`, após validar o contrato em runtime. Uma busca vazia válida
+é preservada; não é confundida com erro de comunicação.
+
+O timeout é de 5 segundos, incluindo leitura do corpo; não há retries automáticos.
+Consulta inválida gera `BadRequestException` (400); configuração inválida ou erro
+de conexão, `ServiceUnavailableException` (503); timeout,
+`GatewayTimeoutException` (504); HTTP não bem-sucedido, JSON inválido ou contrato
+incompatível, `BadGatewayException` (502). Mensagens não expõem respostas internas,
+URLs ou detalhes da exceção original. Redirecionamentos não são seguidos.
+
+Os testes unitários simulam o fetch; a suíte e2e inclui um servidor HTTP local
+para verificar transporte e resolução do serviço no NestJS. Isso não substitui a
+validação futura com o FastAPI/ChromaDB reais. Não há LLM, Keycloak ou decisão de
+fallback implementados nesta integração.
+
 ## Compile and run the project
 
 ```bash
