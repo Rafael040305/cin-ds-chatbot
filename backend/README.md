@@ -83,8 +83,85 @@ URLs ou detalhes da exceção original. Redirecionamentos não são seguidos.
 
 Os testes unitários simulam o fetch; a suíte e2e inclui um servidor HTTP local
 para verificar transporte e resolução do serviço no NestJS. Isso não substitui a
-validação futura com o FastAPI/ChromaDB reais. Não há LLM, Keycloak ou decisão de
-fallback implementados nesta integração.
+validação futura com o FastAPI/ChromaDB reais. O `AiService` não implementa LLM,
+Keycloak ou decisão de fallback; a decisão pertence à orquestração descrita abaixo.
+
+## Orquestração e fallback por e-mail
+
+`OrchestrationModule` importa `AiServiceModule` e exporta
+`OrchestrationService.processar(request)`. Está registrado no `AppModule` e não
+adiciona endpoint público. `FallbackService` gera somente texto para revisão e
+cópia pelo usuário: não envia e-mail nem define endereço de destinatário.
+
+Exemplo de entrada do serviço:
+
+```typescript
+const resultado = await orchestrationService.processar({
+  consulta: {
+    pergunta: 'Como solicitar dispensa?',
+    curso: 'CC',
+    perfil: '2023',
+    top_k: 3,
+  },
+  dados_email: {
+    nome: 'Ana',
+    matricula: '123',
+    assunto: 'Dispensa de disciplina',
+    resumo: 'Gostaria de orientação sobre a solicitação.',
+  },
+});
+```
+
+`dados_email` e seus campos são opcionais. Campos pessoais ausentes ou vazios
+viram marcadores editáveis; sem assunto, usa-se a pergunta. Curso e perfil vêm
+da consulta e a dúvida é a própria pergunta. Somente `consulta` é enviada ao
+ai-service; os dados adicionais do e-mail não são enviados nem registrados em log.
+
+A regra aciona fallback quando `distancia_minima >= FALLBACK_DISTANCE_THRESHOLD`
+(inclusive na igualdade) **ou** quando `contexto.trim()` está vazio. Assim, contexto
+vazio ou composto apenas por espaços em branco aciona fallback mesmo abaixo do
+limiar. **O padrão 0.8 é provisório, herdado da prova de conceito e NÃO é
+validado cientificamente nem definitivo.** Distância não representa probabilidade
+ou percentual de confiança. O limiar precisa ser calibrado com a métrica, os
+embeddings e o corpus reais antes de uso como critério validado.
+
+`FALLBACK_DISTANCE_THRESHOLD` é opcional. Quando ausente, usa 0.8; quando presente,
+deve ser um número decimal finito não negativo (aceita notação científica).
+Valor vazio, negativo, não numérico ou infinito impede a inicialização do módulo
+com mensagem de configuração inválida. Não há teto arbitrário de 1, pois o domínio
+depende da métrica de distância. A configuração é lida uma vez na inicialização;
+mudanças exigem reiniciar o backend. `AI_SERVICE_URL` continua sendo validada pelo
+`AiService` ao chamar a busca, conforme a seção anterior. Não há carregamento
+automático de `.env`.
+
+```bash
+AI_SERVICE_URL=http://localhost:8000 FALLBACK_DISTANCE_THRESHOLD=0.8 npm run start:dev
+```
+
+Os resultados são uma união discriminada por `fallback_acionado`:
+
+- `false`: retorna `contexto`, `fontes` e `distancia_minima` para uma futura etapa
+  de LLM; não gera resposta de LLM nesta tarefa.
+- `true`: preserva os mesmos dados recuperados e acrescenta `setor_sugerido` e
+  `template_email`. Os trechos não são inseridos automaticamente no e-mail.
+
+As sugestões de setor preservam a ordem da referência Python: estágio,
+requerimento, dispensa e segunda chamada sugerem SecGrad; assunto pedagógico
+sugere NEAP; pós-graduação sugere Secretaria de Pós-Graduação; demais assuntos
+sugerem SecGrad. São sugestões da prova de conceito, não novas regras
+administrativas ou garantia de competência do setor.
+
+Erros seguros do `AiService` são propagados sem transformar indisponibilidade em
+fallback. Ausência de contexto sempre aciona fallback, independentemente do
+limiar customizado. Contexto válido abaixo do limite continua no fluxo normal.
+O contexto original é preservado no resultado; `trim()` serve apenas à decisão.
+Não há LLM, autenticação ou envio de e-mail. Os arquivos Python antigos permanecem
+apenas como referência conceitual.
+
+Testes unitários cobrem limiar padrão/customizado/inválido, igualdade, geração do
+template, sugestões de setor, contexto vazio/em branco e propagação de erros. Os e2e verificam o fluxo
+NestJS → HTTP simulado → decisão, sem criar rota pública. A validação com
+FastAPI/ChromaDB reais e a calibração do limiar continuam pendentes.
 
 ## Compile and run the project
 
