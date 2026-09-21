@@ -27,9 +27,26 @@
 
 ## Project setup
 
+Use Node.js 24.x (also declared in `.nvmrc` and `package.json`).
+
 ```bash
-$ npm install
+$ nvm use
+$ npm ci
 ```
+
+## Docker
+
+From the repository root, build and run the backend independently:
+
+```bash
+docker build -t secgrad-backend ./backend
+docker run --rm -p 3000:3000 secgrad-backend
+```
+
+The image uses Node.js 24 for build and runtime, installs only production
+dependencies in the final stage, and runs as the unprivileged `node` user.
+The API listens on port 3000 by default; when setting `PORT`, adjust the port
+mapping accordingly.
 
 ## Compile and run the project
 
