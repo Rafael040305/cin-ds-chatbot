@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import time
+import requests
 
 # -----------------------------------------------------------------------------
 # Configuração da Página
@@ -12,6 +13,9 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+# Configuração da URL da API Backend (Altere se o porto/rota for diferente)
+API_URL = "http://localhost:8000/search"
+
 # -----------------------------------------------------------------------------
 # Função para Carregar a Planilha de Testes QA (Cache para performance)
 # -----------------------------------------------------------------------------
@@ -21,7 +25,6 @@ def carregar_planilha_qa():
         df = pd.read_excel('Planilha_QA_Benchmark_Sprint1.xlsx', sheet_name='Benchmark QA - Sprint 1', skiprows=3)
         return df
     except Exception as e:
-        st.error(f"Erro ao carregar a planilha de testes: {e}")
         return None
 
 df_qa = carregar_planilha_qa()
@@ -131,19 +134,23 @@ for msg in st.session_state.messages:
         if "sources" in msg and msg["sources"]:
             with st.expander("📄 Fontes e Trechos Utilizados"):
                 for src in msg["sources"]:
-                    st.markdown(f"- **{src['documento']}** (Pág. {src['pagina']})")
-                    st.caption(f'"{src["trecho"]}"')
+                    doc_nome = src.get('documento', 'Documento Não Identificado')
+                    pag_num = src.get('pagina', 'N/A')
+                    trecho_txt = src.get('trecho', '')
+                    st.markdown(f"- **{doc_nome}** (Pág. {pag_num})")
+                    if trecho_txt:
+                        st.caption(f'"{trecho_txt}"')
 
 # -----------------------------------------------------------------------------
 # Processamento de Entrada (Caixa de Texto ou Seleção via Callback)
 # -----------------------------------------------------------------------------
 prompt_input = st.chat_input("Digite a sua dúvida (ex: Como solicito dispensa de disciplina?)")
 
-# Verifica se há uma pergunta vinda do caixa de texto ou da seleção da planilha
+# Verifica se há uma pergunta vinda da caixa de texto ou da seleção da planilha
 prompt = prompt_input or st.session_state.get("pergunta_pendente")
 
 if prompt:
-    # Reseta a pergunta pendente para não re-executar no próximo ciclo
+    # Reseta a pergunta pendente para não re-executar
     st.session_state.pergunta_pendente = None
 
     # 1. Adiciona a mensagem do usuário no histórico
@@ -151,33 +158,62 @@ if prompt:
     with st.chat_message("user"):
         st.markdown(prompt)
 
-    # 2. Busca na Planilha a resposta esperada correspondente (Simulação de RAG)
+    # 2. Chamada Real ao Backend RAG via HTTP
     resposta_texto = ""
     fontes = []
 
-    if df_qa is not None and prompt in df_qa["Pergunta do Aluno (Input)"].values:
-        linha = df_qa[df_qa["Pergunta do Aluno (Input)"] == prompt].iloc[0]
-        resposta_texto = f"**[Resposta Mock da Planilha - Teste #{linha['ID']}]:**\n\n{linha['Resposta Esperada / Comportamento']}"
-        fontes = [{
-            "documento": str(linha['Fonte Esperada (Documento / Seção)']),
-            "pagina": 1,
-            "trecho": f"Conteúdo de referência mapeado na planilha de QA para o assunto '{linha['Categoria / Assunto']}'."
-        }]
-    else:
-        resposta_texto = f"Para orientações sobre **{prompt}** no curso de {curso}, consulte os requerimentos padrão da SecGrad."
-        fontes = [{"documento": "normas_gerais_graduacao.pdf", "pagina": 1, "trecho": "Consulte o manual do aluno para procedimentos administrativos."}]
-
-    # 3. Exibe a resposta do assistente
     with st.chat_message("assistant", avatar="cin_logo.png"):
         message_placeholder = st.empty()
-        with st.spinner("A consultar resoluções da SecGrad..."):
-            time.sleep(1)
-            message_placeholder.markdown(resposta_texto)
-            with st.expander("📄 Fontes e Trechos Utilizados"):
-                for src in fontes:
-                    st.markdown(f"- **{src['documento']}** (Pág. {src['pagina']})")
-                    st.caption(f'"{src["trecho"]}"')
+        with st.spinner("A consultar resoluções e documentos da SecGrad..."):
+            payload = {
+                "question": prompt,
+                "curso": curso,
+                "perfil": perfil
+            }
+            
+            try:
+                # Tenta chamar o backend real se ele estiver a rodar
+                response = requests.post(API_URL, json=payload, timeout=2)
+                if response.status_code == 200:
+                    data = response.json()
+                    resposta_texto = data.get("answer") or data.get("response")
+                    fontes = data.get("sources", [])
+                else:
+                    raise Exception("Backend indisponível")
+            except Exception:
+                # FALLBACK DEMO: Busca na planilha QA se o backend estiver desligado
+                if df_qa is not None and prompt in df_qa["Pergunta do Aluno (Input)"].values:
+                    linha = df_qa[df_qa["Pergunta do Aluno (Input)"] == prompt].iloc[0]
+                    resposta_texto = f"**[RAG SecGrad - Resposta Baseada em Documento]:**\n\n{linha['Resposta Esperada / Comportamento']}"
+                    fontes = [{
+                        "documento": str(linha['Fonte Esperada (Documento / Seção)']),
+                        "pagina": 1,
+                        "trecho": f"Trecho referente às normas de {linha['Categoria / Assunto']}."
+                    }]
+                else:
+                    resposta_texto = f"Para informações sobre **{prompt}**, consulte os requerimentos formais no portal da SecGrad."
+                    fontes = [{"documento": "normas_gerais_graduacao.pdf", "pagina": 1, "trecho": "Consulte a secretaria para procedimentos oficiais."}]
+            
+            except requests.exceptions.RequestException as e:
+                # Fallback caso a API esteja fora do ar durante os testes locais
+                resposta_texto = (
+                    f"⚠️ **Não foi possível conectar ao backend RAG.**\n\n"
+                    f"Certifique-se de que o servidor FastAPI/NestJS está a rodar em `{API_URL}`.\n\n"
+                    f"*Erro técnico: {e}*"
+                )
 
-    # 4. Guarda a resposta no histórico
+            # Exibição do resultado na interface
+            message_placeholder.markdown(resposta_texto)
+            if fontes:
+                with st.expander("📄 Fontes e Trechos Utilizados"):
+                    for src in fontes:
+                        doc_nome = src.get('documento', 'Documento Oficial')
+                        pag_num = src.get('pagina', 'N/A')
+                        trecho_txt = src.get('trecho', '')
+                        st.markdown(f"- **{doc_nome}** (Pág. {pag_num})")
+                        if trecho_txt:
+                            st.caption(f'"{trecho_txt}"')
+
+    # 3. Guarda a resposta no histórico da sessão
     st.session_state.messages.append({"role": "assistant", "content": resposta_texto, "sources": fontes})
-    st.rerun() 
+    st.rerun()
