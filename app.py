@@ -134,10 +134,9 @@ for msg in st.session_state.messages:
         if "sources" in msg and msg["sources"]:
             with st.expander("📄 Fontes e Trechos Utilizados"):
                 for src in msg["sources"]:
-                    doc_nome = src.get('documento', 'Documento Não Identificado')
-                    pag_num = src.get('pagina', 'N/A')
+                    doc_nome = str(src.get('documento', 'Documento Não Identificado')).split(' (pág')[0]
                     trecho_txt = src.get('trecho', '')
-                    st.markdown(f"- **{doc_nome}** (Pág. {pag_num})")
+                    st.markdown(f"- **{doc_nome}**")
                     if trecho_txt:
                         st.caption(f'"{trecho_txt}"')
 
@@ -187,12 +186,11 @@ if prompt:
                     resposta_texto = f"**[RAG SecGrad - Resposta Baseada em Documento]:**\n\n{linha['Resposta Esperada / Comportamento']}"
                     fontes = [{
                         "documento": str(linha['Fonte Esperada (Documento / Seção)']),
-                        "pagina": 1,
                         "trecho": f"Trecho referente às normas de {linha['Categoria / Assunto']}."
                     }]
                 else:
-                    resposta_texto = f"Para informações sobre **{prompt}**, consulte os requerimentos formais no portal da SecGrad."
-                    fontes = [{"documento": "normas_gerais_graduacao.pdf", "pagina": 1, "trecho": "Consulte a secretaria para procedimentos oficiais."}]
+                    resposta_texto = f"Para informações sobre **{prompt}**, consulte os requerimentos formally no portal da SecGrad."
+                    fontes = [{"documento": "normas_gerais_graduacao.pdf", "trecho": "Consulte a secretaria para procedimentos oficiais."}]
             
             except requests.exceptions.RequestException as e:
                 # Fallback caso a API esteja fora do ar durante os testes locais
@@ -207,10 +205,9 @@ if prompt:
             if fontes:
                 with st.expander("📄 Fontes e Trechos Utilizados"):
                     for src in fontes:
-                        doc_nome = src.get('documento', 'Documento Oficial')
-                        pag_num = src.get('pagina', 'N/A')
-                        trecho_txt = src.get('trecho', '')
-                        st.markdown(f"- **{doc_nome}** (Pág. {pag_num})")
+                        doc_nome = str(src.get('documento', 'Documento Oficial')).split(' (pág')[0]
+                        trecho_txt = src.get('trecho') or src.get('excerpt', '')
+                        st.markdown(f"- **{doc_nome}**")
                         if trecho_txt:
                             st.caption(f'"{trecho_txt}"')
 
