@@ -97,7 +97,15 @@ export class AiService {
     if (!isResponse(result)) {
       throw new BadGatewayException('Resposta inválida do serviço de busca.');
     }
-    return result;
+    return {
+      contexto: result.contexto,
+      distancia_minima: result.distancia_minima,
+      fontes: result.fontes.map(({ arquivo, pagina, curso }) => ({
+        arquivo,
+        pagina,
+        curso,
+      })),
+    };
   }
 
   private getEndpoint(): URL {

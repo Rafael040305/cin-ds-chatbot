@@ -27,12 +27,90 @@
 
 ## Project setup
 
-Use Node.js 24.x (also declared in `.nvmrc` and `package.json`).
+Use Node.js 24.x (also declared in `.nvmrc` and `package.json`), npm e,
+para os exemplos HTTP, curl. Os comandos abaixo usam Bash (Linux/macOS).
+`nvm use` pressupõe nvm instalado e Node 24 disponível; se necessário,
+execute `nvm install` dentro de `backend/`. Também é possível usar uma instalação
+existente do Node 24 sem nvm.
+
+A partir da raiz do repositório:
 
 ```bash
+$ cd backend
 $ nvm use
 $ npm ci
 ```
+
+### Execução local em sequência
+
+Após instalar as dependências, em `backend/`:
+
+```bash
+npm run start:dev
+```
+
+Isso inicia o NestJS na porta 3000. Em outro terminal:
+
+```bash
+curl -i http://localhost:3000/
+```
+
+`GET /` retorna **200**, com corpo de texto `Hello World!`. É apenas uma
+verificação básica do backend: não testa FastAPI, ChromaDB ou disponibilidade
+de documentos. Sem `AI_SERVICE_URL`, uma consulta válida em `/api/v1/conversa`
+retorna 503. O backend atual não exige PostgreSQL, Prisma, Keycloak ou chave de LLM.
+
+Para consultar a base real, é necessário preparar e iniciar o ai-service antes
+da chamada de conversa. Se a equipe já fornece uma instância, use a origem dela.
+Para execução local, em um terminal separado, a partir da raiz do repositório:
+
+```bash
+cd ai-service
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+python -m src.ingest_batch
+python -m uvicorn main:app --host 127.0.0.1 --port 8000
+```
+
+Esse caminho usa Python 3.11 (versão do Dockerfile do ai-service), com suporte a
+`venv` e pip. A ingestão lê `data/raw/metadata.json` e os documentos em `data/raw/`
+na raiz do repositório, gravando em `ai-service/chroma_db/`. ChromaDB é usado
+localmente como `PersistentClient`; não há servidor Chroma separado nessa configuração.
+A preparação pode exigir acesso à rede para pacotes e modelo de embeddings.
+Verifique o relatório de ingestão: terminar o comando não garante que todos os
+arquivos foram indexados. As dependências Python não estão fixadas em versões;
+falhas de instalação, ingestão ou filtros precisam ser alinhadas com a equipe de IA.
+
+Em outro terminal, verifique o FastAPI:
+
+```bash
+curl -i http://localhost:8000/health
+```
+
+A rota retorna **200**, com `{"status":"ok","service":"ai-service"}`; não valida
+qualidade da recuperação nem comprova que o corpus está indexado.
+Pare a instância anterior do NestJS com Ctrl+C e, em `backend/`, inicie:
+
+```bash
+AI_SERVICE_URL=http://localhost:8000 FALLBACK_DISTANCE_THRESHOLD=0.8 npm run start:dev
+```
+
+Agora é possível executar os exemplos de conversa abaixo. Contexto, fontes e
+distância dependem da base e da busca reais. Este roteiro descreve os comandos
+existentes; não representa certificação de integração ponta a ponta.
+
+### Variáveis do backend
+
+| Variável | Padrão | Uso |
+| --- | --- | --- |
+| `PORT` | `3000` | Porta do NestJS; ajuste também a URL do cliente e o mapeamento Docker. |
+| `AI_SERVICE_URL` | Sem padrão | Origem HTTP/HTTPS do FastAPI; necessária para consultas válidas. |
+| `FALLBACK_DISTANCE_THRESHOLD` | `0.8` | Limiar provisório de fallback, decimal finito não negativo. |
+
+Arquivos `.env` não são carregados automaticamente. Defina as variáveis no
+ambiente do processo; os exemplos usam atribuições Bash válidas só para aquele
+comando. O detalhe de validação das variáveis está nas seções seguintes.
 
 ## Docker
 
@@ -47,6 +125,12 @@ The image uses Node.js 24 for build and runtime, installs only production
 dependencies in the final stage, and runs as the unprivileged `node` user.
 The API listens on port 3000 by default; when setting `PORT`, adjust the port
 mapping accordingly.
+
+O comando Docker acima inicia somente o backend. Para conversar, passe
+`-e AI_SERVICE_URL=...` com a origem real acessível de dentro do container.
+`localhost` no container aponta para ele próprio, não para o host. A escolha do
+endereço/rede depende do ambiente da equipe; a imagem do backend não inclui
+FastAPI, ChromaDB ou o corpus.
 
 ## Integração com o ai-service
 
@@ -105,6 +189,78 @@ Sucesso retorna **HTTP 201**, com `contexto`, `fontes`, `distancia_minima` e
 502/503/504 conforme descrito acima, sem gerar fallback de e-mail.
 A rota devolve trechos recuperados: **não gera respostas por LLM**, não mantém
 histórico e não envia e-mail.
+
+### Exemplos de respostas e seus pré-requisitos
+
+Os exemplos 201 abaixo são derivados dos cenários de
+`test/app.e2e-spec.ts` e do template de `FallbackService.gerarEmail()`.
+Os trechos e a fonte `norma.pdf` são dados simulados dos testes, não resultados
+obtidos do corpus real nem orientação acadêmica. Uma chamada ao FastAPI real
+pode retornar outros valores; nenhuma pergunta força um resultado específico.
+
+**Sucesso sem fallback — HTTP 201.** Para a requisição anterior, se a busca
+retornar os dados usados no teste (distância 0.2), com limiar 0.8:
+
+```json
+{
+  "contexto": "Trecho de uma norma sobre dispensa.",
+  "fontes": [{"arquivo": "norma.pdf", "pagina": 3, "curso": "Ciência da Computação"}],
+  "distancia_minima": 0.2,
+  "fallback_acionado": false
+}
+```
+
+**Fallback — HTTP 201.** Requisição com dados opcionais para o e-mail:
+
+```bash
+curl -i -X POST http://localhost:3000/api/v1/conversa \
+  -H 'Content-Type: application/json' \
+  -d '{"consulta":{"pergunta":"Como solicitar dispensa?","curso":"Ciência da Computação","perfil":"novo","top_k":3},"dados_email":{"nome":"Ana","matricula":"123","resumo":"Preciso de orientação."}}'
+```
+
+Se a busca retornar o cenário de teste com contexto `Trecho normativo`, a fonte
+abaixo e distância 0.8, o limiar 0.8 aciona fallback inclusive na igualdade:
+
+```json
+{
+  "contexto": "Trecho normativo",
+  "fontes": [{"arquivo": "norma.pdf", "pagina": 3, "curso": "Ciência da Computação"}],
+  "distancia_minima": 0.8,
+  "fallback_acionado": true,
+  "setor_sugerido": "SecGrad",
+  "template_email": "Assunto: Como solicitar dispensa?\n\nOlá,\n\nMeu nome é Ana, matrícula 123, aluno(a) do curso de Ciência da Computação, perfil curricular novo.\n\nEstou entrando em contato sobre: Como solicitar dispensa?.\n\nResumo da situação:\nPreciso de orientação.\n\nMinha dúvida é:\nComo solicitar dispensa?\n\nSetor sugerido:\nSecGrad\n\nAtenciosamente,\nAna"
+}
+```
+
+**Entrada inválida — HTTP 400.** Este caso não depende do ai-service:
+
+```bash
+curl -i -X POST http://localhost:3000/api/v1/conversa \
+  -H 'Content-Type: application/json' \
+  -d '{"consulta":{"pergunta":""}}'
+```
+
+```json
+{
+  "message": "Consulta de busca inválida.",
+  "error": "Bad Request",
+  "statusCode": 400
+}
+```
+
+**Serviço não configurado — HTTP 503.** Com o backend iniciado sem
+`AI_SERVICE_URL`, a requisição válida do início desta seção retorna:
+
+```json
+{
+  "message": "Serviço de busca não configurado.",
+  "error": "Service Unavailable",
+  "statusCode": 503
+}
+```
+
+Erros não retornam `fallback_acionado` ou `template_email`. O HTTP 201 de fallback
+é uma decisão sobre uma busca válida; não mascara falhas de transporte.
 
 ### Curso/perfil: valores atuais e pendências da equipe
 
@@ -216,6 +372,10 @@ exige FastAPI/ChromaDB reais; a validação integrada e a calibração continuam
 
 ## Compile and run the project
 
+Execute em `backend/`, após `npm ci`. Os modos abaixo são alternativas; mantenha
+somente uma instância por porta. Configure `AI_SERVICE_URL` no ambiente também
+nesses modos se for chamar a busca.
+
 ```bash
 # development
 $ npm run start
@@ -223,11 +383,16 @@ $ npm run start
 # watch mode
 $ npm run start:dev
 
-# production mode
+# production mode: compilar antes de iniciar
+$ npm run build
 $ npm run start:prod
 ```
 
 ## Run tests
+
+Em `backend/`, após `npm ci`. Não é necessário iniciar o backend ou o FastAPI:
+os testes criam suas próprias instâncias e simulam o serviço externo. Os e2e
+precisam de permissão para abrir portas locais temporárias.
 
 ```bash
 # unit tests
@@ -238,7 +403,47 @@ $ npm run test:e2e
 
 # test coverage
 $ npm run test:cov
+
+# lint (sem alterar arquivos)
+$ npm run lint
+
+# compilação
+$ npm run build
 ```
+
+## Troubleshooting
+
+| Sintoma | Causa provável / diagnóstico | Solução |
+| --- | --- | --- |
+| `npm` não encontra `package.json`, ou `nvm use` não encontra configuração | Comando executado fora de `backend/`. | Entre em `backend/`, use Node 24 e execute `npm ci`. |
+| `nest`/`vitest` não encontrado | Dependências de desenvolvimento não instaladas. | Execute `npm ci` em `backend/` sem omitir dependências de desenvolvimento. |
+| `start:prod` não encontra `dist/main` | Build ausente. | Execute `npm run build` e depois `npm run start:prod`. |
+| `EADDRINUSE` na inicialização | Outra instância ocupa a porta. | Pare a instância conhecida ou use `PORT=3001 npm run start:dev`; ajuste o curl para 3001. |
+| HTTP 400: `Consulta de busca obrigatória.` / `Consulta de busca inválida.` | `consulta` ausente, pergunta vazia ou tipos/`top_k` inválidos. | Envie o JSON no formato documentado; pergunta não pode conter apenas espaços, filtros devem ser strings e `top_k` inteiro positivo seguro. |
+| HTTP 400: `Dados para o e-mail de fallback inválidos.` | `dados_email` não é objeto válido ou contém campos conhecidos que não são strings. | Omita `dados_email` ou envie seus campos opcionais como strings, sem `null`. |
+| HTTP 503: `Serviço de busca não configurado.` | `AI_SERVICE_URL` ausente ou origem inválida; `.env` sozinho não configura o processo. | Inicie com `AI_SERVICE_URL=http://localhost:8000 npm run start:dev`; não acrescente `/api/v1/buscar`, query ou credenciais. |
+| HTTP 503: `Serviço de busca indisponível.` | Falha de conexão/DNS ou redirecionamento recusado. | Confira origem, porta e acesso a `/health` a partir do ambiente do backend. Em Docker, não use `localhost` para alcançar outro container/host. |
+| HTTP 502: `Falha na resposta do serviço de busca.` | FastAPI respondeu com status não bem-sucedido. | Inspecione o status/logs do ai-service e a chamada direta de diagnóstico abaixo; alinhe correção da busca/filtros com IA. |
+| HTTP 502: `Resposta inválida do serviço de busca.` | JSON inválido ou contrato incompatível. | Confira `contexto` string, `distancia_minima` número finito e `fontes` como lista de objetos com `arquivo`/`curso` strings e `pagina` inteira ≥ 1. Não altere o contrato unilateralmente. |
+| HTTP 504: `Tempo limite do serviço de busca excedido.` | Busca ou leitura do corpo excedeu 5 segundos. | Verifique latência, inicialização do modelo e logs do ai-service com a equipe de IA. O timeout é fixo no código; não existe variável para ajustá-lo. |
+| Backend não inicia com erro de `FALLBACK_DISTANCE_THRESHOLD` | Valor vazio, negativo ou não numérico. | Remova a variável para usar o padrão ou informe decimal finito não negativo, como `0.8`; reinicie. |
+| HTTP 201 sempre com fallback ou busca sem trechos | Corpus ausente, filtros incompatíveis, contexto vazio ou distância acima do limiar. | Confira relatório de ingestão e valores de curso/perfil; alinhe metadados e calibração com a equipe. Não trate o limiar como confiança probabilística. |
+| E2e falha com `listen EPERM` | Ambiente bloqueia abertura de portas locais. | Execute a suíte em ambiente que permita sockets locais, com a autorização necessária; não é evidência de falha no FastAPI. |
+
+Para isolar uma falha de busca, execute no ambiente com acesso ao FastAPI
+(ajuste a origem se não for local):
+
+```bash
+curl -i http://localhost:8000/health
+curl -i -X POST http://localhost:8000/api/v1/buscar \
+  -H 'Content-Type: application/json' \
+  -d '{"pergunta":"Como solicitar dispensa?","curso":"Geral","perfil":"Todos","top_k":3}'
+```
+
+`/health` responder não garante que `/api/v1/buscar` funcione. O segundo comando
+exercita a recuperação sem filtros, ajudando a distinguir indisponibilidade de
+problemas de metadados. Essa validação depende do FastAPI/ChromaDB reais e não
+substitui os testes isolados do backend nem a avaliação conjunta da qualidade.
 
 ## Deployment
 
