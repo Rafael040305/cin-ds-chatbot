@@ -1,106 +1,277 @@
 import os
-from pypdf import PdfReader
-from langchain_text_splitters import RecursiveCharacterTextSplitter
-import chromadb
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-CHROMA_PATH = os.path.join(BASE_DIR, "chroma_db")
-
-client = chromadb.PersistentClient(path=CHROMA_PATH)
-collection = client.get_or_create_collection(
-    name="secgrad_normas",
-    metadata={"hnsw:space": "cosine"}
+from langchain_text_splitters import (
+    RecursiveCharacterTextSplitter,
 )
+from pypdf import PdfReader
+
+from src.config import CHROMA_PATH, COLLECTION_NAME
+from src.index_utils import sincronizar_documento
+from src.metadata_utils import enriquecer_metadados
+
+
+def obter_collection():
+    """
+    Abre a coleção do ChromaDB apenas quando necessário.
+    """
+
+    import chromadb
+
+    client = chromadb.PersistentClient(
+        path=str(CHROMA_PATH)
+    )
+
+    return client.get_or_create_collection(
+        name=COLLECTION_NAME,
+        metadata={"hnsw:space": "cosine"},
+    )
+
 
 text_splitter = RecursiveCharacterTextSplitter(
     chunk_size=700,
     chunk_overlap=150,
-    separators=["\n\n", "\n", "Art.", "Artigo", ". ", " ", ""]
+    separators=[
+        "\n\n",
+        "\n",
+        "Art.",
+        "Artigo",
+        ". ",
+        " ",
+        "",
+    ],
 )
 
-def sanitizar_metadados(meta: dict) -> dict:
-    """O ChromaDB exige que metadados sejam str, int, float ou bool."""
-    meta_limpo = {}
-    for k, v in meta.items():
-        if isinstance(v, list):
-            meta_limpo[k] = ", ".join(str(item) for item in v)
-        elif isinstance(v, (str, int, float, bool)):
-            meta_limpo[k] = v
-        else:
-            meta_limpo[k] = str(v)
-    return meta_limpo
 
-def indexar_documento(caminho_arquivo: str, metadados_personalizados: dict = None) -> dict:
-    nome_arquivo = os.path.basename(caminho_arquivo)
-    extensao = os.path.splitext(nome_arquivo)[1].lower()
-    
+def sanitizar_metadados(meta: dict) -> dict:
+    """
+    Converte metadados para os tipos aceitos pelo ChromaDB.
+    """
+
+    metadados_limpos = {}
+
+    for chave, valor in meta.items():
+        if isinstance(valor, list):
+            metadados_limpos[chave] = ", ".join(
+                str(item)
+                for item in valor
+            )
+
+        elif isinstance(
+            valor,
+            (str, int, float, bool),
+        ):
+            metadados_limpos[chave] = valor
+
+        else:
+            metadados_limpos[chave] = str(valor)
+
+    return metadados_limpos
+
+
+def indexar_documento(
+    caminho_arquivo: str,
+    metadados_personalizados: dict | None = None,
+    collection=None,
+) -> dict:
+    """
+    Extrai o texto de um PDF ou TXT e o insere no ChromaDB.
+    """
+
+    nome_arquivo = os.path.basename(
+        caminho_arquivo
+    )
+
+    extensao = os.path.splitext(
+        nome_arquivo
+    )[1].lower()
+
     if metadados_personalizados is None:
         metadados_personalizados = {}
-    
-    metadados_base = sanitizar_metadados(metadados_personalizados)
-    docs_para_inserir = []
 
-    # 1. Leitura de Ficheiro TXT
+    metadados_enriquecidos = enriquecer_metadados(
+        metadados_personalizados
+    )
+
+    metadados_base = sanitizar_metadados(
+        metadados_enriquecidos
+    )
+
+    documentos_para_inserir = []
+
     if extensao == ".txt":
         try:
-            with open(caminho_arquivo, "r", encoding="utf-8") as f:
-                conteudo = f.read()
-        except UnicodeDecodeError:
-            with open(caminho_arquivo, "r", encoding="latin-1") as f:
-                conteudo = f.read()
-                
-        if not conteudo.strip():
-            print(f"[-] Aviso: O ficheiro '{nome_arquivo}' está vazio.")
-            return {"sucesso": False, "motivo": "Ficheiro vazio"}
+            with open(
+                caminho_arquivo,
+                "r",
+                encoding="utf-8",
+            ) as arquivo:
+                conteudo = arquivo.read()
 
-        chunks = text_splitter.split_text(conteudo)
-        for i, chunk in enumerate(chunks):
-            meta_chunk = metadados_base.copy()
-            meta_chunk.update({
+        except UnicodeDecodeError:
+            with open(
+                caminho_arquivo,
+                "r",
+                encoding="latin-1",
+            ) as arquivo:
+                conteudo = arquivo.read()
+
+        if not conteudo.strip():
+            print(
+                f"[AVISO] O arquivo "
+                f"'{nome_arquivo}' está vazio."
+            )
+
+            return {
+                "sucesso": False,
+                "motivo": "Arquivo vazio",
+            }
+
+        chunks = text_splitter.split_text(
+            conteudo
+        )
+
+        for numero_chunk, chunk in enumerate(
+            chunks
+        ):
+            identificador = (
+                f"{nome_arquivo}_p1_c"
+                f"{numero_chunk}"
+            )
+
+            metadata_chunk = (
+                metadados_base.copy()
+            )
+
+            metadata_chunk.update({
                 "documento": nome_arquivo,
                 "pagina": 1,
-                "chunk_id": f"{nome_arquivo}_p1_c{i}"
+                "chunk_id": identificador,
             })
-            docs_para_inserir.append((f"{nome_arquivo}_p1_c{i}", chunk, meta_chunk))
 
-    # 2. Leitura de Ficheiro PDF
+            documentos_para_inserir.append((
+                identificador,
+                chunk,
+                metadata_chunk,
+            ))
+
     elif extensao == ".pdf":
         try:
-            reader = PdfReader(caminho_arquivo)
-        except Exception as e:
-            print(f"[-] Erro ao abrir PDF '{nome_arquivo}': {e}")
-            return {"sucesso": False, "motivo": str(e)}
+            leitor = PdfReader(
+                caminho_arquivo
+            )
 
-        for num_pagina, pagina in enumerate(reader.pages, start=1):
-            texto_pagina = pagina.extract_text() or ""
+        except Exception as erro:
+            print(
+                f"[ERRO] Não foi possível abrir "
+                f"'{nome_arquivo}': {erro}"
+            )
+
+            return {
+                "sucesso": False,
+                "motivo": str(erro),
+            }
+
+        for numero_pagina, pagina in enumerate(
+            leitor.pages,
+            start=1,
+        ):
+            texto_pagina = (
+                pagina.extract_text() or ""
+            )
+
             if not texto_pagina.strip():
                 continue
-            
-            chunks = text_splitter.split_text(texto_pagina)
-            for i, chunk in enumerate(chunks):
-                meta_chunk = metadados_base.copy()
-                meta_chunk.update({
+
+            chunks = text_splitter.split_text(
+                texto_pagina
+            )
+
+            for numero_chunk, chunk in enumerate(
+                chunks
+            ):
+                identificador = (
+                    f"{nome_arquivo}_p"
+                    f"{numero_pagina}_c"
+                    f"{numero_chunk}"
+                )
+
+                metadata_chunk = (
+                    metadados_base.copy()
+                )
+
+                metadata_chunk.update({
                     "documento": nome_arquivo,
-                    "pagina": num_pagina,
-                    "chunk_id": f"{nome_arquivo}_p{num_pagina}_c{i}"
+                    "pagina": numero_pagina,
+                    "chunk_id": identificador,
                 })
-                docs_para_inserir.append((f"{nome_arquivo}_p{num_pagina}_c{i}", chunk, meta_chunk))
+
+                documentos_para_inserir.append((
+                    identificador,
+                    chunk,
+                    metadata_chunk,
+                ))
+
     else:
-        print(f"[-] Formato não suportado para '{nome_arquivo}'.")
-        return {"sucesso": False, "motivo": "Extensão inválida"}
+        print(
+            f"[ERRO] Formato não suportado: "
+            f"'{nome_arquivo}'."
+        )
 
-    # Gravação no ChromaDB
-    if not docs_para_inserir:
-        print(f"[-] Aviso: Nenhum texto extraído de '{nome_arquivo}' (possível PDF digitalizado/imagem).")
-        return {"sucesso": False, "motivo": "Nenhum texto extraído"}
+        return {
+            "sucesso": False,
+            "motivo": "Extensão inválida",
+        }
 
-    ids = [d[0] for d in docs_para_inserir]
-    documents = [d[1] for d in docs_para_inserir]
-    metadatas = [d[2] for d in docs_para_inserir]
+    if not documentos_para_inserir:
+        print(
+            f"[AVISO] Nenhum texto extraído de "
+            f"'{nome_arquivo}'."
+        )
 
-    collection.upsert(ids=ids, documents=documents, metadatas=metadatas)
-    print(f"[✓] Sucesso: {len(ids)} trechos indexados de '{nome_arquivo}'.")
-    return {"sucesso": True, "total_chunks": len(ids)}
+        return {
+            "sucesso": False,
+            "motivo": "Nenhum texto extraído",
+        }
 
-# Mantém compatibilidade com chamadas anteriores
+    ids = [
+        item[0]
+        for item in documentos_para_inserir
+    ]
+
+    documentos = [
+        item[1]
+        for item in documentos_para_inserir
+    ]
+
+    metadados = [
+        item[2]
+        for item in documentos_para_inserir
+    ]
+
+    if collection is None:
+        collection = obter_collection()
+
+    ids_removidos = sincronizar_documento(
+        collection=collection,
+        nome_arquivo=nome_arquivo,
+        ids=ids,
+        documents=documentos,
+        metadatas=metadados,
+    )
+
+    print(
+        f"[OK] {len(ids)} trechos indexados "
+        f"de '{nome_arquivo}'."
+    )
+
+    return {
+        "sucesso": True,
+        "total_chunks": len(ids),
+        "chunks_obsoletos_removidos": len(
+            ids_removidos
+        ),
+    }
+
+
+# Mantém compatibilidade com chamadas anteriores.
 indexar_pdf = indexar_documento

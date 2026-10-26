@@ -1,13 +1,19 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
+
+from src.ingest import indexar_documento
 from src.retriever import buscar_contexto
-from src.ingest import indexar_pdf
+
 
 app = FastAPI(
     title="SecGrad AI Microservice",
-    description="Serviço de RAG e Busca Vetorial para o Chatbot SecGrad",
-    version="1.0.0"
+    description=(
+        "Serviço de RAG e busca vetorial "
+        "para o Chatbot SecGrad"
+    ),
+    version="1.0.0",
 )
+
 
 class ConsultaRequest(BaseModel):
     pergunta: str
@@ -15,34 +21,84 @@ class ConsultaRequest(BaseModel):
     perfil: str = "Todos"
     top_k: int = 3
 
+
 class IngestaoRequest(BaseModel):
     caminho_pdf: str
     curso: str = "Geral"
     perfil: str = "Todos"
     categoria: str = "Geral"
 
+
 @app.get("/health")
 def health_check():
-    """Endpoint de checagem para o Docker Compose e NestJS."""
-    return {"status": "ok", "service": "ai-service"}
+    """
+    Verificação utilizada pelo Docker e pelo NestJS.
+    """
+
+    return {
+        "status": "ok",
+        "service": "ai-service",
+    }
+
 
 @app.post("/api/v1/buscar")
-def rota_buscar(req: ConsultaRequest):
-    """Endpoint chamado pelo NestJS para buscar contexto semântico."""
-    resultado = buscar_contexto(
-        pergunta=req.pergunta,
-        curso=req.curso,
-        perfil=req.perfil,
-        top_k=req.top_k
-    )
-    return resultado
+def rota_buscar(
+    requisicao: ConsultaRequest,
+):
+    """
+    Recupera contexto documental para o NestJS.
+    """
+
+    try:
+        return buscar_contexto(
+            pergunta=requisicao.pergunta,
+            curso=requisicao.curso,
+            perfil=requisicao.perfil,
+            top_k=requisicao.top_k,
+        )
+
+    except ValueError as erro:
+        raise HTTPException(
+            status_code=422,
+            detail=str(erro),
+        ) from erro
+
 
 @app.post("/api/v1/ingestar")
-def rota_ingestar(req: IngestaoRequest):
-    """Endpoint para indexar novos documentos."""
-    meta = {
-        "curso": req.curso,
-        "perfil": req.perfil,
-        "categoria": req.categoria
+def rota_ingestar(
+    requisicao: IngestaoRequest,
+):
+    """
+    Indexa manualmente um documento.
+
+    A ingestão normal do projeto deve utilizar
+    o catálogo e o comando src.ingest_batch.
+    """
+
+    metadados = {
+        "curso_alvo": [
+            requisicao.curso
+        ],
+        "perfil_curricular": (
+            requisicao.perfil
+        ),
+        "tipo_documento": (
+            requisicao.categoria
+        ),
     }
-    return indexar_pdf(req.caminho_pdf, meta)
+
+    try:
+        return indexar_documento(
+            caminho_arquivo=(
+                requisicao.caminho_pdf
+            ),
+            metadados_personalizados=(
+                metadados
+            ),
+        )
+
+    except ValueError as erro:
+        raise HTTPException(
+            status_code=422,
+            detail=str(erro),
+        ) from erro
