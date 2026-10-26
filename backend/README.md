@@ -50,10 +50,10 @@ mapping accordingly.
 
 ## Integração com o ai-service
 
-`AiServiceModule` exporta `AiService.buscarContexto(consulta)` para a futura
-orquestração NestJS. O módulo está importado no `AppModule`; outros módulos que
-consumirem o serviço devem importar `AiServiceModule`. Nenhuma rota HTTP pública
-foi adicionada nesta etapa.
+`AiServiceModule` exporta `AiService.buscarContexto(consulta)`, usado pela
+orquestração NestJS. O `AppController` expõe `POST /api/v1/conversa` e delega
+para `OrchestrationService.processar(request)`. Os módulos estão registrados
+no `AppModule`.
 
 Configure `AI_SERVICE_URL` no ambiente com a origem HTTP/HTTPS do ai-service
 (esquema, host e porta, sem caminho, query, fragmento ou credenciais). Por exemplo,
@@ -86,11 +86,58 @@ para verificar transporte e resolução do serviço no NestJS. Isso não substit
 validação futura com o FastAPI/ChromaDB reais. O `AiService` não implementa LLM,
 Keycloak ou decisão de fallback; a decisão pertence à orquestração descrita abaixo.
 
+## POST /api/v1/conversa
+
+Recebe JSON com `consulta` obrigatória e `dados_email` opcional:
+
+```bash
+curl -X POST http://localhost:3000/api/v1/conversa \
+  -H 'Content-Type: application/json' \
+  -d '{"consulta":{"pergunta":"Como solicitar dispensa?","curso":"Ciência da Computação","perfil":"novo","top_k":3}}'
+```
+
+`consulta.pergunta` deve ser uma string não vazia. `curso` e `perfil`, quando
+informados, devem ser strings; `top_k` deve ser inteiro positivo. `dados_email`
+aceita `nome`, `matricula`, `assunto` e `resumo`, todos strings opcionais.
+Sucesso retorna **HTTP 201**, com `contexto`, `fontes`, `distancia_minima` e
+`fallback_acionado`. Se houver fallback, também retorna `setor_sugerido` e
+`template_email`. Entrada inválida retorna 400; falhas da busca retornam
+502/503/504 conforme descrito acima, sem gerar fallback de e-mail.
+A rota devolve trechos recuperados: **não gera respostas por LLM**, não mantém
+histórico e não envia e-mail.
+
+### Curso/perfil: valores atuais e pendências da equipe
+
+O backend não define enum nem converte siglas/anos: repassa as strings recebidas.
+Quando omitidos, envia `curso: "Geral"` e `perfil: "Todos"`; no retriever esses
+valores desativam o respectivo filtro (strings vazias também não aplicam filtro).
+
+O catálogo `../data/raw/metadata.json`, utilizado por
+`../ai-service/src/ingest_batch.py`, contém:
+
+- `curso_alvo`: `Ciência da Computação`, `Engenharia da Computação`,
+  `Sistemas de Informação`, `Sistemas de Informações` e `Inteligência Artificial`.
+- `perfil_curricular`: `novo`, `anterior` e `ambos`.
+
+A ingestão une listas de cursos em strings; o retriever aplica `$contains` em
+`curso_alvo` e `perfil_curricular`. O backend não traduz `CC`/`2023`, usados em
+alguns testes de transporte, para nomes de cursos/perfis do catálogo. Esses testes
+não comprovam recuperação semântica para tais valores. Há também divergência
+entre `Sistemas de Informação` e `Sistemas de Informações`; `ambos` não recebe
+tratamento especial que o inclua automaticamente nas buscas por `novo`/`anterior`.
+Além disso, a rota de ingestão do ai-service fornece `curso`/`perfil`, enquanto o
+retriever filtra `curso_alvo`/`perfil_curricular` usados pela ingestão em lote.
+
+**Pendências compartilhadas:** equipe de IA/curadoria/frontend deve acordar o
+vocabulário e a semântica dos filtros, alinhar as formas de ingestão e validar
+consultas com a base real. A calibração de `FALLBACK_DISTANCE_THRESHOLD` também
+depende do corpus e da métrica reais. Nenhuma conversão ou mudança de contrato
+é introduzida pelo backend nesta entrega.
+
 ## Orquestração e fallback por e-mail
 
 `OrchestrationModule` importa `AiServiceModule` e exporta
-`OrchestrationService.processar(request)`. Está registrado no `AppModule` e não
-adiciona endpoint público. `FallbackService` gera somente texto para revisão e
+`OrchestrationService.processar(request)`, chamado pela rota de conversa. `FallbackService` gera somente texto para revisão e
 cópia pelo usuário: não envia e-mail nem define endereço de destinatário.
 
 Exemplo de entrada do serviço:
@@ -99,8 +146,8 @@ Exemplo de entrada do serviço:
 const resultado = await orchestrationService.processar({
   consulta: {
     pergunta: 'Como solicitar dispensa?',
-    curso: 'CC',
-    perfil: '2023',
+    curso: 'Ciência da Computação',
+    perfil: 'novo',
     top_k: 3,
   },
   dados_email: {
@@ -159,9 +206,13 @@ Não há LLM, autenticação ou envio de e-mail. Os arquivos Python antigos perm
 apenas como referência conceitual.
 
 Testes unitários cobrem limiar padrão/customizado/inválido, igualdade, geração do
-template, sugestões de setor, contexto vazio/em branco e propagação de erros. Os e2e verificam o fluxo
-NestJS → HTTP simulado → decisão, sem criar rota pública. A validação com
-FastAPI/ChromaDB reais e a calibração do limiar continuam pendentes.
+template, sugestões de setor, contexto vazio/em branco e propagação de erros.
+`test/app.e2e-spec.ts` exercita a rota HTTP com `OrchestrationService`,
+`FallbackService` e `AiService` reais, simulando o `fetch` externo e o sinal de
+timeout. Cobre sucesso, filtros/padrões, privacidade dos dados de e-mail, fallback,
+entradas inválidas e erros 502/503/504. `test/ai-service.e2e-spec.ts` usa um servidor
+HTTP local simulado para verificar transporte e decisão. Nenhum desses testes
+exige FastAPI/ChromaDB reais; a validação integrada e a calibração continuam pendentes.
 
 ## Compile and run the project
 

@@ -1,118 +1,200 @@
-import { Test, TestingModule } from '@nestjs/testing';
-import { INestApplication } from '@nestjs/common';
+import { Test } from '@nestjs/testing';
+import type { INestApplication } from '@nestjs/common';
 import request from 'supertest';
-import { App } from 'supertest/types';
-import { AppModule } from './../src/app.module.js';
-import { OrchestrationService } from '../src/orchestration/orchestration.service.js';
+import type { App } from 'supertest/types';
+import { AppModule } from '../src/app.module.js';
 
-describe('AppController (e2e)', () => {
+const resultado = {
+  contexto: 'Trecho de uma norma sobre dispensa.',
+  fontes: [{ arquivo: 'norma.pdf', pagina: 3, curso: 'Ciência da Computação' }],
+  distancia_minima: 0.2,
+};
+const consulta = {
+  pergunta: 'Como solicitar dispensa?',
+  curso: 'Ciência da Computação',
+  perfil: 'novo',
+  top_k: 3,
+};
+
+describe('AppController (HTTP com orquestração real)', () => {
   let app: INestApplication<App>;
+  const fetchMock = vi.fn<typeof fetch>();
 
   beforeEach(async () => {
-    const moduleFixture: TestingModule = await Test.createTestingModule({
+    vi.stubEnv('AI_SERVICE_URL', 'http://busca.test:8000');
+    vi.stubEnv('FALLBACK_DISTANCE_THRESHOLD', '0.8');
+    fetchMock.mockReset().mockResolvedValue(Response.json(resultado));
+    vi.stubGlobal('fetch', fetchMock);
+    const module = await Test.createTestingModule({
       imports: [AppModule],
     }).compile();
-
-    app = moduleFixture.createNestApplication();
+    app = module.createNestApplication();
     await app.init();
   });
 
-  it('/ (GET)', () => {
-    return request(app.getHttpServer())
-      .get('/')
-      .expect(200)
-      .expect('Hello World!');
+  afterEach(async () => {
+    await app?.close();
+    vi.restoreAllMocks();
+    vi.unstubAllGlobals();
+    vi.unstubAllEnvs();
   });
 
-  it('/api/v1/conversa (POST) - consulta inválida', () => {
-  return request(app.getHttpServer())
-    .post('/api/v1/conversa')
-    .send({
-      consulta: {
-        pergunta: '',
-      },
-    })
-    .expect(400);
-});
-it('/api/v1/conversa (POST) - retorna contexto e fontes', async () => {
-  const resultadoSimulado = {
-    contexto: 'Trecho de uma norma sobre dispensa.',
-    fontes: [
-      {
-        arquivo: 'norma-dispensa.pdf',
-        pagina: 3,
-        curso: 'CC',
-      },
+  it('/ (GET)', () =>
+    request(app.getHttpServer()).get('/').expect(200).expect('Hello World!'));
+
+  it('retorna contexto e fontes, preserva filtros e não envia dados pessoais', async () => {
+    await request(app.getHttpServer())
+      .post('/api/v1/conversa')
+      .send({ consulta, dados_email: { nome: 'Ana', matricula: '123' } })
+      .expect(201)
+      .expect({ ...resultado, fallback_acionado: false });
+    expect(fetchMock).toHaveBeenCalledTimes(1);
+    const [url, options] = fetchMock.mock.calls[0]!;
+    expect(url).toBeInstanceOf(URL);
+    expect((url as URL).href).toBe('http://busca.test:8000/api/v1/buscar');
+    expect(options?.method).toBe('POST');
+    expect(JSON.parse(options!.body as string)).toEqual(consulta);
+  });
+
+  it('aplica os padrões quando os filtros são omitidos', async () => {
+    await request(app.getHttpServer())
+      .post('/api/v1/conversa')
+      .send({ consulta: { pergunta: 'Dispensa?' } })
+      .expect(201);
+    expect(JSON.parse(fetchMock.mock.calls[0]![1]!.body as string)).toEqual({
+      pergunta: 'Dispensa?',
+      curso: 'Geral',
+      perfil: 'Todos',
+      top_k: 3,
+    });
+  });
+
+  it.each([
+    [0.8, 'Trecho normativo'],
+    [1, 'Trecho normativo'],
+    [0.1, ''],
+    [0.1, '   '],
+  ])(
+    'gera fallback para distância %s e contexto %j',
+    async (distancia, contexto) => {
+      const busca = { ...resultado, contexto, distancia_minima: distancia };
+      fetchMock.mockResolvedValue(Response.json(busca));
+      const response = await request(app.getHttpServer())
+        .post('/api/v1/conversa')
+        .send({
+          consulta,
+          dados_email: {
+            nome: 'Ana',
+            matricula: '123',
+            resumo: 'Preciso de orientação.',
+          },
+        })
+        .expect(201);
+      expect(response.body).toEqual({
+        ...busca,
+        fallback_acionado: true,
+        setor_sugerido: 'SecGrad',
+        template_email: expect.any(String),
+      });
+      expect(response.body.template_email).toContain('Ana, matrícula 123');
+      expect(response.body.template_email).toContain(consulta.pergunta);
+      expect(response.body.template_email).toContain('Preciso de orientação.');
+      expect(JSON.parse(fetchMock.mock.calls[0]![1]!.body as string)).toEqual(
+        consulta,
+      );
+    },
+  );
+
+  it.each([
+    {},
+    { consulta: { pergunta: '' } },
+    { consulta: { pergunta: '   ' } },
+    { consulta: { ...consulta, curso: 123 } },
+    { consulta: { ...consulta, perfil: [] } },
+    { consulta: { ...consulta, top_k: 0 } },
+    { consulta, dados_email: { nome: 123 } },
+  ])(
+    'rejeita entrada inválida sem consultar o serviço externo: %j',
+    async (body) => {
+      await request(app.getHttpServer())
+        .post('/api/v1/conversa')
+        .send(body)
+        .expect(400);
+      expect(fetchMock).not.toHaveBeenCalled();
+    },
+  );
+
+  it.each([
+    [
+      'HTTP externo',
+      () => new Response('segredo interno', { status: 500 }),
+      'Falha na resposta do serviço de busca.',
     ],
-    distancia_minima: 0.2,
-    fallback_acionado: false,
-  };
+    [
+      'JSON inválido',
+      () => new Response('segredo interno'),
+      'Resposta inválida do serviço de busca.',
+    ],
+    [
+      'contrato inválido',
+      () => Response.json({ contexto: 'segredo interno' }),
+      'Resposta inválida do serviço de busca.',
+    ],
+  ] as const)(
+    'retorna 502 para %s sem fallback ou detalhes internos',
+    async (_caso, resposta, mensagem) => {
+      fetchMock.mockResolvedValue(resposta());
+      const response = await request(app.getHttpServer())
+        .post('/api/v1/conversa')
+        .send({ consulta })
+        .expect(502);
+      expect(response.body.message).toBe(mensagem);
+      expect(response.body).not.toHaveProperty('fallback_acionado');
+      expect(response.text).not.toContain('segredo');
+    },
+  );
 
-  const processar = vi
-    .spyOn(app.get(OrchestrationService), 'processar')
-    .mockResolvedValueOnce(resultadoSimulado);
-
-    try {
-    await request(app.getHttpServer())
+  it('retorna 503 para falha de rede sem expor detalhes internos', async () => {
+    fetchMock.mockRejectedValue(new Error('segredo interno ECONNREFUSED'));
+    const response = await request(app.getHttpServer())
       .post('/api/v1/conversa')
-      .send({
-        consulta: {
-          pergunta: 'Como solicitar dispensa?',
-          curso: 'CC',
-        },
-      })
-      .expect(201)
-      .expect(resultadoSimulado);
+      .send({ consulta })
+      .expect(503);
+    expect(response.body.message).toBe('Serviço de busca indisponível.');
+    expect(response.body).not.toHaveProperty('fallback_acionado');
+    expect(response.text).not.toContain('segredo');
+  });
 
-    expect(processar).toHaveBeenCalledWith({
-      consulta: {
-        pergunta: 'Como solicitar dispensa?',
-        curso: 'CC',
-      },
-    });
-  } finally {
-    processar.mockRestore();
-  }
-});
-
-it('/api/v1/conversa (POST) - retorna fallback', async () => {
-  const resultadoSimulado = {
-    contexto: '',
-    fontes: [],
-    distancia_minima: 1,
-    fallback_acionado: true as const,
-    setor_sugerido: 'SecGrad' as const,
-    template_email: 'Assunto: Dispensa\n\nOlá, gostaria de orientação.',
-  };
-
-  const processar = vi
-    .spyOn(app.get(OrchestrationService), 'processar')
-    .mockResolvedValueOnce(resultadoSimulado);
-
-  try {
-    await request(app.getHttpServer())
+  it('retorna 503 quando AI_SERVICE_URL está ausente', async () => {
+    vi.stubEnv('AI_SERVICE_URL', undefined);
+    const response = await request(app.getHttpServer())
       .post('/api/v1/conversa')
-      .send({
-        consulta: {
-          pergunta: 'Como solicitar dispensa?',
-          curso: 'CC',
-        },
-      })
-      .expect(201)
-      .expect(resultadoSimulado);
+      .send({ consulta })
+      .expect(503);
+    expect(response.body.message).toBe('Serviço de busca não configurado.');
+    expect(fetchMock).not.toHaveBeenCalled();
+  });
 
-    expect(processar).toHaveBeenCalledWith({
-      consulta: {
-        pergunta: 'Como solicitar dispensa?',
-        curso: 'CC',
-      },
+  it('retorna 504 no timeout sem converter a falha em fallback', async () => {
+    const controller = new AbortController();
+    const timeout = vi
+      .spyOn(AbortSignal, 'timeout')
+      .mockReturnValue(controller.signal);
+    fetchMock.mockImplementation(() => {
+      controller.abort();
+      return Promise.reject(
+        new DOMException('segredo interno', 'TimeoutError'),
+      );
     });
-  } finally {
-    processar.mockRestore();
-  }
-});
-
-  afterEach(async () => {
-    await app.close();
+    const response = await request(app.getHttpServer())
+      .post('/api/v1/conversa')
+      .send({ consulta })
+      .expect(504);
+    expect(timeout).toHaveBeenCalledWith(5000);
+    expect(response.body.message).toBe(
+      'Tempo limite do serviço de busca excedido.',
+    );
+    expect(response.body).not.toHaveProperty('fallback_acionado');
+    expect(response.text).not.toContain('segredo');
   });
 });
