@@ -56,6 +56,50 @@ describe('AppController (HTTP com orquestração real)', () => {
     expect(JSON.parse(options!.body as string)).toEqual(consulta);
   });
 
+  it.each([
+    [0.2, false],
+    [0.8, true],
+  ] as const)(
+    'remove campos externos extras do HTTP com distância %s e fallback %s',
+    async (distancia, fallback) => {
+      fetchMock.mockResolvedValue(
+        Response.json({
+          ...resultado,
+          distancia_minima: distancia,
+          debug: { detalhe: 'metadado interno' },
+          setor_sugerido: 'setor externo',
+          template_email: 'template externo',
+          fallback_acionado: !fallback,
+          fontes: resultado.fontes.map((fonte) => ({
+            ...fonte,
+            caminho_interno: '/interno/norma.pdf',
+            metadados: { detalhe: 'metadado interno' },
+          })),
+        }),
+      );
+
+      const response = await request(app.getHttpServer())
+        .post('/api/v1/conversa')
+        .send({ consulta, dados_email: { nome: 'Ana', matricula: '123' } })
+        .expect(201);
+
+      expect(response.body).toEqual({
+        ...resultado,
+        distancia_minima: distancia,
+        fallback_acionado: fallback,
+        ...(fallback
+          ? {
+              setor_sugerido: 'SecGrad',
+              template_email: expect.stringContaining('Ana, matrícula 123'),
+            }
+          : {}),
+      });
+      expect(response.text).not.toContain('metadado interno');
+      expect(response.text).not.toContain('/interno/norma.pdf');
+      expect(response.text).not.toContain('template externo');
+    },
+  );
+
   it('aplica os padrões quando os filtros são omitidos', async () => {
     await request(app.getHttpServer())
       .post('/api/v1/conversa')
