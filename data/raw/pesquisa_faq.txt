@@ -1,0 +1,1589 @@
+Perguntas Frequentes
+O Que é a Coordenação de Pesquisa do CIn-UFPE?
+Setor que responsável por executar atividades técnico-administrativas de assessoramento direto à Direção e à Coordenação de Pesquisa do CIn. Articula, junto aos Programas de Pós-graduação, as atividades de pesquisa no CIn, em especial dos Grupos de Pesquisa devidamente credenciados, acompanhando inclusive a produtividade do corpo docente em tais atividades. Cabe também à Coordenação de Pesquisa propor, ao Conselho do Centro e à Câmara Setorial de Pesquisa e Inovação, ações de interesse da pesquisa científica no âmbito do Centro. 
+
+
+A Coordenação de Pesquisa do CIn tem o objetivo  apoiar a captação de recursos para investimento e custeio das atividades de pesquisa, bem como exercer demais funções que lhe forem conferidas pela Câmara Setorial de Pesquisa e Inovação, pelo Conselho e pelo Diretor do Centro.
+
+
+
+Para Entrar em Contato com a Coordenação de Pesquisa
+Para entrar em contato, favor enviar e-mail para:
+
+Prof. Breno Miranda, Coordenador de Pesquisa do CIn-UFPE
+
+Prof. Jamilson Dantas , Vice-Coordenador de Pesquisa do CIn-UFPE
+
+E-mail da Coordenação: coordpesq@cin.ufpe.br
+
+
+Patrícia Buarque Pereira, Secretária de Pesquisa do CIn
+
+E-mail setorial: secpesq@cin.ufpe.br
+
+
+
+
+Quais São as Áreas de Concentração da Ciência da Computação-CIn?
+Os discentes do Programa desenvolvem seus projetos, associados a sete (7) grandes áreas da Ciência da Computação: 
+
+Arquitetura de Computadores e Sistemas Digitais
+
+Bancos de Dados
+
+Computação Inteligente/Inteligência Computacional
+
+Engenharia da Computação
+
+Engenharia de Software e Linguagens de Programação
+
+Redes de Computadores e Sistemas Distribuídos
+
+Teoria da Computação
+
+
+
+
+
+Quais são os Grupos de Pesquisa do CIn?
+Veja abaixo a lista de links dos Grupos de pesquisa do Cin
+
+
+Ascent - Advanced Networks, Communications, and Cibersecurity Research Group
+
+Instituição: UFPE
+
+Líder(es): Andson Marreiros Balieiro E-mail: amb4@cin.ufpe.br 
+
+Site:dgp.cnpq.br/dgp/espelhogrupo/7069465121410817 
+
+Área: Ciência da Computação
+
+
+ 
+
+INES 
+
+Instituição: UFPE
+
+Líder(es): Augusto Cesar  Alves Sampaio E-mail: acas@cin.ufpe.br
+
+Site: https://ines.org.br/
+
+Área: Ciência da Computação
+
+ 
+
+CIn-AI
+
+Instituição: UFPE
+
+Líder(es): 
+
+Site: ai.cin.ufpe.br
+
+Área: Ciência da Computação
+
+
+CIn-TRUST
+
+Instituição: UFPE
+
+Líder(es): Augusto Cezar Alves Sampaio E-mail: acas@cin.ufpe.br
+
+Alexandre Cabral Mota E-mail: acm@cin.ufpe.br
+
+Site: https://trust.cin.ufpe.br/
+
+ Espelho do Grupo no DGP
+
+Área: Ciência da Computação
+
+
+Grupo de Pesquisa: PRAIA-Pesquisa Realmente Aplicada em IA
+
+Instituição: UFPE
+
+Líder(es): 
+
+Site: https://portal.cin.ufpe.br/pesquisa-e-extensao/pesquisa/grupos-de-pesquisa/praia/
+
+Área: Ciência da Computação
+
+ 
+
+Grupo de pesquisa: Ai Health
+
+Instituição: UFPE
+
+Líder(es): 
+
+Site: https://portal.cin.ufpe.br/pesquisa-e-extensao/pesquisa/grupos-de-pesquisa/
+
+Área: Ciência da Computação
+
+ 
+
+Grupo de pesquisa: ASSERT: Advanced System and Software Engineering Research Technologies Lab
+
+Instituição: UFPE
+
+Líder(es): Vinicius Cardoso Garcia E-mail: vcg@cin.ufpe.br
+
+Site: http://assertlab.com/
+
+Espelho do Grupo no DGP
+
+Área: Ciência da Computação
+
+Status: Certificado DGP
+
+ 
+
+Grupo de pesquisa: Banco de Dados
+
+Instituição: UFPE
+
+Líder(es): Valeria Cesario Times E-mail: vct@cin.ufpe.br
+
+Site: 
+
+Espelho do Grupo no DGP
+
+Área: Ciência da Computação
+
+Status: Não Atualizado
+
+ 
+
+Grupo de pesquisa: Business Management and Innovation
+
+Instituição: UFPE
+
+Líder(es): Carina Frota Alves E-mail: cfa@cin.ufpe.br
+
+Área: Ciência da Computação
+
+Site: 
+
+Espelho do Grupo no DGP 
+
+Área: Ciência da Computação
+
+Status: Certificado DGP	
+
+ 
+
+Grupo de pesquisa: Ciências Cognitivas e Tecnologia Educacional
+
+Instituição: UFPE
+
+Líder(es): Alex Sandro Gomes E-mail: asg@cin.ufpe.br 
+
+Rosane Maria Alencar da Silva
+
+Site: http://ccte.cin.ufpe.br 
+
+Espelho do Grupo no DGP
+
+Área: Ciência da Computação
+
+Status: Certificado DGP
+
+ 
+
+Grupo de pesquisa: Computação e Informação Quântica 
+
+Instituição: UFPE
+
+Líder(es): Adenilton José da Silva E-mail: ajsilva@cin.ufpe.br 
+
+Fernando Maciano de Paula Neto E-mail: fernando@cin.ufpe.br
+
+Stefan Michael Blawid E-mail: sblawid@cin.ufpe.br
+
+Site: https://sites.google.com/a/cin.ufpe.br/qcin/
+
+Espelho do Grupo no DGP
+
+Área: Ciência da Computação
+
+Status: Certificado DGP
+
+
+Grupo de pesquisa: Computação Natural
+
+Instituição: UFPE
+
+Líder(es): Aluizio Fausto Ribeiro Araújo  E-mail: aluizioa@cin.ufpe.br
+
+Guilherme de Alencar Barreto
+
+Site: 
+
+Espelho do Grupo no DGP
+
+Área: Ciência da Computação
+
+Status: Certificado DGP
+
+
+Grupo de pesquisa: CORE
+
+Instituição: UFPE
+
+Líder(es): Sílvio de Barros Melo E-mai: sbm@cin.ufpe.br
+
+Site: dgp.cnpq.br/dgp/espelhogrupo/1754416103574217
+Área: Ciência da Computação
+
+Grupo de pesquisa: DARE - Dating with Advanced Requirements Engineering
+
+Instituição: UFPE
+
+Líder(es): Carla Taciana Lima Lourenco Silva Schuenemann E-mail: ctlls@cin.ufpe.br
+
+Site:https://sites.google.com/cin.ufpe.br/dare/home
+
+Área: Ciência da Computação
+
+
+Grupo de pesquisa: Empirical Software Engineering Group
+
+Instituição: UFPE
+
+Líder(es): Sérgio Castelo Branco Soares E-mail: scbs@cin.ufpe.br
+
+Site:https://eseg.cin.ufpe.br/
+Espelho do Grupo no DGP
+
+Área: Ciência da Computação
+
+Status: Certificado DGP
+
+
+Grupo de pesquisa: Estufa
+
+Instituição: UFPE
+
+Líder(es):
+
+Site: https://portal.cin.ufpe.br/pesquisa-e-extensao/pesquisa/grupos-de-pesquisa/
+
+Área: Ciência da Computação
+
+  
+
+Grupo de pesquisa: GP2 Grupo de Pesquisa em Gestão de Projetos
+
+Instituição: UFPE
+
+Líder(es): Hermano Perrelli de Moura E-mail: hermano@cin.ufpe.br
+
+Jose Gilson de Almeida Teixeira Filho
+
+Site:  https://www.cin.ufpe.br/~gp2/2/
+
+Espelho do Grupo no DGP
+
+Área: Ciência da Computação
+
+Status: Certificado DGP
+
+
+Grupo de pesquisa: GREEFO - Grupo de Pesquisa em Gerenciamento de Riscos, Estudos de Engenharia Financeira e Otimização
+
+Instituição: UFPE
+
+Líder(es): Adiel Teixeira de Almeida Filho E-mail: adielfilho@cin.ufpe.br
+
+Site: https://www.gprt.ufpe.br/grvm/
+
+Espelho do Grupo no DGP
+
+Área: Ciência da Computação
+
+Status: Certificado DGP
+
+
+Grupo de pesquisa: Grupo de Pesquisa em Mudanças de Conceito e Fluxos Contínuos de Dados
+
+Instituição: UFPE
+
+Líder(es): Roberto Souto Maior de Barros E-mail: roberto@cin.ufpe.br
+
+Silas Garrido Teixeira de Carvalho Santos
+
+Site: 
+
+Espelho do Grupo no DGP
+
+Área: Ciência da Computação
+
+Status: Certificado DGP
+
+ 
+
+Grupo de pesquisa: Grupo de Pesquisa em Realidade Virtual e Multimídia
+
+Instituição: UFPE
+
+Líder(es): Judith Kelner E-mail: jk@cin.ufpe.br
+
+Djamel Fawzi Hadj Sadok E-mail: jamel@cin.ufpe.br
+
+Site: https://www.gprt.ufpe.br/grvm/
+
+Espelho do Grupo no DGP
+
+Área: Ciência da Computação
+
+Status: Certificado DGP
+
+ 
+
+Grupo de pesquisa: GRUPO DE PESQUISA EM REDES E TELECOMUNICAÇÕES - GPRT
+
+Instituição: UFPE
+
+Líder(es): Djamel Fawzi Hadj Sadok E-mail:jamel@cin.ufpe.br
+
+Site: http://www.gprt.ufpe.br
+
+Espelho do Grupo no DGP
+
+Área: Ciência da Computação
+
+Status: Em Preenchimento
+
+
+Grupo de pesquisa: Grupo de Rádio Frequência
+
+Instituição: UFPE
+
+Líder(es): Odilon Maroja da Costa Pereira FIlho 
+
+E-mail:odilon@cin.ufpe.br
+
+Site: 
+
+Espelho do Grupo no DGP
+
+Área: Ciência da Computação
+
+Status: Certificado DGP
+
+ 
+
+Grupo de pesquisa: GFADS
+
+Instituição: UFPE
+
+Líder(es): Nelson Souto Rosa E-mail: nsr@cin.ufpe.br
+
+Site: https://sites.google.com/a/cin.ufpe.br/gfads/
+
+Área: Ciência da Computação
+
+ 
+
+Grupo de pesquisa: Hack´n´joy
+
+Instituição: UFPE
+
+Líder(es): Kiev Gama E-mail: kiev@cin.ufpe.br
+
+Site: https://cin.ufpe.br/~sciot/hacknjoy/
+
+Área: Ciência da Computação
+
+ 
+
+Grupo de pesquisa: HASE
+
+Instituição: UFPE
+
+Líder(es):  Fabio Queda B. Da Silva E-mail: fabio@cin.ufpe.br
+
+Site: https://haseresearch.com/
+
+Área: Ciência da Computação
+
+
+ 
+
+Grupo de pesquisa: Inteligência Artificial
+
+Instituição: UFPE
+
+Líder(es): Teresa Bernarda Ludermir E-mail: tbl@cin.ufpe.br
+
+Site: https://ai.cin.ufpe.br/ 
+
+Espelho do Grupo no DGP
+
+Área: Ciência da Computação
+
+Status: Certificado DGP
+
+
+Grupo de pesquisa: Laboratório de Engenharia de Requisitos
+
+Instituição: UFPE
+
+Líder(es): Jaelson Freire Brelaz de Castro  E-mail: jbc@cin.ufpe.br
+
+Site: 
+
+Espelho do Grupo no DGP
+
+Área: Ciência da Computação
+
+Status: Certificado DGP
+
+
+Grupo de pesquisa: Laboratório de Inovação para Cidades Inteligentes - LIVE
+
+Instituição: UFPE
+
+Líder(es): Abel Guilhermino da Silva Filho E-mail: agsf@cin.ufpe.br
+
+Site: 
+
+Espelho do Grupo no DGP
+
+Área: Ciência da Computação
+
+Status: Certificado DGP
+
+
+Grupo de pesquisa: Lócus para Inovação em Inteligência Artificial e Cibersegurança <NOVO>
+
+Instituição: UFPE
+
+Líder(es): Cleber Zanchettin E-mail: cz@cin.ufpe.br 
+
+Site: 
+
+Espelho do Grupo no DGP
+
+Área: Ciência da Computação
+
+Status: Certificado DGP
+
+
+Grupo de pesquisa: MoDCS
+
+Instituição: UFPE
+
+Líder(es):  Paulo Romero Martins Maciel E-mail: prmm@cin.ufpe.br
+
+Site: https://www.modcs.org/
+
+Área: Ciência da Computação
+
+ 
+
+Grupo de pesquisa: Mustic: pesquisa e inovação em arte, tecnologia e criatividade
+
+Instituição: UFPE
+
+Líder(es): Filipe Carlos de Albuquerque Calegario E-mail: fcac@cin.ufpe.br
+
+Geber Lisboa Ramalho E-mail: glr@cin.ufpe.br
+
+Site: 
+
+Espelho do Grupo no CNPQ
+
+Área: Ciência da Computação
+
+Status: Certificado DGP
+
+
+Grupo de pesquisa: NEXT Research Group
+
+Instituição: UFPE
+
+Líder(es): Simone Cristiane dos Santos Lima E-mail: scs@cin.ufpe.br
+
+Site: https://next.cin.ufpe.br/
+
+Espelho do Grupo no DGP
+
+Área: Ciência da Computação
+
+Status: Certificado DGP
+
+ 
+
+Grupo de pesquisa: Redes de Computadores e Sistemas Distribuídos - REDIS
+
+Instituição: UFPE
+
+Líder(es): Paulo Roberto Freire Cunha E-mail: prfc@cin.ufpe.br 
+
+Carlos André Guimarães Ferraz E-mail: cagf@cin.ufpe.br
+
+Site: 
+
+Espelho do Grupo no DGP
+
+Área: Ciência da Computação
+Status: Certificado DGP
+
+
+Grupo de pesquisa: Segurança Computacional
+
+Instituição: UFPE
+
+Líder(es): Ruy José Guerra Barretto de Queiroz E-mail: ruy@cin.ufpe.br
+
+Frederico Luiz Gonçalves de Freitas E-mail: fred@cin.ufpe.br
+
+Site: dgp.cnpq.br/dgp/espelhogrupo/4639541794957766Área: Ciência da Computação
+
+ 
+
+Grupo de pesquisa: Software Productivity Group (SPG)
+
+Instituição: UFPE
+
+Líder(es): Paulo Henrique Monteiro Borba E-mail: phmb@cin.ufpe.br
+
+Sergio Castelo Branco Soares E-mail: scbs@cin.ufpe.br
+
+Site: http://www.cin.ufpe.br/spg
+
+Espelho do Grupo no DGP
+
+Área: Ciência da Computação
+
+Status: Certificado DGP
+
+  
+
+Grupo de pesquisa: VOXAR labs
+
+Instituição: UFPE
+
+Líder(es): Veronica Teichrieb E-mail: vt@cin.ufpe.br
+
+Site: https://www.cin.ufpe.br/~voxarlabs/
+
+Espelho do Grupo no DGP
+
+Área: Ciência da Computação
+
+Status: Certificado DGP
+
+
+
+
+
+
+
+Quais são os Laboratórios de Pesquisas do CIn?
+Veja abaixo a Planilha contendo os Laboratórios de Pesquisa do Cin
+
+ 
+
+
+Como Cadastrar um Laboratório de Pesquisa do CIn na UFPE?
+Para o passo-a-passo, favor acesse a página da Sec. Geral neste link
+
+ 
+
+
+Sobre Pesquisas na Área de Inteligência Artificial no CIn/UFPE
+O site da coordenação de pesquisa (https://pesquisa.cin.ufpe.br/) do CIn-UFPE contém várias informações públicas sobre pesquisas realizadas no centro.
+
+
+1) A instituição desenvolve pesquisas na área de inteligência artificial? 
+
+Sim
+
+
+2) Quais são os grupos de pesquisa que trabalham com inteligência artificial? 
+
+
+No site da pesquisa.cin.ufpe.br temos publicado todos os grupos de pesquisas (https://pesquisa.cin.ufpe.br/perguntas-frequentes#h.lqlyapm6i7qz) do CIn, dentre estes, temos grupos que desenvolvem pesquisas no campo da Inteligência Artificial::
+
+CIn-AI;
+
+Ai Health;
+
+Grupo de Pesquisa em Realidade Virtual e Multimídia;
+
+Inteligência Artificial;
+
+Laboratório de Inovação para Cidades Inteligentes - LIVE;
+
+Lócus para Inovação em Inteligência Artificial e Cibersegurança;
+
+Mustic: pesquisa e inovação em arte, tecnologia e criatividade;
+
+PRAIA;
+
+VOXAR labs.
+
+
+3) Quais são os temas de pesquisa relacionados à inteligência artificial com os quais esses grupos trabalham? 
+
+O CIn-UFPE desenvolve pesquisa em diversas áreas, incluindo pesquisas básicas e aplicadas. Seguem os temas:
+
+Desenvolvimento de algoritmos de otimização, de classificação e de regressão; 
+
+Computação quântica;
+
+Processamento de linguagem natural;
+
+Visão Computacional;
+
+Aprendizagem de máquina;
+
+Jogos;
+
+Música;
+
+Cibersegurança;
+
+Mineração de dados;
+
+Explicabilidade de algoritmos de IA;
+
+Redes neurais profundas;
+
+Aprendizagem por reforço;
+
+Robótica;
+
+Agrupamento;
+
+Sistemas de Recomendação;
+
+Internet das coisas.
+
+
+4) Quais são os softwares utilizados? (informar nome, fornecedor e versão)  
+
+
+Boa parte da pesquisa é desenvolvida usando softwares de código aberto, por exemplo python e suas bibliotecas (e.g, scikit-learn). Também são usados Matlab e R project.
+
+Seguem os softwares para o desenvolvimento das aplicações:
+
+Anaconda (versão mais recente);
+
+MathWorks Matlab (R2022a);
+
+R (versão mais recente)
+
+Tableau (versão mais recente).
+
+
+5) Há aplicações de inteligência artificial que utilizam produtos de pesquisa de grupos da instituição? 
+
+
+Não temos esta informação
+
+
+
+ 
+
+
+Sobre Pesquisas Envolvendo Seres Humanos - Lei
+Link para a Lei que regulamenta a pesquisa em seres humanos
+
+ 
+
+
+Quais os Serviços Oferecidos pela Secretaria de Pesquisa do CIn?
+A Coordenação de Pesquisa do CIn/UFPE oferece uma série de serviços para apoiar docentes e pesquisadores do CIn nas suas atividades de pesquisa. O objetivo é minimizar o tempo que os docentes e pesquisadores do CIn dedicam às atividades administrativas vinculadas às atividades de pesquisa para os que mesmos possam realizar pesquisas com a melhor qualidade possível, difundir os resultados das mesmas nos melhores periódicos da área, contribuindo para a visibilidade da ciência brasileira e pernambucana.
+
+Os seguintes serviços estão disponíveis:
+
+Apoio à Publicação de Artigos em Periódicos de Primeira Linha
+
+Apoio à importação de equipamentos para a pesquisa
+
+Apoio à elaboração de memoriais de progressão docente
+
+Apoio à elaboração e submissão de projetos para agências de fomento
+
+Apoio à realização de eventos
+
+Apoio à cooperações internacionais
+
+Apoio à prestação de contas de projetos financiados por agências de fomento
+
+Todas as solicitações de apoio deverão ser encaminhadas diretamente pelo pesquisador para a coordenação de pesquisa pelo e-mail: secpesq@cin.ufpe.br.
+
+
+Como Solicitar o Apoio à Elaboração de Memoriais para a Progressão Docente
+A Coordenação de Pesquisa do CIn/UFPE oferece uma série de serviços para apoiar docentes e pesquisadores do Verifique os procedimentos e a documentação necessária no link: Progressão Funcional Docente 
+
+Poderá solicitar o apoio da Secretaria de Pesquisa para progressões (verticais ou horizontais) que envolvam os níveis Adjuntos e Associados. O serviço não está disponível para promoções ao nível Titular.
+
+É de responsabilidade do professor coletar e agrupar, em arquivo no Google Drive, as comprovações de maneira organizada  e por sessões (conforme modelos de memoriais disponíveis na resolução 003/2014 do Conselho Universitário ).
+
+Envie o link da pasta compartilhada para secpesq@cin.ufpe.br 
+
+A Secretaria de Pesquisa ficará responsável em preparar o Memorial, o Relatório e criar o processo no SIPAC.
+
+ATENÇÃO: Todas os documentos/formulários deverão ser enviados preenchidos corretamente e as comprovações necessárias devem estar completas. 
+
+Como Solicitar o Apoio a Importação de Equipamentos Destinados a Pesquisas?
+A Finalidade deste serviço é atuar como facilitador no processo de importação à pesquisas baseados no modelo Importa Fácil Ciência CNPq.
+
+
+Como Solicitar o Serviço: 
+
+1. As primeiras coisas a serem feitas  são:
+
+a) obter o cadastro no CNPq como pesquisador credenciado para utilizar o Importa Fácil Ciência. Para ver como é o processo de credenciamento veja em: 
+
+http://www.cnpq.br/web/guest/pessoa-fisica
+
+http://efomento.cnpq.br/efomento 
+
+Pesquisadores com Bolsa de produtividade já possuem no sistema CNPq um cadastro já parcialmente aprovado, basta que o pesquisador acesse e aceite os termos envie ao CNPq e aguarde numeração chegar via e-mail. 
+
+b) solicitar o serviço via sd_pesquisa@cin.ufpe.br e 
+
+2. O próximo passo consiste na escolha do equipamento no site do fornecedor e solicitar a proforma (invoice), que pode ser via e-mail, com a cotação do equipamento desejado de uma empresa. Exceto para os equipamentos que tem bateria, todos os outros podem ser importados via correios (muito mais ágil e barato). Caso não seja possível utilizar os correios, outros prestadores de serviço terão que ser utilizados. Já realizamos com sucesso várias compras das seguintes empresas:
+
+
+http://www.bhphotovideo.com . 
+
+http://www.wiredzone.com.
+
+3. A secretaria de pesquisa irá iniciar o processo de compra. O docente / pesquisador deve interagir com os funcionários da secretaria durante todo o processo de compra.
+
+
+INFORMAÇÕES ADICIONAIS AO PESQUISADOR IMPORTADOR:
+
+FONTE: SITE CNPQ
+
+Quais os tipos de benefícios com o credenciamento no CNPq
+
+O credenciamento, implementado em decorrência da alteração da Lei 8.010/90 pela Lei 10.964/2004, e regulamentado no CNPq por intermédio da Resolução Normativa RN-09/2011 , estende para os pesquisadores, como pessoa física, os benefícios tributários e administrativos para importação de equipamentos e insumos. Até então, apenas instituições de pesquisa, sem fins lucrativos, podiam usufruir desses benefícios.
+
+Os benefícios envolvem, dentre outros, a isenção dos impostos de importação e sobre produtos industrializados (IPI), a dispensa do exame de similaridade e o aumento para US$ 10 mil (anteriormente eram US$ 3 mil) do limite para aplicação do regime simplificado, tanto no licenciamento quanto no despacho aduaneiro para importação.
+
+
+Como Solicitar Apoio a submissão do Edital de Apoio à Produção Qualificada (antigo “Qualis A”) No. 09/2021 da PROPESQI?
+Caso deseje apoio da Secretaria de Pesquisa para submeter seu processo no SIPAC, siga os passos abaixo:
+
+Veja quais os documentos solicitados no Edital;
+
+Termo de concessão (Formato PDF, preferencialmente)
+
+Este documento deve ser assinado eletronicamente, via SIPAC, pelo (Vice-)Diretor de Centro, bem como pelo pesquisador solicitante.
+
+Formulário de Acompanhamento;(Formato PDF, preferencialmente)
+
+Este formulário solicita adicionalmente o comprovante de vínculo em PPG na UFPE.
+
+Espelho do grupo de pesquisa, atualizado em 2021 e certificado pela UFPE, na Plataforma Lattes – CNPq (obtenha no DGP do CNPq);
+
+Currículo Lattes atualizado em 2021;
+
+Comprovante de Classificação do periódico (vide detalhes no Edital);
+
+Versão final do manuscrito.(Formato PDF, preferencialmente)
+
+Comprovante de Vínculo com a UFPE
+
+
+OBS: o preenchimento dos documentos corretamente é de responsabilidade de cada pesquisador, a Coordenação de Pesquisa não será responsável por erros no preenchimento destes formulários.
+
+Encaminhe todos os 7 (sete) documentos para a Secretaria de Pesquisa (secpesq@cin.ufpe.br);
+
+O prazo máximo para envio de documentação completa à Secretaria de Pesquisa para que ela possa submeter o pedido no SIPAC é o dia 28 de setembro de 2021.
+
+Lembre-se que todos os documentos incluídos no processo devem ser assinados pelo solicitante eletronicamente para validar a ciência do solicitante da inclusão dos mesmos. Você terá de assinar o documento eletronicamente pelo SIPAC (que enviará um email lembrete).
+
+
+Caso você mesmo prefira submeter seu processo no SIPAC, lembre-se:
+
+Todos os documentos do processo devem ser assinados no SIPAC. Nos campos de assinatura dos formulários e termos adicione o texto "<ASSINADO NO SIPAC>";
+
+Observe no Site da Diretoria o processo para solicitação de assinaturas. Por exemplo, neste caso é preciso incluir a Coordenação de Pesquisa como interessado no processo, veja mais detalhes no Site da Diretoria;
+
+Adicione o documento que precisa da assinatura do Diretor separadamente (Termo de Concessão), pois você terá de adicionar o Diretor como assinante deste documento também (além de você). Para saber quem (Diretor ou Vice-Diretor) adicionar como assinante, olhe no Site da Diretoria que deve assinar no dia do cadastro do processo;
+
+Somente em seguida adicione no processo os demais documentos, que precisarão apenas da sua assinatura.
+
+
+Links importantes:
+
+Qualis Unificado
+
+Portaria nº 08/2014 - Manual de concessão e prestação de contas de auxilio financeiro a pesquisador
+
+Portaria Normativa n° 20/2021 - Altera a Portaria n° 08/2014
+
+Resolução n° 10/2014
+
+
+Acordo entre a Capes e a IEEE para isenção de taxa de publicação
+Maiores informações no link: 
+
+https://open.ieee.org/partners/capes-transformative-agreement/
+
+Como Solicitar Apoio a Submissão do Edital de Apoio à Produção Qualificada (antigo “Qualis A”) No. 05/2023 da PROPESQI?
+Caso deseje apoio da Secretaria de Pesquisa para submeter seu processo no SIPAC, siga os passos abaixo:
+
+Veja quais os documentos solicitados no Edital;
+
+Termo de concessão (Formato PDF, preferencialmente)
+
+Este documento deve ser assinado eletronicamente, via SIPAC, pelo (Vice-)Diretor de Centro, bem como pelo pesquisador solicitante.
+
+Formulário de Acompanhamento;(Formato PDF, preferencialmente)
+
+Este formulário solicita adicionalmente o comprovante de vínculo em PPG na UFPE.
+
+Link para o Espelho do grupo de pesquisa (participante ou líder) no formato http://dgp.cnpq.br/dgp/espelhogrupo/xxxx, atualizado em 2023 e certificado pela UFPE (apenas grupo da UFPE), na Plataforma Lattes – CNPq (obtenha no DGP do CNPq); 
+
+OBSERVAÇÃO: É suficiente a participação do docente em 1 grupo dentro dos critérios para estar elegível para a submissão (data de envio de atualização em 2023 e grupos apenas da UFPE). 
+
+Para certificar grupos no Diretório, favor procurar informações com a secpesq@cin.ufpe.br;
+
+Link para o Currículo Lattes do pesquisador proponente, no formatohttp://lattes.cnpq.br/xxxxxxxxxxxxxxxx, atualizado no corrente ano e conforme as diretrizes institucionais aprovadas pela RESOLUCÃO Nº 01/2023 do CEPE sobre afiliação institucional; ;
+
+Link para o perfil do pesquisador proponente no ORCID e no Scopus, atualizado no corrente ano e conforme as diretrizes institucionais aprovadas pela RESOLUCÃO Nº 01/2023 do CEPE sobre a filiação institucional; 
+
+Comprovante de Classificação do periódico, 
+
+6.1 Qualis do Periódico A1 ou A2 (Qualis 2017-2020 da CAPES), ou, no caso do periódico não ser classificado no Qualis; 
+
+6.2 Primeiro quartil na base Scopus (percentil scopus acima de 75%). O percentil scopus da revista pode ser consultado em https://www.scopus.com/sources  
+
+(vide detalhes no Edital);
+
+Versão final do manuscrito.
+
+Comprovante de vínculo em PPG na UFPE (Solicitado no Formulário de Acompanhamento)
+
+
+As solicitações deverão atender aos seguintes critérios: 
+
+2.1 Artigos publicados em periódicos de elevada qualificação, que se enquadrem em um dos critérios definidos nos itens 2.1.5.1 ou 2.1.5.2 publicados no período de outubro de 2021 a junhode2023.
+
+2.2.O pesquisador responsável pelo encaminhamento da solicitação de apoio, emrespostaaeste Edital, deverá ser professor efetivo da UFPE e que participe de Grupo de Pesquisa atualizado e certificado pela UFPE, na Plataforma Lattes – CNPq; 
+
+2.3 A UFPE deverá obrigatoriamente figurar na folha de rosto (ou equivalente) como uma das instituições responsáveis pelo trabalho, devendo a denominação institucional respeitar as diretrizes aprovadas pela RESOLUCÃO Nº 01/2023 do CEPE; 
+
+
+OBS: o preenchimento dos documentos corretamente é de responsabilidade de cada pesquisador, a Coordenação de Pesquisa não será responsável por erros no preenchimento destes formulários.
+
+Encaminhe todos os 7 (sete) documentos para a Secretaria de Pesquisa (secpesq@cin.ufpe.br);
+
+O prazo máximo para envio de documentação completa à Secretaria de Pesquisa para que possamos submeter o pedido no SIPAC é o dia 13 de julho de 2023.
+
+Lembre-se que todos os documentos incluídos no processo devem ser assinados pelo solicitante eletronicamente para validar a ciência do solicitante da inclusão dos mesmos. Você terá de assinar o documento eletronicamente pelo SIPAC (que enviará um e-mail lembrete).
+
+
+Caso você mesmo prefira submeter seu processo no SIPAC, lembre-se:
+
+Todos os documentos do processo devem ser assinados no SIPAC. Nos campos de assinatura dos formulários e termos adicione o texto "<ASSINADO NO SIPAC>";
+
+Observe no Site da Diretoria o processo para solicitação de assinaturas. 
+
+Adicione o documento que precisa da assinatura do Diretor separadamente (Termo de Concessão), pois você terá de adicionar o Diretor como assinante deste documento também (além de você). Para saber quem (Diretor ou Vice-Diretor) adicionar como assinante, olhe no Site da Diretoria que deve assinar no dia do cadastro do processo;
+
+Somente em seguida adicione no processo os demais documentos, que precisarão apenas da sua assinatura.
+
+
+Links importantes:
+
+Qualis Unificado
+
+Portaria nº 08/2014 - Manual de concessão e prestação de contas de auxilio financeiro a pesquisador
+
+Portaria Normativa n° 20/2021 - Altera a Portaria n° 08/2014
+
+Resolução n° 10/2014
+
+
+Quais São as Regras Atuais do Edital (2025 a 2029) da Coordenação de Pesquisa ?
+Linl para o Edital 2025-2029 (Atual)
+
+Link para o Edital 2021-2025 (Anterior)
+
+
+
+Como Solicitar a Prorrogação do Edital Qualis A da PROPESQI?
+O beneficiário poderá solicitar a prorrogação de Qualquer edital do tipo, para isso acontecer o documento de solicitação deve ser inserido no processo que originou o
+
+Verifique os procedimentos e a documentação necessária abaixo:
+
+Preencha o modelo de solicitação aqui com os dados do seu projeto/processo. Lembre-se de conferir a justificativa;
+
+Caso deseje remanejar itens dentro da rubrica de custeio (não pode remanejar para outras rubricas) ajuste o pedido no modelo do item anterior;
+
+Uma sugestão de itens de custeio está nesta planilha de itens;
+
+Envie o formulário de solicitação para a Secretaria de Pesquisa (secpesq@cin.ufpe.br);
+
+Lembre-se que todos os documentos incluídos no processo devem ser assinados pelo solicitante eletronicamente para validar a ciência do solicitante da inclusão dos mesmos. Você terá de assinar o documento eletronicamente pelo SIPAC (que enviará um email lembrete).
+
+
+Como Realizar a Prestação de Contas de Projetos Aprovados pelo Qualis A da PROPESQI?
+A  prestação de contas de editais Qualis A da PROPESQI deve ocorrer no mesmo número do processo, considerando as seguintes situações:
+
+Processo original foi realizado já no SIPAC
+
+De posse do número de processo, entrar no SIPAC e inserir um novo documento com a prestação de contas
+
+Assinar o documento com as comprovações da despesa
+
+Enviar o processo para CAF/PROPESQI (11.00.12)
+
+
+B. Se o processo foi no método físico (antes do SIPAC), deve encontrar o número no sistema SIPAC pois, apesar dele ser físico ele existe no SIPAC, mas não tem nenhuma documentação.
+
+De posse do número de processo, entrar no SIPAC 
+
+O processo estará vazio, neste caso é preciso escanear os documentos do processo físico e inserir como um novo documento (documentos comprobatórios) no SIPAC, como PDF em separado da prestação de contas. 
+
+Inserir o documento da prestação de contas com as comprovações da despesa
+
+Assinar os 2 documentos;
+
+Enviar o processo par CAF/PROPESQI (11.00.12) 
+
+Ou,Se preferir, pode enviar toda a documentação para secpesq@cin.ufpe.br e o número do processo que inserimos a documentação no SIPAC.
+
+Sempre observe o Manual de concessão e prestação de contas de auxílio financeiro a pesquisador (Portaria n° 08/2014) da UFPE que traz maiores detalhes e a Portaria Normativa n° 20/2021 que altera a Portaria n° 08/2014
+
+
+
+Quais as Regras para o remanejamento de valores entre as rubricas dos projetos do CNPq? 
+Confira o links com a Resolução RN 008/2018 e a Portaria 914/2022, ambas referem-se as Normas de Prestação de Contas e Utilização dos Recursos Financeiros, bem como, ambas mencionam sobre os remanejamentos.
+
+
+"Permite-se a realocação de recursos, dentro da mesma rubrica, desde que essa seja necessária à pesquisa realizada.
+
+
+Poderão ser feitos remanejamentos de despesas, de Capital para Custeio, ou vice-versa, nos termos do art. 46 do Decreto nº 9.283, de 7 de fevereiro de 2018. Os remanejamentos deverão ser justificados no Relatório de Execução do Objeto (REO), observados os itens financiáveis listados na Ação e respeitando o estabelecido a seguir:
+
+
+I- até 20% do valor do projeto (Custeio e Capital) poderão ser remanejados sem anuência do CNPq; e
+
+II- acima de 20% o beneficiário deverá obter anuência formal do CNPq para o remanejamento, previamente ao dispêndio realizado".
+
+
+
+Como Solicitar a Utilização Antecipada dos Recursos Aprovados  no Edital de Produção Qualificada da PROPESQI?
+Os recursos para alguns editais da PROPESQI provém de fontes diversas. Os docentes contemplados com estas verbas podem demorar a receber o recurso. Em casos excepcionais é possível antecipar a utilização dos recursos aprovados no Edital de Produção Qualificada da PROPESQI, para tal é necessária solicitar à PROPESQI uma autorização especial. Como fazer:
+
+1- No SIPAC encontrar o processo original e inserir um despacho, devidamente assinado pelo beneficiário, solicitando a antecipação dos recursos. Desejável detalhar os valores e rubricas desta antecipação.
+
+2- Devolver o processo via SIPAC à Diretoria de Pesquisa, para análise. 
+
+3- Após a PROPESQI emitir o parecer favorável o gasto pode ser feito antecipadamente e com os recursos pessoais do docente contemplado. Somente desta maneira a prestação de contas estará em conformidade às regras existentes.
+
+ Caso de dúvidas falar com Marcelo (ramal 7050)- Diretoria de Pesquisa - PROPESQI.
+
+
+Quais os Novos Critérios para Solicitar o Incentivo à Publicação em Periódicos?
+As alterações nos critérios foram dadas pelos 1º e 2º Termos Aditivos ao EDITAL INTERNO No 003/2021 - FLUXO CONTÍNUO - PROGRAMA DE AUXÍLIO FINANCEIRO PARA DOCENTES, DISCENTES E PESQUISADORES DE PÓS-DOUTORADO - 2021-2025, confira abaixo:
+
+
+INCENTIVO PELA PUBLICAÇÃO DE ARTIGOS
+
+
+3.8. As solicitações de incentivo pela publicação de artigos deverão atender aos seguintes critérios: 
+
+3.8.1. Este apoio é destinado exclusivamente ao Docente; 
+
+3.8.2. O apoio se dará anualmente conforme cronograma divulgado em http://pesquisa.cin.ufpe.br; 
+
+3.8.3. No ato da inscrição, além de preencher o Formulário de Solicitação, é necessário o envio do artigo em formato digital para a Secretaria de Pesquisa do CIn/UFPE; 3.8.4. Só serão aceitas inscrições de artigos que estejam cadastrados no LATTES de seus autores Docentes do CIn/UFPE; 
+
+3.8.5. A avaliação dos artigos será baseada na seguinte pontuação: Qualis do Artigo Pontos A1 4,00 A2 3,50 A3 3,25 A4 3,00 
+
+3.8.5 Para a avaliação dos artigos escritos na língua inglesa, deve-se observar o percentil do periódico nas bases (Web of Science ou Scopus) e 
+
+i) para periódicos classificados como Ciência da Computação, o percentil deve ser maior ou igual a 62,5, em pelo menos uma das bases; 
+
+ii) para periódicos que não estejam classificados como Ciência da Computação, o percentil deve ser maior ou igual a 87,5, em pelo menos uma das bases. 
+
+
+Os artigos que satisfizerem i) ou ii) terão sua pontuação conferida da seguinte forma: qualis A1 (4,0 pontos), qualis A2 (3,5 pontos) e qualis A3 (3,0 pontos). 
+
+
+Para artigos que satisfizerem os itens i) ou ii), mas que não constarem no qualis, a seguinte regra será aplicada: 4,0 pontos (para percentil ≥ 87,5), 3,5 pontos (para percentil ≥ 75 e < 87,5) e 3,0 pontos (para percentil ≥ 62,5 e < 75). 
+
+
+O qualis deve ser observado na Plataforma Sucupira, selecionando a "Área de Avaliação" como Ciência da Computação. (Redação dada pelo 2º. Termo Aditivo) 
+
+
+3.8.6. A avaliação dos artigos será feita por uma comissão composta por professores do CIn/UFPE, indicados pela Coordenação de Pesquisa e homologados pela Direção do Centro; 
+
+3.8.7. No caso de mais de um Docente ser autor da publicação que foi submetida à avaliação para ganho do incentivo, a pontuação daquela publicação será igualmente dividida entre os Docentes envolvidos; 
+
+3.8.8. Apenas artigos publicados em periódicos classificados como A1, A2, A3 e A4, segundo o QUALIS da CAPES, serão considerados para concorrer ao incentivo; (Excluído pelo 2º. Termo Aditivo) (Excluído pelo 2º. Termo Aditivo) 
+
+3.8.9. Serão aceitos artigos publicados no ano anterior ao ano do apoio. Entende-se por artigos publicados, todos os artigos publicados de forma definitiva e os artigos em earlier access; 
+
+3.8.10. O Auxílio Financeiro a Pesquisador deverá ser usado pelo Docente para apoio a participação em eventos (despesas com passagens nacionais ou internacionais, diárias e inscrição), apoio à vinda de pesquisador visitante nacional ou estrangeiro (despesas com passagens nacionais ou internacionais e diárias), realização de visitas científicas a universidades e centros de pesquisa nacionais e/ou estrangeiros ou outros tipos de custeio que apoiem a realização de pesquisas pelo Docente e que atendam à legislação interna vigente; 
+
+3.8.11. O Auxílio Financeiro a Pesquisador poderá ainda ser concedido ao Docente total ou parcialmente na rubrica de capital; 
+
+3.8.12. O Docente terá o prazo de um ano para utilizar e prestar contas do auxílio recebido, contado a partir da data de depósito do recurso na conta corrente do Docente; 3.8.12 O docente terá o prazo de dois anos (improrrogáveis) para utilizar e prestar contas do auxílio recebido, contado a partir da data de depósito do recurso na sua conta corrente; (Redação dada pelo 2º. Termo Aditivo) 
+
+3.8.13. O pagamento do incentivo pela publicação de artigos é condicionado à presença de pelo menos um dos seus autores (ou representante) em evento de divulgação da produção do CIn/UFPE; 
+
+3.8.14. O valor de referência do incentivo é de R$ 1.000,00 (hum mil reais) por cada ponto obtido; 
+
+3.8.15. O auxílio financeiro atribuído ao Docente não poderá ultrapassar o valor correspondente a 20 pontos; 
+
+3.8.16. Os artigos de professores recém-ingressados no CIn com filiação externa na época da publicação (no artigo, a filiação indicada não é a UFPE ou o CIn/UFPE) não fazem parte da produção do programa e não serão colocados no relatório da CAPES. Portanto, não serão considerados elegíveis para o incentivo pela publicação; 
+
+
+
+Como Realizar a Prestação de Contas de Projetos Aprovados nos Editais Internos de Incentivo à Publicações?
+Para a prestação de contas de editais internos (CIn) de Incentivo à publicação, temos duas situações:
+
+A - Se a submissão foi realizada por meio de processo no SIPAC:
+
+1- Inserir ao processo original, o formulário devidamente preenchido e os comprovantes da despesa realizada, ou seja, não é preciso criar um novo processo basta utilizar o processo existente.
+
+2- Enviar o processo, já com as comprovações para gerencia financeira do CIn.
+
+B- Se a submissão foi realizada por formulários:
+
+Enviar e-mail à Gerfin@cin.ufpe.br contendo os seguintes documentos:
+
+Formulário devidamente preenchido e os comprovantes da despesa realizada
+
+
+
+
+Ou,Se preferir, pode enviar toda a documentação para secpesq@cin.ufpe.br e o número do processo que inserimos a documentação no SIPAC.
+
+Sempre observe o Manual de concessão e prestação de contas de auxílio financeiro a pesquisador (Portaria n° 08/2014) da UFPE que traz maiores detalhes e a Portaria Normativa n° 20/2021 que altera a Portaria n° 08/2014
+
+
+
+Tenho Recurso do Edital de Incentivo à Publicação (CIn ou UFPE), Quais os Itens Financiáveis?
+As últimas versões dos editais limitaram o uso dos recursos apenas a custeio. Uma sugestão de itens de custeio foi criada na planilha de itens com ajuda do setor de patrimônio da UFPE. Esta é uma lista de consulta composta de itens que poderiam gerar dúvidas, não tem a intenção de ser exaustiva para todos os itens de custeio e de capital possíveis. 
+
+
+Caso seja concedido algum recurso de Capital, observe o procedimento específico para aquisições de bens no Manual de Prestação de Contas.
+
+
+Sempre observe o Manual de concessão e prestação de contas de auxílio financeiro a pesquisador (Portaria n° 08/2014) da UFPE que traz maiores detalhes e a Portaria Normativa n° 20/2021 que altera a Portaria n° 08/2014
+
+
+
+Qual o Prazo para a Prestação de Contas dos Editais de Incentivo à Publicação (CIn/UFPE)? 
+Abaixo a lista de editais de Incentivo à Publicação que tiveram seus prazos de utilização e de prestação de contas prorrogados:
+
+
+1- O edital de Incentivo à Publicação 2020, ano base 2019 , por motivos da Pandemia de Covid19, teve seu prazo de prestação de contas prorrogado por 2 anos após o recebimento dos recursos. Abaixo a circular que formaliza esta prorrogação.
+
+Circular de prorrogação do edital de incentivo à publicação 2020, ano base 2019
+
+
+2- O edital de Incentivo à Publicação 2021, ano base 2020, teve seu prazo de prestação de contas prorrogado por 2 anos após o recebimento dos recursos. Abaixo a circular que formaliza esta prorrogação.
+Circular de prorrogação do edital de incentivo à publicação 2021, ano base 2020 
+
+3- Os demais recursos da MODALIDADE INCENTIVO PELA PUBLICAÇÃO DE ARTIGOS, recebidos pelo EDITAL INTERNO N° 003/2021 - FLUXO CONTÍNUO - PROGRAMA DE AUXÍLIO FINANCEIRO PARA DOCENTES, DISCENTES E PESQUISADORES DE PÓS-DOUTORADO - 2021-2025 tiveram seus prazos alterados conforme itens 3.8.12  e 3.8.12:
+
+   " 3.8.12. O docente terá o prazo de dois anos (improrrogáveis) para utilizar e prestar contas do auxílio recebido, contado a partir da data de depósito do recurso na sua            conta corrente.” 
+
+  “3.12.8. O docente terá o prazo de dois anos (improrrogáveis) para utilizar e prestar contas do auxílio recebido, contado a partir da data de depósito do recurso na sua conta     corrente. 
+
+
+Os demais editais que não sofreram alteração via Ofício Circular,  via de regra, fica mantido o prazo de 1 ano, após o recebimento dos recursos, para a prestação de contas
+
+
+
+Dúvidas Sobre o Edital Universal 2018, Itens Financiáveis
+Favor acessar o link abaixo e ir na seção 6  para ter acesso aos itens financiáveis. O edital Universal 2018 estará com o texto integral e servirá, inclusive, para sanar outras possíveis dúvidas com o edital em questão.
+
+Texto Completo do Edital Universal 2018
+
+
+
+Como Solicitar Apoio à Revisão/Tradução de Manuscritos para inglês?
+Para os procedimentos e a documentação necessária acesse o Edital Vigente
+
+As solicitações deverão atender aos seguintes critérios (este apoio é destinado exclusivamente ao Docente):
+
+
+1 Os manuscritos deverão ser encaminhados para revisão/tradução por serviços especializados;
+
+2 O pesquisador responsável pelo encaminhamento da solicitação de apoio deverá estar em efetivo exercício no âmbito do CIn/UFPE e ser   
+
+credenciado junto ao Programa de Pós-Graduação em Ciência da Computação da UFPE;
+
+3 Os manuscritos deverão ser submetidos para publicação dentro de, no máximo, 30 (trinta) dias após a conclusão da revisão;
+
+4 O docente deve possuir currículo atualizado nos últimos 03 (três) meses na Plataforma Lattes – CNPq;
+
+5 A UFPE deverá obrigatoriamente figurar na folha de rosto (ou equivalente) como uma das instituições responsáveis pelo trabalho, devendo a 
+
+denominação institucional incluir “Universidade Federal de Pernambuco”, em português e sem nenhuma abreviação.
+
+6. O apoio é destinado exclusivamente a manuscritos a serem submetidos em periódicos com percentil maior ou igual a 62,5% em pelo menos uma  
+
+das bases (Web of Science ou Scopus) e que estejam classificados como Ciência da Computação. Para periódicos que não estejam classificados como 
+
+Ciência da Computação, o percentil em uma das bases (Web of Science ou Scopus) deve ser maior ou igual a 87,5; (Redação dada pelo 2o. Termo 
+
+Aditivo)
+
+7. Serão apoiadas despesas para pagamento de serviços de revisão/tradução até o limite de R$ 1.000,00 (hum mil reais) por manuscrito,
+
+podendo o Docente manter no máximo duas solicitações simultâneas (para solicitar um novo apoio, é necessário comprovar a aceitação de artigo
+
+vinculado a pelo menos uma das solicitações em curso);
+
+8. Não serão aceitos prestadores de serviços pessoa física, somente pessoa jurídica, e que emitam necessariamente Nota Fiscal. Exceção para
+
+pessoa jurídica renomada, sediada no exterior, que receba em moeda estrangeira, neste caso será aceita Invoice, uma vez que a mesma não emite
+
+Nota Fiscal no Brasil;
+
+9. O proponente se compromete a encaminhar um relatório simplificado, indicando as datas de re-submissão para o mesmo periódico ou para 
+
+outro(s) periódico(s), no caso do artigo ter recebido uma primeira resposta negativa, indicando o periódico no qual o manuscrito foi aceito e incluindo 
+
+o comprovante de aceite e a versão eletrônica final do manuscrito aceito para publicação.
+
+Como solicitar esse serviço:
+
+Obs: Antes de executar a revisão, favor encaminhe os dados da revisão para secpesq@cin.ufpe.br . Dessa maneira informaremos se existem verbas do CIn disponíveis para o reembolso.
+
+
+As solicitações para o apoio deverão ser encaminhadas pelo pesquisador docente do CIn, preenchendo o Formulário e fazer upload da documentação necessária em um único arquivo PDF, contendo todos os documentos salvar no formato <seu nome. PDF>
+
+Só serão aceitos os formulários cujo preenchimento tenha sido realizado pelo e-mail de professores do CIn.
+
+
+OBS: Não serão aceitos recibos emitidos por Pessoa Física, os prestadores de serviços deverão ter, necessariamente, Nota Fiscal ou Invoice caso trate-se de empresas internacionais que não possuem CNPj no Brasil.
+
+
+
+
+
+
+Temas dos Ciclos de Seminários da Coordenação de Pesquisa
+Bolsa PQ: Benefícios e Critérios, por Profa. Teresa Ludermir (CIn-UFPE), 15 de julho de 2021, às 15:00
+
+Financiamento Internacional para Pesquisa: Opções e Dicas por Profs. Marcelo d'Amorim e Breno Miranda (CIn-UFPE), 19 agosto de 2021 às 14:00
+
+Evento Pesquisa em Destaque CIn, 28 de setembro de 2021 às 14:00:
+
+-- Hybrid systems for time series forecasting: state of the art and research challenges, com o professor Paulo Salgado;
+
+-- Network Softwarization and Cloudification: Somes Challenges and Research Directions, com o professor Kelvin Lopes Dias;
+
+-- Data science without data scientists, com o professor Vinicius Garcia. 
+
+Estratégias para Publicações, por Professor Paulo Borba (Diretor CIn/UFPE), 26 de outubro de 2021 às 15:00
+
+Orientação, papéis e responsabilidades, por Professor George Darmiton (Coordenador de Pesquisa CIn/UFPE), 08 de dezembro 2021 às 15:00
+
+Co-inovação e engenharia de software em ecossistemas de plataformas de software aberto, com Daniela Damian, 29 de março de 2022
+
+Provas e Programas: A Influência da Lógica Matemática na Computação, por Paulo Oliva, 30 de março de 2022 
+
+ Previsão e Geração de Cenários Climáticos Extremos usando Aprendizado de Máquina, por Bianca Zadrozny, 19 de abril de 2022
+
+True immersive experience is finally coming to us, por Vanessa Testoni, 25 de maio de 2022 
+
+ Evento Pesquisa de Destaque CIn 2022, 3 de agosto de 2022
+        --- Automated Software Engineering Research: Perspective and Challenges, com o professor Marcelo d’Amorim.
+        --- Planejamento de Infraestrutura Computacionais em Nuvem: Modelos Considerando Métricas de Dependabilidade, Custo e Desempenho,
+            com o professor Jamilson Dantas.
+
+Building Convolutional Feature Extractors from Image Markers , Por Alexandre Falcão, 22 de setembro de 2022 
+
+Higher-Order Singular Value Decomposition (HOSVD), por Michele Gallo , 22 de setembro de 2022 (evento apenas presencial)
+
+Orientações para projetos submetidos ao comitê de ética em pesquisa com seres humanos no CIn-UFPE, Por Anjolina Grisi,dia 28 de setembro de 2022 (evento apenas presencial)
+
+A Sustainability Requirements Catalog: the Social and Technical Dimensions, Por João Araújo, 27/10/2022 
+
+Symbolic Analysis of Message-Passing Client-side JavaScript Programs, Por Gabriela Sampaio, 09/11/2022
+
+Desenvolvimento de aplicativos na borda da rede, Por Breno Dantas. 29/11/2022
+
+Technical Debt in Software Systems: Research Directions, Por Carolyn Seaman,  21/03/2023
+
+O fim da programação, de novo!, Por Paulo Borba, 18/04/2023 
+
+Benchmarking of Emergent Technologies for Near- and In-Sensor Computing, Por Stefan Bladwin , 03/05/2023
+
+Chat-GPT: histórico, IA e pesquisa, Por Teresa Ludermir e Tsang Ing Ren, 07/06/2023
+
+Verificação Formal de Contratos Inteligentes Empresariais , Por Alexandre Cabral Mota 29/06/2023 
+
+A carreira de engenheiros de software na era da Inteligência Artificial , Por Ralf Lämel em 06/07/2023 (evento pelo Zoom, apenas simultâneo)
+
+Orientações para a submissão de bolsas PQs, Por Teresa Ludermir em 25/07/2023 (evento apenas presencial)
+
+Never-Ending Learning, Lifelong Learning and Continual Learning in the Era of Large Pre-Trained Language Models, Por Estevam Hruschka em 01/08/2023
+
+Obtendo conhecimento em diferentes domínios utilizando Visualização de Grafos, Por Claudio Linhares em 14/08/2023
+
+Shaping the future of Music, Por Marcelo M. Wanderley em 16/08/2023 (Seminário de Pesquisa e Aula Magna da Pós-graduação CIn-UFPE)
+
+Handling Uncertainty in the Development of Conversational Assistants with RELAXed User Stories, Por João Araújo em 22/08/2023
+
+Reparo automatizado de violações encontradas por Checkstyle, Por Fernanda Madeiral em 1/11/2023
+
+Inteligência Artificial e Segurança: Detectando Ataques e Minimizando Riscos Causados pela IA, Por Paulo Freitas (evento apenas presencial no Porto Digital)
+
+Code Analysis at WhatsApp, Por Gabriela Sampaio em 22/11/2023
+
+A Clustering Algorithm for Polygonal Data Applied to Scientific Journal Profiles, Por Wagner Jorge em 28/11/2023
+
+Cluster Apuana: arquitetura, instruções e políticas de uso. Por Hansenclever e Adiel Filho em 15/12/2023 
+
+Designing for Reliable and Secure Mobile Networks of the Future, por Jacek Kibilda em 19/12/2023. 
+
+Automatic and Verified Evolution-aware Product-Line Analyses, por Vander Alves  em 13/03/2024
+
+Explorando Práticas Sustentáveis em Visualizações Tangíveis, por Luiz Augusto Morais em 04/07/2024
+
+How Vector Databases are Revolutionizing Unstructured Data Search in AI Applications, por Frank Liu em 9/07/2024
+
+Advancing scientific software one hackathon at a time , por Alexander Nolte em 10/07/2024
+
+3 Seminários: Applications of cross-coverage to test functionally equivalent programs, por Antonia Bertolino; Towards Expansion Sensitive Multi-Call Rumor Spreading, por Emilio Cruciani  e Empirical Research for Greener Software: Where Two Worlds Meet , por Roberto Verdecchia  em 11/07/2024.
+
+Fake news detection: a dynamic multi-view and ensemble selection approach , Por Rafael M. O. Cruz em 23/08/2024 (evento apenas presencial)
+
+Pattern structures for data analysis , Por Sergei O. Kuznetsov  em 12/11/2024. 
+
+Explainable knowledge discovery in numerical data with interval pattern structures, Por Sergei O. Kuznetsov  em 13/11/2024.
+
+From Resilient Autonomous Driving to Cyber-Resilient Systems on a Chip, Por Dr. -Ing. Marcus Völp em 21/11/2024.
+
+The ABC of Software Engineering Research & The Role of Theory, Por Klaas-Jan Stol Klaas-Jan Stol em em 13/02/2025.
+
+Modelos lineares para análise de dados distribucionais , Por Paula Brito em 11/03/2025.
+
+Some Musings on Research, Por Prof. Kishor Trivedi em 07/04/2025.
+
+New models of Centrality in Networks , Por Prof.Fuad Aleskerov  tarde para o seminário em 20/05/2025.
+
+Method of anomalous clustering and its applications, Por Prof. Boris Mirkin em 22/05/2025.
+
+Choice Procedures in Big Data Analysis , Por Prof. Fuad Aleskerov em 27/05/2025.
+
+Evento de Abertura da 1ª Jornada de Pesquisa de Graduação do CIn-UFPE, em 17/06/2025.
+
+Duplicação de Código: Fundamentos, Avanços Recentes e Perspectivas Futuras , Por Matheus Paixão em 26/07/2/025.
+
+From Modeling to Insight: Discriminant Analysis and Visualization Tools for Interval Data, Por Maria do Rosário em 17/11/2025.
+
+
+ 
+
+
+Como Fazer um Registro de Software?
+Passo-a-passo para realizar um Registro de Software no INPI
+
+
+Realizar consulta do nome do software na Base de Dados do INPI*
+
+Definir Tipo de Pesquisa: Exata e Radical;
+
+Informar o nome do software; 
+
+Informar o  número de  Classificação do Nice - NCL; Software de computador é apresentado no item nº42, da lista de serviços.
+
+Clicar no botão "pesquisar"; 
+
+Gerar arquivo.pdf do resultado da pesquisa, indicando que não há resultado com o nome informado. 
+
+Caso a pesquisa retorne com processos, deve-se verificar se a Classe do nome conflitante é a mesma que a que está sendo pesquisada. Se sim, deve-se definir um novo nome para o software. Se não, deve-se prosseguir com o registro de software.
+
+*A consulta é realizada em:
+
+	 https://busca.inpi.gov.br/pePI/jsp/marcas/Pesquisa_classe_basica.jsp 
+
+
+Produzir a logo do software.
+
+
+Formato JPG; tamanho mínimo de 945x945 pixels (ou 8x8 cm); resolução mínima de 300 dpis; não pode conter símbolos de marca registrada, tais como™, ou ®; e arquivo com tamanho máximo de 2 MB;
+
+
+Gerar arquivo .PDF do Código Fonte (arquivo único);
+
+Preencher  documento Anexo de Autores;
+
+Preencher Formulário Interno de Registro de Programa de Computador.
+
+
+A lista de Classificação do campo de aplicação encontrasse na Tabela de Classificação por Tipo de Programa para o Registro de Programa de Computador (Anexo I);
+
+
+A lista de Classificação do tipo de programa encontras-se no documento Campo de Aplicação (Anexo II).
+
+
+Enviar todos os documentos acima produzidos para o e-mail do Setor de Propriedade Intelectual <acompanhamentopi.propesqi@ufpe.br>, em arquivo zipado, sem senha.
+
+
+Caso precise consultar, segue  a Lei da Propriedade Intelectual
+
+
+
+Como Vejo os Editais de Órgãos de Fomento que Foram Divulgados pela Coordenação de Pesquisa?
+Para ver os boletins de Editais que foram divulgados no ano de 2021:
+
+Julho, Agosto, Setembro Dezembro
+
+
+
+Onde Posso Encontrar um Texto Padrão de Apresentação do CIn Para Utilizar em Projeto de Pesquisa?
+Criamos um documento com um texto padrão que pode servir de referência no link abaixo.
+
+Texto base Institucional do CIn-UFPE
+
+
+
+Como Obter Carta de Anuência dos Dirigentes da UFPE Para Projeto de Pesquisa?
+A carta de anuência da UFPE, para projetos FACEPE, poderá seguir o modelo em anexo, assim também como carta de intenção (não se faz necessária assinatura do Diretor do CIn, apenas do Reitor).
+
+
+Para iniciar o pedido de assinatura.
+
+1- Deve-se proceder com um processo interno, conforme orientação obtida do Gabinete no Reitor, que é abrir um processo SIPAC,  composto por:
+a) requerimento do Diretor do Centro,
+b) cópia do Edital FACEPE  e,
+c) Respectiva Carta de Anuência preenchida. 
+
+O processo é  submetido inicialmente a PROPESQI que em sequência submeterá a assinatura do Reitor. 
+
+Para maiores informações, consulte a página de Contratos do CIn
+
+Para Projetos aprovados, que requerem a anuência da  PROPESQI, as instruções referentes a solicitação de declarações e cartas de anuência para projeto de pesquisa ou inovação são:
+
+
+Informamos que, por delegação do magnífico reitor, prof. Alfredo Macedo Gomes, o Pró-Reitor de Pesquisa e Inovação/PROPESQI-UFPE está autorizado a emitir CARTAS DE ANUÊNCIA ou DECLARAÇÕES representando a Universidade Federal de Pernambuco perante os órgãos de fomento à pesquisa e à inovação.
+
+
+As solicitações podem ser enviadas para a secpesq@cin.ufpe.br com as seguintes informações:
+
+Para tanto, o e-mail de solicitação deve conter os dados mínimos necessários, a saber:
+
+
+A) Nome do órgão de fomento, número e o título do edital
+
+B) Título do Projeto de Pesquisa ou Inovação
+
+C) Nome Completo do Professor Coordenador do Projeto
+
+D) Matrícula SIAPE do Professor Coordenador
+
+E) Lotação do Professor Coordenador (Departamento, Centro, Campus, etc)
+
+
+Essas cartas também podem ser requeridas diretamente à PROPESQI, através do e-mail (proreitor.propesqi@ufpe.br).
+
+
+Caso edital de fomento possua modelo próprio ou específico de carta, os documentos ou informações pertinente podem ser enviados também por email.
+
+
+
+
+
+Onde Posso Encontrar Plantas do CIn Para Utilizar num Projeto de Pesquisa?
+Arquivos pdf das plantas do CIn. 
+
+Como Fazer Para Cadastrar um Novo Grupo de Pesquisa no Diretório do CNPq?
+IMPORTANTE: ao cadastrar um novo grupo, informar à secpesq@cin.ufpe.br para o devido registro no Centro de Informática
+
+Para dar entrada como líder de Grupo de Pesquisa, é preciso receber o acesso que é liberado mediante contato com o DPQ / Propesqi. Para isso é necessário enviar um e-mail para o sergio.menezes@ufpe.br.
+
+a propesqi solicita que o próprio líder entre em contato para receber  informações detalhadas.
+
+A Secretaria de Pesquisa poderá auxiliar no cadastramento do grupo,  mas é preciso enviar todos os dados minuciosos incluindo CPF dos participantes e linhas de pesquisa com descrição das mesmas.
+
+
+Após o cadastro, favor informar à secpesq@cin.ufpe.br.
+
+
+LINKS IMPORTANTES:
+
+http://lattes.cnpq.br/web/dgp/faq
+
+http://lattes.cnpq.br/web/dgp/glossario
+
+http://lattes.cnpq.br/web/dgp/manual-do-usuario
+
+
+
+
+
+Como Fazer Para Cadastrar um Projeto de Pesquisa na UFPE, Para Contar Como Carga Horária?
+Para cadastrar um projeto de Pesquisa no CIn, favor enviar os documentos abaixo para secpesq@cin.ufpe.br com cópia para coordpesq@cin.ufpe.br
+
+Desde 2018 , os processos para registro de projetos de pesquisa deverão conter os seguintes documentos:
+
+Formulário de apresentação de projeto de pesquisa; (para consultar os Para consultar os ODS /ONU pode acessar esse link : http://www.ods.cnm.org.br/agenda-2030
+
+Ata de aprovação do pleno do departamento (solicitar que entre em pauta ao pelo e-mail secgeral@cin.ufpe.br);
+
+Ata de aprovação do conselho departamental (solicitar que entre em pauta pelo e-mail secgeral@cin.ufpe.br);
+
+Cópia do  Projeto de pesquisa. Podem ser solicitados os registros de projetos nas seguintes condições:
+a) Projetos que foram aprovados por órgãos de fomento como Capes, CNPq, Facepe. Estes quando forem registrados na PROPESQI  o período de execução ficará definido o já estabelecido por estes órgãos.
+b) Projetos que não têm fomento, neste caso,  será tido como prazo de execução o padrão, definido na Câmara de Pesquisa, limitado a 36 meses.
+
+Caso o próprio professor queira, deverá formar um processo 
+
+Formando um processo no SIPAC (Proposição Projeto de Pesquisa) e enviar para o NAP/DPQ/PROPESQI- COORDENACAO DO NUCLEO DE APOIO AO PESQUISADOR - PROPESQI (11.17.07). Lembrar de acrescentar, como interessados no processo,   a Coordenação de Pesquisa do CIn. Após o envio, este processo entra numa pauta para aprovação do registro. Utilizar os seguintes dados de cadastro:
+
+Origem de Processo: Processo Interno
+
+Tipos de Processos: Projetos de Pesquisa: Proposição
+
+Processo Eletrônico: Sim
+
+Assunto detalhado: Cadastro de Projeto de Pesquisa <NOME DO PROJETO>, 	do Professor <NOME>
+
+Natureza do Processo: ostensivo
+
+
+
+Para Firmar Protocolos de Intenções com Universidades Estrangeiras
+O professor interessado em firmar um convênio ou protocolo de intenções com uma instituição estrangeira deve trazer a documentação completa à sala da Diretoria de Relações Internacionais para que o processo possa ser iniciado. Para que um acordo de cooperação seja concluído, ele terá que tramitar pelas seguintes instâncias na ordem descrita a seguir: 
+
+
+1. Departamento
+
+2. Diretoria de Relações Internacionais
+
+3. Pró-reitoria envolvida - para emissão de parecer
+
+4. Procuradoria Jurídica
+
+5. Gabinete do Reitor - para assinatura pelo Reitor da UFPE
+
+6. Instituição estrangeira - para assinatura
+
+
+Documentação Necessária:
+
+
+- Ofício de encaminhamento à Coordenação de Cooperação Internacional, anexando:
+
+- Cópia da Ata de Reunião de Aprovação do Pleno do Departamento;
+
+- Cópia da carta/ofício da Instituição estrangeira demonstrando interesse em fazer um trabalho de Cooperação com a UFPE.
+
+-O Protocolo de Intenções/ Acordo em 3 vias de cada idioma (3 vias em português e 3 vias no idioma de preferência da instituição estrangeira). Seguem modelos em vários idiomas
+
+Protocolo de Intenções Versão Espanhol
+
+Protocolo de Intenções Versão Francês
+
+ 	Protocolo de Intenções Versão Inglês	
+
+Protocolo de Intenções Versão Inglês (EUA)
+
+ 	Protocolo de Intenções Versão Italiano
+
+ 	Protocolo de Intenções Versão Português
+
+ 
+
+Informações sobre a Cotutela
+
+ 
+
+A Resolução vigente sobre cursos de Doutorado em regime de Cotutela (dupla e múltipla titulação) é a Resolução nº 27/2020. 
+
+ 
+
+Copiamos a seguir trechos da referida resolução que explicam o processo de assinatura da convenção de cotutela:
+
+ 
+
+Para a formalização da Cotutela é necessário abertura de processo, via SIPAC, a ser encaminhado à Diretoria de Relações Internacionais (DRI) com a seguinte documentação (modelos de vários documentos encontram-se anexos à Resolução nº 27/2020):
+
+I - Solicitação de Cotutela pelo professor orientador na UFPE;
+
+II - Parecer favorável do Colegiado do Programa da UFPE (extrato de ata);
+
+III - minuta da Convenção de Cotutela (Geral ou Específica) devidamente preenchida;
+
+IV - Termo de Compromisso e Plano de Atividades, devidamente preenchidos e assinados;
+
+V- Documento que conste interesse da instituição estrangeira na realização do projeto; e
+
+VI- Histórico Escolar do estudante, ou documento equivalente.
+
+ 
+
+Após a DRI conferir a documentação anexada ao processo de cotutela, ele passa pela análise da Pró-Reitoria de Pós-Graduação - PROPG e da Procuradoria antes da assinatura pelo Reitor.
+
+
+
+Como Entrar em Contato com os Setores da PROPESQI?
+Para entrar em contato com a Diretoria de Pesquisa da  PROPESQI - Atendimento via Whatsapp: (81) 2126 7050
+
+
+Para demais setores aqui 
+
+Passos para Submissão de Protocolo/projeto ao Comitê de Ética em Pesquisa
+Processo de submissão de protocolo/projeto para validação no CEP
+
+
+Toda pesquisa que envolva seres humanos como objeto da pesquisa ou como participante em alguma das etapas, deve ser submetida ao Comitê de Ética em Pesquisas (CEP). Por exemplo, se há entrevista, aplicação de questionários (sejam on-line ou presencial), etc. 
+
+
+Todas as informações sobre o processo de avaliação de projeto pelo CEP podem ser conferidas através do site principal do CEP (https://www.ufpe.br/cep), em especial duas áreas do site são de extrema importância: Calendário de Reuniões (https://www.ufpe.br/cep/calendario) e Manual e Modelos (https://www.ufpe.br/cep/manual-e-modelos). O primeiro mostra as datas das próximas reuniões do CEP, onde um quantitativo fixo de projeto é analisado a cada reunião. O segundo contém os manuais e modelos que serão utilizados para o preparo de projeto para apreciação pelo CEP.
+
+Acessar "Manual e Modelos", baixar e ler o Manual do Pesquisador.
+Este manual contém todo o passo a passo do processo, incluindo documentos que devem ser preparados e coletados para envio do projeto ao CEP.
+
+Preparar os documentos obrigatórios.
+O CEP exige um conjunto de documentos obrigatórios, os quais estão listados no Manual do Pesquisador (pág. 9) e modelos para os mesmos estão disponíveis na área do site "Manual e Modelos". Dentre eles, o Projeto detalhado é possivelmente um dos mais importantes onde deverá reunir informações sobre o projeto tais como introdução, referencial teórico, problematização, a metodologia, aspectos étnicos, entre outros. A lista de itens obrigatórios e opcionais podem ser encontrados no Manual do Pesquisador (pág. 13). Todo o documento deve ser redigido segundo as normas da ABNT e os itens incluídos serão úteis não só para compor o projeto, mas para serem incluídos nos campos solicitados na Plataforma Brasil, por onde todo o trâmite ocorre. Uma das principais preocupações neste documento são as questões relacionadas à ética do procedimento ou experimento a ser aplicado. O pesquisador deve elaborar o projeto de tal modo que garanta que os participantes não sofrerão nenhum tipo de desconforto, cansaço, incômodo, constrangimento, além de garantir uma participação voluntária com a possibilidade de se retirar a qualquer momento. Dada a possibilidade de avaliação do projeto por parte de um pesquisador de uma área distinta, é importante que termos técnicos sejam postos de forma clara e quando necessário colocar entre parênteses o significado do mesmo, especialmente termos em inglês.
+
+Cadastrar-se na Plataforma Brasil.
+Uma vez que todos os documentos já encontram-se prontos, o pesquisador deve cadastrar-se na Plataforma Brasil (http://aplicacao.saude.gov.br/plataformabrasil/login.jsf) assim como todos os pesquisadores envolvidos na pesquisa (o orientador da pesquisa, por exemplo) caso não tenham cadastrado. É necessário o cadastro nesta plataforma pois é por ela que o todo o processo ocorre.
+
+Cadastro do projeto na Plataforma Brasil .
+Uma vez feito o cadastro na plataforma, o pesquisador principal já pode começar o passo a passo do cadastro do projeto seguindo as etapas mostradas no Manual do Pesquisador (pág. 19). O pesquisador tem a opção de salvar o projeto em qualquer etapa e a qualquer momento, conseguindo assim preencher todas as telas no seu próprio ritmo. A maior parte das informações requeridas são em sua maioria informações já preenchidas no documento contendo o projeto detalhado. Exceções incluem campos como Resumo, Hipótese (opcional no documento do projeto) ou inclusão dos pesquisadores envolvidos. Todos os dados devem ser preenchidos de acordo com as informações contidas no documento do projeto, como por exemplo o cronograma e orçamento, a fim de evitar inconsistências. A última tela do processo inclui opções relacionadas ao sigilo do processo, ficando a cargo do pesquisador delimitar se terá ou não e até quando (na ausência de sigilo, apenas informações básicas são apresentadas na Plataforma Brasil). Uma vez cadastrado o projeto, o pesquisador deve acompanhar se o número do CAAE (Certificado de Apresentação de Apreciação Ética) foi gerado até um dia da finalização de envio do projeto, o que indica que o CEP aprovou a apresentação dos documentos anexados na plataforma. Caso contrário, o projeto será devolvido e o pesquisador fica a cargo de fazer os ajustes solicitados e o reenvio do projeto.
+
+Aguardar e Acompanhar o Parecer Consubstanciado.
+Uma vez que o número do CAAE for gerado, o pesquisador deve aguardar o parecer do CEP feito na próxima reunião disponível. O CEP pode emitir os possíveis pareceres conforme informado no Manual do Pesquisador (pág. 16): Aprovado, Pendente, ou Não Aprovado. Apenas o parecer aprovado garante que o pesquisador pode iniciar a coleta de dados/execução da pesquisa. Todas as outras indicam algum problema (por exemplo, falta de documento, inconsistência de informações, entre outros), cabendo ao pesquisador proceder com as pendências e problemas informados (no caso de não aprovado, o pesquisador deve entrar em contato com o CEP).
+
+
+Um resumo deste processo pode ser encontrado no Manual do Pesquisador nas páginas: 16 e 28. Além disso, o CEP inclui um checklist (Checklist para Pesquisadores) dos documentos solicitados (anexados na Plataforma Brasil) na página de "Manual e Modelo". 
+
+
+Antes de fazer a submissão do projeto na Plataforma, o pesquisador deve entrar em contato com o CEP para saber qual a próxima data de reunião com vagas disponíveis; o pesquisador deve organizar o cronograma do projeto de acordo com essa data de reunião do CEP, de modo que a coleta de dados seja definida para começar pelo menos 15 dias após a reunião do CEP, ainda com risco do projeto voltar para ajustes e correções. Pesquisas que coletam dados antes do parecer do CEP são rejeitadas.
+
+
+É importante incluir no orçamento do projeto itens que promovam um ambiente seguro em função da pandemia recente (COVID-19), tais como máscaras e álcool 70, sendo assim os custos ficando a cargo do(s) pesquisador(es) da pesquisa.
+
+
+
+
+Seguem outros links relevantes:
+A Cartilha do CEP
+
+Checklist para Pesquisadores: Como os documentos obrigatórios devem ser apresentados ao CEP via Plataforma Brasil 
+
+ 
+
+Dashboard Pesquisa
+O Sistema de Pesquisa do Centro de Informática (CIn) da UFPE apresenta alguns indicadores extraídos a partir dos Currículos Lattes dos Professores do CIn. Por enquanto, estão disponíveis indicadores ligados a publicações, projetos de pesquisa e alunos orientados. Os indicadores são sempre apresentados na visão geral (do CIn como um todo, ao longo do tempo) e na visão por professor.
+
+
+O dashborad pode ser acessado pela intranet.cin.ufpe.br (Sistema de pesquisa).
+
+Em uma das funcionalidade do sistema, o professor pode fazer o upload do seu currículo lattes e suas informações no sistema serão atualziadas. 

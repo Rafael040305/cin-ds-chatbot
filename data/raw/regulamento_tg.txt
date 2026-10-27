@@ -1,0 +1,154 @@
+Universidade Federal de Pernambuco (UFPE)
+
+Centro de Informática (CIn)
+
+Trabalhos de Graduação
+(Parte deste documento se constitui de uma tradução para o português do Student Project Guidelines, Dept of Computing, Imperial College, London, e uma pequena parte (os critérios de diferenciação) resultou de uma tradução para o português do documento Projects Assessment, Division of Informatics, Edinburgh University, Scotland)
+
+
+
+1. Objetivos
+O Trabalho de Graduação (TG) é uma atividade obrigatória no currículo de todos os cursos de graduação oferecidos pelo Centro de Informática da UFPE. Trata-se de uma grande oportunidade que o aluno tem de demonstrar independência e originalidade, além de capacidade de planejar e organizar um projeto de razoável porte, e levá-lo a bom termo utilizando os métodos e técnicas aprendidas durante o curso. Qualquer que seja seu nível de desempenho acadêmico, através do TG o aluno tem a chance de demonstrar todo o seu potencial realizador e criativo, além de poder produzir um documento que poderá servir a outros. O resultado final deverá trazer um ótimo sentimento de "ter realizado algo, com começo, meio e fim".
+
+
+
+2. Gestão da Disciplina
+Atualmente, os responsáveis pela disciplina para para Ciência da Computação (CC), Engenharia da Computação (EC) e Sistemas de Informação (SI) são, respectivamente, Juliano Manabu Iyoda, Carlos Alexandre Barros de Mello e Liliane Rose Benning Salgado. Caso tenha alguma dúvida ou problema, o aluno deve contactar o responsável no seu respectivo curso.
+
+
+
+3. A Escolha de um TG
+Em geral, a ideia para o projeto de TG pode vir de uma proposta de um(a) professor(a), ou do próprio aluno, ou mesmo de uma combinação dos dois. O aluno deve procurar o(s) professor(es) para discutir sobre o(s) projeto(s) que mais lhe interessa(m), de modo que haja tempo para um amadurecimento da ideia antes que o projeto seja mesmo oficializado como seu TG. É importante observar que o projeto deve se enquadrar no perfil escolhido (teórico, acadêmico, tecnológico, voltado ao mercado, etc.), de forma a permitir que as chances de sucesso sejam as melhores possíveis. 
+
+Os alunos que têm uma ideia própria de um projeto assumem a responsabilidade de encontrar um(a) professor(a) que não só aprove a proposta, como se disponha a supervisionar. Os professores responsáveis em cada um dos cursos poderão ajudar o aluno a encontrar um(a) professor(a) que "assuma" o projeto do aluno, mas é preciso que fique claro que nem sempre é possível garantir que o seu projeto encontre alguém disposto(a) a assumir. 
+
+Importante: A oficialização da escolha junto à Coordenação de TG, que deverá ser acompanhada de uma declaração de concordância expressa do(a) professor(a) orientador(a) e de uma "proposta preliminar" contendo um plano de trabalho e um cronograma, deve ser feita até no máximo até 30(trinta) dias após o "Último dia para Cancelamento de Disciplinas e Tracamento de Semestre", data estabelecida no calendário da Graduação expedido pela PROACAD. A entrega da proposta constitui a primeira fase cumprida do TG, sendo entendida como a primeira nota. Caso o discente não entregue a proposta na data marcada, ele levará FALTA nessa primeira nota e deverá solicitar segunda chamada (com apresentação de justificativa comprovada). Se devidamente justificada, o aluno deverá entregar o projeto até 5 (cinco) dias após a data original de entrega. Caso a solicitação não seja aprovada (por falta de comprovação, por exemplo), o discente receberá FALTA na segunda chamada da primeira nota e será considerado REPROVADO POR FALTA.
+
+Procedimento de Submissão de uma Proposta de TG: 
+
+Entregue a versão em papel da proposta na secretaria da graduação; nela deve estar o "ciente" do orientador.
+Envie o arquivo (em PDF com nome conforme especificado através de formulário eletrônico apropriado, juntamente com (i) nome completo do aluno; (ii) curso (CC, EC ou SI); (iii) endereço eletrônico do aluno no CIn-UFPE; (iv) título do trabalho; (v) área; (vi) nome do(a) orientador(a); (vii) uma lista de possíveis avaliadores (de comum acordo com o orientador); ; (viii) resumo de no máximo 10 linhas.
+4. Avaliação
+Um bom projeto de TG envolve uma combinação de uma boa pesquisa sobre o "estado-da-arte", uma implementação não-trivial, ou um trabalho teórico bem-fundamentado, e um relatório bem organizado e bem escrito que especifique os detalhes relevantes do projeto e que deixe bem claro seu contexto, seus objetivos, e os resultados obtidos. Os projetos excepcionais invariavelmente avançam fronteiras, como por exemplo, desenvolvendo uma aplicação complexa que ainda não existe, ou melhorando significativamente uma aplicação ou um método já existente(s) seja através de sua funcionalidade, desempenho, etc.
+
+Um projeto de implementação reconhecidamente fácil muito provavelmente não será avaliado como "ótimo", ou "excelente", independentemente do quão bem ela foi feita. Da mesma forma, projetos que se caracterizam predominantemente como um "apanhado" ou "levantamento" de resultados em uma determinada área (em inglês se usa a palavra survey) não terão grandes chances de obter a nota máxima a menos que a monografia venha acompanhada de alguns resultados experimentais, ou implementação não-trivial, ou mesmo análise teórica, como por exemplo, uma comparação objetiva entre os métodos e técnicas descritas no texto. 
+
+Banca examinadora: será composta de dois membros, o(a) professor(a) orientador(a) e um(a) outro(a) professor(a) do centro. 
+
+Importante: Os avaliadores deverão levar em conta a relação entre o que foi planejado (ou seja, aquilo que foi descrito na proposta inicial do trabalho, e seu respectivo cronograma) e o que de fato foi realizado. 
+
+5. Equipamento
+O aluno poderá desenvolver o software ou hardware no seu próprio equipamento, desde que isso possa ser duplicado aqui no CIn-UFPE no dia de apresentação dos projetos para efeito de avaliação.
+
+Importante: lembre-se que não há desculpas para aqueles que não tomaram as devidas precauções com relação a backup. A perda de arquivos e/ou dados devido a uma falha no sistema poderá implicar na perda da nota final. É bom lembrar que o TG é uma disciplina, e que como tal tem o prazo de 1(um) semestre para ser concluído. 
+
+6. Encontros com o Orientador do TG
+O aluno assume a responsabilidade de garantir que os encontros com o(a) professor(a) orientador(a) sejam suficientemente regulares. Obviamente a Coordenação estará à disposição para ajudá-lo nos casos de maior dificuldade. Os encontros, ainda que breves, devem também servir para o aluno demonstrar ao(a) professor(a) orientador(a) que o trabalho está progredindo, ou até para resolver os problemas que porventura o impedem de progredir. É aconselhável preparar com antecipação uma lista de pontos a serem discutidos com o(a) professor(a) orientador(a).
+
+
+
+7. O Relatório Final do TG
+O relatório é uma parte extremamente importante do projeto. Ele serve para mostrar os resultados que o aluno obteve, e deve servir para demonstrar também que o aluno:
+
+entende o contexto maior da Computação no qual seu projeto se insere, na medida em que deixa bem claro a relação entre o que foi realizado (abordagem, métodos e técnicas empregados, etc.) e o que já existe disponível; 
+
+é capaz de aplicar as técnicas teóricas e práticas ensinadas no curso ao problema escolhido, além de demonstrar que percebe sua relevância para a Computação em geral; 
+
+está capacitado a criticar objetivamente o seu próprio trabalho, apresentando sugestões construtivas para melhorá-lo, ou apontar para as possíveis alternativas de trabalhos futuros baseados nos resultados até então obtidos; 
+
+como um profissional de Informática, é capaz de expor de forma clara e sucinta suas ideias e seus métodos de trabalho a terceiros que podem até não ser especialistas na sua área de trabalho.
+
+Espera-se que os avaliadores do projeto terão tido acesso ao projeto e por isso terão pouco tempo para assistir a uma apresentação ou demonstração. Por essa razão o relatório final do TG será a principal fonte a partir da qual os avaliadores darão suas notas. Daí a importância de se prezar bastante pela qualidade do relatório, seja no seu conteúdo, seja na sua forma. 
+
+É muito fácil subestimar a importância do relatório e cometer o erro de achar que uma nota alta pode ser obtida simplesmente pela confecção de um bom produto (software ou hardware). Nunca é demais insistir na importância de se escrever um bom relatório, por isso não se deve deixar para a última hora o trabalho de escrever. 
+
+Tal como já foi dito anteriormente, a apresentação do relatório é muito importante. Um documento bem formatado, sem erros grosseiros, e bem organizado facilita a sua leitura e deixa a impressão de que o profissionalismo e o cuidado com a qualidade foram as atitudes que prevaleceram na elaboração do trabalho. 
+
+Desnecessário dizer que quantidade não garante qualidade, por isso um relatório de 150 páginas não é duas vezes melhor que um de 75 páginas. Da mesma forma, uma implementação de 10.000 linhas de código não é duas vezes melhor que uma de 5.000 linhas. Ao escrever um relatório é importante ser sucinto, claro e elegante. O mesmo acontece com programação. Daí, a avaliação do trabalho levará em conta tais qualidades. 
+
+De modo geral, um bom relatório final de TG deve ter a seguinte organização: 
+
+Página de rosto - inclui o título do projeto e o nome do autor. O nome do(a) professor(a) orientador(a) pode também aparecer. 
+Resumo - uma pequena descrição do conteúdo do relatório. Não deve ultrapassar meia página. Deve ser escrito de tal forma que alguém que não esteja familiarizado com o projeto possa ter uma ideia razoável sobre o assunto do trabalho. 
+Agradecimentos - é comum se registrar palavras de reconhecimento a todos aqueles que de uma forma ou de outra ofereceram alguma ajuda à concepção e/ou à elaboração do projeto. 
+Índice - relaciona os principais capítulos e (sub)seções do relatório. É aconselhável escolher os títulos de capítulos e seções de forma que eles sejam "auto-explicativos". Use espacejamento duplo. Se possível inclua o número das páginas que indicam onde começam cada capítulo ou seção. Procure evitar a inclusão de muitos níveis de subseção. 
+Introdução - trata-se de uma das partes mais importantes do documento. Deve começar com uma explicação bem clara do tópico e dos objetivos do projeto, de tal maneira que a natureza e a abrangência do trabalho possam ser facilmente entendidas por um leitor não-especialista. É aqui que deve aparecer uma descrição resumida do contexto específico no qual o projeto se insere, bem como de sua relevância para outros trabalhos relacionados. Além disso, é importante que se dê os apontadores para as seções que contêm o material técnico do trabalho. 
+Contexto - a seção de contexto deve situar o projeto procurando relacioná-lo com os outros trabalhos publicados na mesma área que fizeram parte da sua leitura inicial. Na verdade, a seção de contexto às vezes faz parte da seção de introdução, mas pode ser feita num capítulo separado caso o projeto tenha envolvido tal quantidade de pesquisa que justifique. O material pesquisado pode incluir artigos científicos, livros, manuais, ou até mesmo software ou hardware com os quais o aluno tenha se envolvido diretamente no levantamento inicial do projeto. As fontes de inspiração para o trabalho podem e devem ser referenciadas. Não há nada de errado em fazer uso das ideias de terceiros, desde que se faça o devido crédito. É fundamental, no entanto, evitar o que se chama de plágio: se o trabalho de terceiro(s) está sendo utilizado no seu trabalho como se fosse seu, e não estão sendo citadas as fontes de informação, então está havendo desonestidade, o que é absolutamente condenável. Para citar trabalhos de terceiros, mencione as fontes onde os trabalhos são referenciados ou utilizados, em vez de simplesmente listá-los no final. 
+Corpo do relatório - a parte central do relatório normalmente consiste de três a quatro capítulos que vão detalhar o trabalho técnico desenvolvido durante o projeto. A estrutura de tais capítulos depende de cada projeto. Tipicamente os capítulos devem refletir o desenvolvimento cronológico do projeto, e.g. concepção, implementação, experimentação, otimização, embora este não seja sempre o melhor formato. Qualquer que seja sua escolha da forma de apresentar esta parte essencial do relatório, é preciso deixar bem claro o como e o por que o aluno chegou à alternativa escolhida em detrimento de outras alternativas mencionadas na seção de Contexto. Para projetos de implementação é preciso descrever e justificar as escolhas de concepção feitas na codificação do programa. E isso deve ser feito de forma razoavelmente clara, e de "alto nível", destacando alguma peculiaridade do(s) algoritmo(s) utilizado(s). 
+Conclusões e trabalhos futuros - um bom relatório deve concluir com uma avaliação objetiva tanto dos resultados positivos quanto dos negativos, apresentando sugestões de futuras direções para onde os resultados poderão ser melhorados e/ou utilizados na solução de outros problemas. É importante entender que não existe um projeto perfeito. Mesmo os melhores trabalhos têm suas limitações, e espera-se que o relatório inclua uma avaliação crítica do que foi de fato realizado. Os avaliadores vão certamente identificar as limitações do trabalho e espera-se que o relatório seja objetivo e antecipe tal identificação. 
+Bibliografia - uma relação de todos os livros, artigos, manuais, etc., utilizados no projeto e mencionados no relatório. É preciso fornecer informação suficiente para permitir ao leitor encontrar a fonte. Inclua título completo e nome(s) do(s) autor(es), além da fonte bibliográfica onde o artigo foi publicado, incluindo número do volume, data, número das páginas, quando necessário. No caso de um livro texto é importante mencionar o nome da editora e o ano de publicação. 
+Apêndice(s) - os apêndices normalmente contêm informações até certo ponto "periféricas" ao corpo principal do relatório. Tipicamente, um apêndice inclui elementos como partes do código do programa, tabelas, demonstrações, gráficos ou qualquer outro material que provocaria uma quebra na sequência de apresentação do tema do texto caso aparecesse in situ.
+Listagens completas de programas não devem, em princípio, fazer parte do relatório, a menos que o(a) professor(a) orientador(a) considere realmente indispensável. 
+Guia do Usuário - projetos que resultam em um pacote de software utilizável por um determinado público alvo, devem vir acompanhados de um guia de utilização com instruções de fácil entendimento. 
+Encadernação: O relatório final do projeto deve ser encadernado utilizando alguma capa utilizada em documentos do centro (alguns modelos já circulam normalmente entre os próprios alunos e funcionários).
+
+
+
+8. Data-Limite de Entrega do Relatório Final
+O Relatório Final deverá ser entregue DIRETAMENTE aos examinadores (orientador e avaliador) no máximo até a data oficialmente declarada como "último dia de aulas" no calendário da Graduação.
+
+Importante: Entregar diretamente a cada examinador 1 cópia em papel do relatório final (acompanhada de um "ciente" do(a) professor(a) orientador(a)), e enviar ao endereço dos TGs ("tg @ cin.ufpe.br") uma cópia da versão eletrônica para que seja disponibilizada via internet.  Se, após a defesa, houver correções a serem feitas, a nova versão do documento deve ser enviada também.
+
+9. Apresentação do Projeto e Demonstração do Produto
+Um dos principais objetivos do TG é desenvolver no aluno a habilidade de comunicar suas ideias, seja por escrito ou através de uma apresentação pública oral. Como parte da avaliação, será então necessário fazer uma apresentação do seu projeto (que em alguns casos pode incluir uma demonstração de um produto) aos avaliadores (que normalmente serão o orientador e um(a) outro(a) professor(a) do centro).
+
+Cada defesa deve ser de, no máximo 30 minutos, divididos, aproximadamente, em 20 minutos de apresentação (com demonstração, se necessário) e 10 minutos de questionamentos da banca. 
+
+O procedimento de avaliação será realizado em um dia a ser fixado no calendário da Graduação, com características de um "dia aberto" à participação de todos os membros do centro. 
+
+10. Atribuição de Notas aos Projetos
+A nota final do TG será calculada com base no grau atribuído pelos avaliadores (ou seja, uma nota de 0 a 10) aos seguintes aspectos do trabalho: 
+
+Preparação do Contexto - aqui será avaliada a forma como o aluno chegou à especificação inicial do projeto, cronograma de trabalho e lista de objetivos. Procura-se verificar a qualidade do levantamento que foi feito da literatura especializada, e até que ponto a abordagem escolhida bem como o programa de trabalho se situam no contexto do estado-da-arte atual. Será levada em conta a relação entre o que foi planejado (de acordo com a proposta inicial do trabalho) e o que de fato foi realizado.
+Vale 15% da nota final. 
+
+Grau de Competência - diz respeito à abordagem dada ao projeto e à capacidade do aluno de superar as inevitáveis complicações que aparecem. Os elementos fundamentais da avaliação deste aspecto concernem a organização, confiabilidade e pontualidade, competência técnica geral, e o grau de contribuição individual aos resultados do projeto.
+Vale 15% da nota final. 
+
+Resultados Técnicos - diz respeito aos resultados técnicos propriamente ditos. Leva em conta itens específicos como concepção, corretude, elegância, usabilidade, etc., do "produto" final, bem como o quanto o trabalho significa em relação ao estado-da-arte.
+Vale 20% da nota final. 
+
+Qualidade da Apresentação Escrita (Relatório).
+Vale 25% da nota final. 
+
+Qualidade da Apresentação Oral.
+Vale 25% da nota final.
+
+
+
+11. Critérios de Diferenciação
+Aos avaliadores caberá não somente a atribuição da nota final de cada projeto, mas também a diferenciação dos projetos que eventualmente acabem recebendo a mesma nota final. De forma a facilitar o trabalho de diferenciação, e até mesmo de tratamento dos casos duvidosos, tanto os que tendem "para baixo" quanto os que tendem "para cima", vamos listar alguns critérios.
+
+Critérios Básicos
+entendimento do problema 
+conclusão do projeto 
+qualidade do trabalho 
+qualidade do relatório Critérios Adicionais
+conhecimento da literatura 
+avaliação crítica de trabalhos existentes 
+avaliação crítica do próprio trabalho 
+justificação das escolhas feitas na fase de concepção do projeto Critérios Excepcionais
+evidência de originalidade 
+inclusão de material publicável 
+
+
+Utilizando tais critérios, a classificação seria feita da seguinte forma:
+
+definitivamente reprovado
+quando o projeto é considerado inadequado em todos os critérios básicos 
+claramente reprovado
+quando o projeto é considerado inadequado em mais de um dos critérios básicos 
+possivelmente reprovado
+quando o projeto é considerado inadequado em um dos critérios básicos 
+aprovado
+quando o projeto é considerado adequado em todos os critérios básicos 
+bom
+quando o projeto é considerado satisfatório em todos os critérios básicos e no máximo em um dos critérios adicionais 
+muito bom
+quando o projeto é considerado no mínimo bom em todos os critérios básicos e bom ou excelente nos critérios adicionais 
+ótimo
+quando o projeto é considerado bom ou excelente em todos os critérios básicos e adicionais 
+excelente
+quando o projeto é considerado bom ou excelente em todos os critérios básicos e adicionais, e também possui elementos dos critérios excepcionais 
+excepcional
+quando o projeto é considerado bom ou excelente em todos os critérios básicos, adicionais e excepcionais, e também contém trabalho publicável em uma revista acadêmica de boa reputação. 
