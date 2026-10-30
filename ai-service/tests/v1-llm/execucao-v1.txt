@@ -1,0 +1,135 @@
+test_contrato_distancia_nao_finita_na_origem (test_busca_v1.BuscaV1.test_contrato_distancia_nao_finita_na_origem) ... 
+  test_contrato_distancia_nao_finita_na_origem (test_busca_v1.BuscaV1.test_contrato_distancia_nao_finita_na_origem) (distancia=nan) ... FAIL
+  test_contrato_distancia_nao_finita_na_origem (test_busca_v1.BuscaV1.test_contrato_distancia_nao_finita_na_origem) (distancia=inf) ... FAIL
+  test_contrato_distancia_nao_finita_na_origem (test_busca_v1.BuscaV1.test_contrato_distancia_nao_finita_na_origem) (distancia=-inf) ... FAIL
+test_contrato_pagina_invalida_na_origem (test_busca_v1.BuscaV1.test_contrato_pagina_invalida_na_origem) ... 
+  test_contrato_pagina_invalida_na_origem (test_busca_v1.BuscaV1.test_contrato_pagina_invalida_na_origem) (pagina=0) ... FAIL
+  test_contrato_pagina_invalida_na_origem (test_busca_v1.BuscaV1.test_contrato_pagina_invalida_na_origem) (pagina=-1) ... FAIL
+  test_contrato_pagina_invalida_na_origem (test_busca_v1.BuscaV1.test_contrato_pagina_invalida_na_origem) (pagina='1') ... FAIL
+  test_contrato_pagina_invalida_na_origem (test_busca_v1.BuscaV1.test_contrato_pagina_invalida_na_origem) (pagina=1.5) ... FAIL
+  test_contrato_pagina_invalida_na_origem (test_busca_v1.BuscaV1.test_contrato_pagina_invalida_na_origem) (pagina=True) ... FAIL
+  test_contrato_pagina_invalida_na_origem (test_busca_v1.BuscaV1.test_contrato_pagina_invalida_na_origem) (pagina=None) ... FAIL
+test_cursos_perfis_reconhecidos (test_busca_v1.BuscaV1.test_cursos_perfis_reconhecidos) ... ok
+test_filtros_desconhecidos (test_busca_v1.BuscaV1.test_filtros_desconhecidos) ... ok
+test_fontes_e_paginas_validas (test_busca_v1.BuscaV1.test_fontes_e_paginas_validas) ... ok
+test_pergunta_invalida (test_busca_v1.BuscaV1.test_pergunta_invalida) ... ok
+test_pergunta_nao_vazia (test_busca_v1.BuscaV1.test_pergunta_nao_vazia) ... ok
+test_restricao_unica (test_busca_v1.BuscaV1.test_restricao_unica) ... ok
+test_sem_restricoes (test_busca_v1.BuscaV1.test_sem_restricoes) ... ok
+test_sem_resultados (test_busca_v1.BuscaV1.test_sem_resultados) ... ok
+test_top_k_invalido (test_busca_v1.BuscaV1.test_top_k_invalido) ... ok
+test_top_k_valores_validos (test_busca_v1.BuscaV1.test_top_k_valores_validos) ... ok
+test_varias_fontes (test_busca_v1.BuscaV1.test_varias_fontes) ... ok
+
+======================================================================
+FAIL: test_contrato_distancia_nao_finita_na_origem (test_busca_v1.BuscaV1.test_contrato_distancia_nao_finita_na_origem) (distancia=nan)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Rafael\OneDrive\RafaelASUS\ProjetoDS\codigo\cin-ds-chatbot\ai-service\tests\v1-llm\test_busca_v1.py", line 184, in test_contrato_distancia_nao_finita_na_origem
+    self.assert_contrato(buscar_contexto('matr�cula', collection=ColecaoFake(resultado(distancia=distancia))))
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rafael\OneDrive\RafaelASUS\ProjetoDS\codigo\cin-ds-chatbot\ai-service\tests\v1-llm\test_busca_v1.py", line 58, in assert_contrato
+    self.assertTrue(math.isfinite(corpo['distancia_minima']))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_contrato_distancia_nao_finita_na_origem (test_busca_v1.BuscaV1.test_contrato_distancia_nao_finita_na_origem) (distancia=inf)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Rafael\OneDrive\RafaelASUS\ProjetoDS\codigo\cin-ds-chatbot\ai-service\tests\v1-llm\test_busca_v1.py", line 184, in test_contrato_distancia_nao_finita_na_origem
+    self.assert_contrato(buscar_contexto('matr�cula', collection=ColecaoFake(resultado(distancia=distancia))))
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rafael\OneDrive\RafaelASUS\ProjetoDS\codigo\cin-ds-chatbot\ai-service\tests\v1-llm\test_busca_v1.py", line 58, in assert_contrato
+    self.assertTrue(math.isfinite(corpo['distancia_minima']))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_contrato_distancia_nao_finita_na_origem (test_busca_v1.BuscaV1.test_contrato_distancia_nao_finita_na_origem) (distancia=-inf)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Rafael\OneDrive\RafaelASUS\ProjetoDS\codigo\cin-ds-chatbot\ai-service\tests\v1-llm\test_busca_v1.py", line 184, in test_contrato_distancia_nao_finita_na_origem
+    self.assert_contrato(buscar_contexto('matr�cula', collection=ColecaoFake(resultado(distancia=distancia))))
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rafael\OneDrive\RafaelASUS\ProjetoDS\codigo\cin-ds-chatbot\ai-service\tests\v1-llm\test_busca_v1.py", line 58, in assert_contrato
+    self.assertTrue(math.isfinite(corpo['distancia_minima']))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_contrato_pagina_invalida_na_origem (test_busca_v1.BuscaV1.test_contrato_pagina_invalida_na_origem) (pagina=0)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Rafael\OneDrive\RafaelASUS\ProjetoDS\codigo\cin-ds-chatbot\ai-service\tests\v1-llm\test_busca_v1.py", line 178, in test_contrato_pagina_invalida_na_origem
+    self.assert_contrato(buscar_contexto('matr�cula', collection=ColecaoFake(resultado(pagina=pagina))))
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rafael\OneDrive\RafaelASUS\ProjetoDS\codigo\cin-ds-chatbot\ai-service\tests\v1-llm\test_busca_v1.py", line 64, in assert_contrato
+    self.assertGreaterEqual(fonte['pagina'], 1)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0 not greater than or equal to 1
+
+======================================================================
+FAIL: test_contrato_pagina_invalida_na_origem (test_busca_v1.BuscaV1.test_contrato_pagina_invalida_na_origem) (pagina=-1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Rafael\OneDrive\RafaelASUS\ProjetoDS\codigo\cin-ds-chatbot\ai-service\tests\v1-llm\test_busca_v1.py", line 178, in test_contrato_pagina_invalida_na_origem
+    self.assert_contrato(buscar_contexto('matr�cula', collection=ColecaoFake(resultado(pagina=pagina))))
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rafael\OneDrive\RafaelASUS\ProjetoDS\codigo\cin-ds-chatbot\ai-service\tests\v1-llm\test_busca_v1.py", line 64, in assert_contrato
+    self.assertGreaterEqual(fonte['pagina'], 1)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+AssertionError: -1 not greater than or equal to 1
+
+======================================================================
+FAIL: test_contrato_pagina_invalida_na_origem (test_busca_v1.BuscaV1.test_contrato_pagina_invalida_na_origem) (pagina='1')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Rafael\OneDrive\RafaelASUS\ProjetoDS\codigo\cin-ds-chatbot\ai-service\tests\v1-llm\test_busca_v1.py", line 178, in test_contrato_pagina_invalida_na_origem
+    self.assert_contrato(buscar_contexto('matr�cula', collection=ColecaoFake(resultado(pagina=pagina))))
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rafael\OneDrive\RafaelASUS\ProjetoDS\codigo\cin-ds-chatbot\ai-service\tests\v1-llm\test_busca_v1.py", line 63, in assert_contrato
+    self.assertIs(type(fonte['pagina']), int)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: <class 'str'> is not <class 'int'>
+
+======================================================================
+FAIL: test_contrato_pagina_invalida_na_origem (test_busca_v1.BuscaV1.test_contrato_pagina_invalida_na_origem) (pagina=1.5)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Rafael\OneDrive\RafaelASUS\ProjetoDS\codigo\cin-ds-chatbot\ai-service\tests\v1-llm\test_busca_v1.py", line 178, in test_contrato_pagina_invalida_na_origem
+    self.assert_contrato(buscar_contexto('matr�cula', collection=ColecaoFake(resultado(pagina=pagina))))
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rafael\OneDrive\RafaelASUS\ProjetoDS\codigo\cin-ds-chatbot\ai-service\tests\v1-llm\test_busca_v1.py", line 63, in assert_contrato
+    self.assertIs(type(fonte['pagina']), int)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: <class 'float'> is not <class 'int'>
+
+======================================================================
+FAIL: test_contrato_pagina_invalida_na_origem (test_busca_v1.BuscaV1.test_contrato_pagina_invalida_na_origem) (pagina=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Rafael\OneDrive\RafaelASUS\ProjetoDS\codigo\cin-ds-chatbot\ai-service\tests\v1-llm\test_busca_v1.py", line 178, in test_contrato_pagina_invalida_na_origem
+    self.assert_contrato(buscar_contexto('matr�cula', collection=ColecaoFake(resultado(pagina=pagina))))
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rafael\OneDrive\RafaelASUS\ProjetoDS\codigo\cin-ds-chatbot\ai-service\tests\v1-llm\test_busca_v1.py", line 63, in assert_contrato
+    self.assertIs(type(fonte['pagina']), int)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: <class 'bool'> is not <class 'int'>
+
+======================================================================
+FAIL: test_contrato_pagina_invalida_na_origem (test_busca_v1.BuscaV1.test_contrato_pagina_invalida_na_origem) (pagina=None)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Rafael\OneDrive\RafaelASUS\ProjetoDS\codigo\cin-ds-chatbot\ai-service\tests\v1-llm\test_busca_v1.py", line 178, in test_contrato_pagina_invalida_na_origem
+    self.assert_contrato(buscar_contexto('matr�cula', collection=ColecaoFake(resultado(pagina=pagina))))
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rafael\OneDrive\RafaelASUS\ProjetoDS\codigo\cin-ds-chatbot\ai-service\tests\v1-llm\test_busca_v1.py", line 63, in assert_contrato
+    self.assertIs(type(fonte['pagina']), int)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: <class 'NoneType'> is not <class 'int'>
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.094s
+
+FAILED (failures=9)

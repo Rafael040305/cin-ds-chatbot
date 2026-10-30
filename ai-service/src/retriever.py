@@ -1,5 +1,10 @@
 from src.config import CHROMA_PATH, COLLECTION_NAME
 from src.metadata_utils import construir_filtro
+import math
+
+
+class InvalidSearchResult(RuntimeError):
+    """A coleção retornou dados que não podem fundamentar uma resposta."""
 
 
 def obter_collection():
@@ -84,6 +89,12 @@ def buscar_contexto(
         else []
     )
 
+    if not (len(documentos) == len(metadados) == len(distancias)):
+        raise InvalidSearchResult("Resultado documental inconsistente.")
+    for distancia in distancias:
+        if type(distancia) not in (int, float) or not math.isfinite(distancia):
+            raise InvalidSearchResult("Distância inválida na origem.")
+
     contexto_formatado = []
     fontes = []
 
@@ -108,6 +119,9 @@ def buscar_contexto(
             "curso_alvo",
             metadata.get("curso", "Geral"),
         )
+
+        if type(numero_pagina) is not int or numero_pagina < 1:
+            raise InvalidSearchResult("Página inválida na origem.")
 
         identificacao = (
             f"[Documento: {nome_documento} | "
