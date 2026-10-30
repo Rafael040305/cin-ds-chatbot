@@ -1,5 +1,9 @@
 # Sprint 3 — Registro de uso de LLM
 
+## Atualização de aprovação antes da V1
+
+Rafael confirmou nesta conversa que a equipe aprovou a matriz em conjunto e que a professora abriu exceção à elaboração necessariamente manual. Registro baseado no relato do integrante; a assistência original foi preservada. A geração V1 da IA será feita em chat novo, sem fornecer a matriz, limitada à US-01. US-02 e US-03 permanecem no escopo do backend de Victor.
+
 Este arquivo mantém a rastreabilidade do uso de LLM durante a Sprint 3. Novas interações relevantes devem ser adicionadas sem apagar as anteriores.
 
 ## Entrada 001 — Apoio ao planejamento da matriz

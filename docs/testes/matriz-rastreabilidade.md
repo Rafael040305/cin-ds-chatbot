@@ -1,6 +1,6 @@
 # Sprint 3 — Matriz de rastreabilidade de testes
 
-> **Status:** rascunho assistido por LLM, ainda pendente de validação humana pela equipe.
+> **Status:** aprovada em conjunto pela equipe, conforme confirmação de Rafael nesta conversa. A professora autorizou elaboração com apoio de LLM, conforme relato de Rafael. O histórico de assistência permanece registrado.
 >
 > Esta versão foi preparada a partir do comportamento já implementado no projeto. Antes da geração da suíte V1, os quatro integrantes devem conferir as histórias, os critérios, as partições, os limites e os resultados esperados. A assistência utilizada está registrada em `docs/testes/llm-log.md`.
 
