@@ -1,5 +1,11 @@
 # Sprint 3 — Registro de uso de LLM
 
+## Medição e melhoria após a V1
+
+Foi preservada a geração independente em commit 0a75b77; o prompt integral e saída original estão em v1-ia-geracao.md. Em seguida, neste chat, Rafael solicitou: "Ok, então continue esse trabalho para mim, por favor, e vai me dizendo o que você ta fazendo. Acha que você ainda vai fazer alguma alteração no código do projeto relativo à minha parte? Quero saber quando eu posso mandar as alterações pro repositório no GitHub...".
+
+Codex mediu a V1 com coverage.py, analisou as falhas, implementou rejeição de retorno documental inválido e criou a V2 por herança explícita dos testes válidos da V1, com substituição dos dois oráculos de origem inválida e quatro métodos adicionais. Resultados e limitações em analise-ia-v1-v2.md. Esta interação modifica V2 e produção, não o arquivo V1. Versão exata do modelo não registrada; não inferir pelo nome comercial da ferramenta.
+
 ## Atualização de aprovação antes da V1
 
 Rafael confirmou nesta conversa que a equipe aprovou a matriz em conjunto e que a professora abriu exceção à elaboração necessariamente manual. Registro baseado no relato do integrante; a assistência original foi preservada. A geração V1 da IA será feita em chat novo, sem fornecer a matriz, limitada à US-01. US-02 e US-03 permanecem no escopo do backend de Victor.

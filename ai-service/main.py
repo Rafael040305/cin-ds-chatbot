@@ -1,8 +1,10 @@
 from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel
+from pydantic import BaseModel, Field, StrictInt, field_validator
+
+from src.generation import GenerationUnavailable, gerar_resposta
 
 from src.ingest import indexar_documento
-from src.retriever import buscar_contexto
+from src.retriever import InvalidSearchResult, buscar_contexto
 
 
 app = FastAPI(
@@ -19,7 +21,31 @@ class ConsultaRequest(BaseModel):
     pergunta: str
     curso: str = "Geral"
     perfil: str = "Todos"
-    top_k: int = 3
+    top_k: StrictInt = Field(default=3, ge=1)
+
+
+class GeracaoRequest(BaseModel):
+    pergunta: str = Field(max_length=10000)
+    contexto: str = Field(max_length=100000)
+
+    @field_validator("pergunta")
+    @classmethod
+    def pergunta_nao_vazia(cls, valor: str) -> str:
+        if not valor.strip():
+            raise ValueError("A pergunta não pode estar vazia.")
+        return valor.strip()
+
+
+class GeracaoResponse(BaseModel):
+    resposta: str | None
+
+
+@app.post("/api/v1/gerar", response_model=GeracaoResponse)
+def rota_gerar(requisicao: GeracaoRequest):
+    try:
+        return {"resposta": gerar_resposta(requisicao.pergunta, requisicao.contexto)}
+    except GenerationUnavailable as erro:
+        raise HTTPException(status_code=503, detail="Serviço de geração indisponível.") from erro
 
 
 class IngestaoRequest(BaseModel):
@@ -57,6 +83,8 @@ def rota_buscar(
             top_k=requisicao.top_k,
         )
 
+    except InvalidSearchResult as erro:
+        raise HTTPException(status_code=502, detail="Resposta inválida do serviço de busca.") from erro
     except ValueError as erro:
         raise HTTPException(
             status_code=422,

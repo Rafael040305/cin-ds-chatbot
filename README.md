@@ -1,6 +1,14 @@
 
 # 🎓 Chatbot SecGrad — Assistente de Orientação Acadêmica
 
+> Estado atual: busca FastAPI/ChromaDB e orquestração NestJS implementadas. Streamlit ainda chama `/search` e depende de adaptação ao contrato público `/api/v1/conversa`. React, Keycloak/LDAP, Prisma/PostgreSQL e Compose abaixo descrevem planejamento, não funcionalidades comprovadas. A geração `/api/v1/gerar` está disponível apenas em simulação explícita; não há provedor real conectado.
+
+### Execução corrigida do serviço de IA
+
+Na raiz, instale `python -m pip install -r ai-service/requirements-dev.txt`; entre em `ai-service`, execute `python -m src.validate_catalog`, `python -m src.ingest_batch` e `python -m uvicorn main:app --reload --port 8000`. Swagger: http://localhost:8000/docs. Para testes: `python -m unittest discover -s tests -v`. A dependência `httpx` é usada nos testes HTTP.
+
+O catálogo canônico é `data/raw/metadata.json`; `ai-service/data/` é legado. Contagens antigas precisam ser medidas novamente após atualizar os documentos. A geração simulada requer `SECGRAD_GENERATION_MODE=mock` e retorna aviso explícito. Sem configuração retorna 503 para contexto não vazio; contexto vazio retorna `resposta: null`.
+
 Assistente conversacional baseado em **RAG (Retrieval-Augmented Generation)**, desenvolvido para responder a dúvidas frequentes sobre procedimentos acadêmicos, normas e requerimentos da Secretaria de Graduação (SecGrad) do Centro de Informática da Universidade Federal de Pernambuco (**CIn-UFPE**).
 
 O projeto adota uma arquitetura de microsserviços conteinerizada, integrando recuperação vetorial especializada, citação obrigatória de fontes normativas e autenticação institucional.
@@ -126,7 +134,7 @@ source venv/bin/activate
 Na raiz do projeto, execute:
 
 ```bash
-pip install -r requirements.txt
+python -m pip install -r ai-service/requirements-dev.txt
 ```
 
 Esse comando instala as bibliotecas Python necessárias, conforme especificado no arquivo `requirements.txt`.
@@ -154,7 +162,7 @@ Essa etapa é responsável por processar os documentos disponíveis, fragmentar 
 Para verificar o mecanismo de recuperação de informações, execute:
 
 ```bash
-python -m src.retriever
+python -m unittest discover -s tests -v
 ```
 
 O objetivo dessa etapa é avaliar a recuperação de trechos documentais relevantes e verificar as referências utilizadas pelo sistema.
