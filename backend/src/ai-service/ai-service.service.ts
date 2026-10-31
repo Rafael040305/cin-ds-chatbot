@@ -51,7 +51,7 @@ export class AiService {
     }
 
     const endpoint = this.getEndpoint();
-    const signal = AbortSignal.timeout(5000);
+    const signal = AbortSignal.timeout(30000);
     let response: Response;
     try {
       response = await fetch(endpoint, {
@@ -110,14 +110,14 @@ export class AiService {
 
   private getEndpoint(): URL {
     try {
-      const base = new URL(process.env.AI_SERVICE_URL ?? '');
+      const baseUrlStr = process.env.AI_SERVICE_URL || 'http://localhost:8000';
+      const base = new URL(baseUrlStr);
       if (
         !['http:', 'https:'].includes(base.protocol) ||
         base.username ||
         base.password ||
         base.search ||
-        base.hash ||
-        base.pathname !== '/'
+        base.hash
       ) {
         throw new Error('Invalid origin');
       }
