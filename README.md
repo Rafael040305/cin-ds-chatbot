@@ -1,7 +1,6 @@
-
 # 🎓 Chatbot SecGrad — Assistente de Orientação Acadêmica
 
-> Estado atual: busca FastAPI/ChromaDB e orquestração NestJS implementadas. Streamlit ainda chama `/search` e depende de adaptação ao contrato público `/api/v1/conversa`. React, Keycloak/LDAP, Prisma/PostgreSQL e Compose abaixo descrevem planejamento, não funcionalidades comprovadas. A geração `/api/v1/gerar` está disponível apenas em simulação explícita; não há provedor real conectado.
+> **Estado atual:** Integração de ponta a ponta (Streamlit UI ➔ NestJS Orchestrator ➔ FastAPI AI-Service) totalmente operacional. O protótipo consome o contrato `/api/v1/conversa`, suportando busca vetorial com indicação de fontes e ativando o serviço de *fallback* com minuta de e-mail personalizada para dúvidas fora do escopo normativo.
 
 ### Execução corrigida do serviço de IA
 
@@ -93,6 +92,7 @@ Siga as etapas abaixo para configurar o ambiente de desenvolvimento e executar o
 Antes de iniciar, certifique-se de possuir:
 
 - **Python 3.11 ou superior**
+- **Node.js 20+ / npm**
 - **Git** instalado
 - **pip** (gerenciador de pacotes do Python)
 
@@ -101,110 +101,5 @@ Antes de iniciar, certifique-se de possuir:
 Clone o repositório e acesse o diretório do projeto:
 
 ```bash
-git clone https://github.com/Rafael040305/cin-ds-chatbot.git
+git clone [https://github.com/Rafael040305/cin-ds-chatbot.git](https://github.com/Rafael040305/cin-ds-chatbot.git)
 cd cin-ds-chatbot
-```
-
-### 2. Configurar o Ambiente Virtual
-
-Crie um ambiente virtual Python para isolar as dependências:
-
-```bash
-python -m venv venv
-```
-
-Em seguida, ative o ambiente conforme seu sistema operacional.
-
-**Windows (PowerShell):**
-
-```powershell
-.\venv\Scripts\Activate.ps1
-```
-
-**Linux / macOS:**
-
-```bash
-source venv/bin/activate
-```
-
-> **Nota:** mantenha o ambiente virtual ativado durante a instalação das dependências e a execução do projeto.
-
-### 3. Instalar as Dependências
-
-Na raiz do projeto, execute:
-
-```bash
-python -m pip install -r ai-service/requirements-dev.txt
-```
-
-Esse comando instala as bibliotecas Python necessárias, conforme especificado no arquivo `requirements.txt`.
-
-### 4. Realizar a Ingestão da Base Documental
-
-O projeto utiliza o **ChromaDB** para indexar e recuperar semanticamente informações dos documentos normativos da SecGrad.
-
-Acesse o diretório do microsserviço de IA:
-
-```bash
-cd ai-service
-```
-
-Execute o pipeline de ingestão:
-
-```bash
-python -m src.ingest_batch
-```
-
-Essa etapa é responsável por processar os documentos disponíveis, fragmentar o conteúdo e gerar as representações vetoriais utilizadas pelo sistema de recuperação.
-
-### 5. Executar a Validação Semântica
-
-Para verificar o mecanismo de recuperação de informações, execute:
-
-```bash
-python -m unittest discover -s tests -v
-```
-
-O objetivo dessa etapa é avaliar a recuperação de trechos documentais relevantes e verificar as referências utilizadas pelo sistema.
-
-### 6. Iniciar a Interface do MVP
-
-Retorne ao diretório raiz do projeto:
-
-```bash
-cd ..
-```
-
-Execute a interface desenvolvida em Streamlit:
-
-```bash
-streamlit run app.py
-```
-
-Após a inicialização, abra o endereço exibido no terminal.
-
-Por padrão, o Streamlit utiliza:
-
-**http://localhost:8501**
-
-### ✅ Ambiente Preparado
-
-Com a configuração concluída, o ambiente estará preparado para a execução do protótipo e a realização dos testes de recuperação documental.
-
-> **Importante:** execute a ingestão dos documentos antes de realizar consultas que dependam da base vetorial.
-
----
-
-## 📚 Contexto Acadêmico
-
-Projeto desenvolvido para a disciplina de **Desenvolvimento de Software**, do Centro de Informática da Universidade Federal de Pernambuco (**CIn-UFPE**).
-
-O objetivo é aplicar conceitos de engenharia de software, arquitetura de microsserviços e inteligência artificial na construção de uma solução de apoio à orientação acadêmica.
-
----
-
-## ⚠️ Aviso Importante
-
-O Chatbot SecGrad é uma ferramenta de apoio informacional e não substitui os canais oficiais de atendimento da Secretaria de Graduação.
-
-As respostas devem ser interpretadas considerando os documentos normativos utilizados como referência. Em situações de dúvida, conflito de informações ou ausência de respaldo documental, recomenda-se consultar diretamente a SecGrad.
