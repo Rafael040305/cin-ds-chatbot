@@ -1,0 +1,67 @@
+[
+  {
+    "arquivo": "norma_estagio_cc_anterior_2016-2.pdf",
+    "titulo": "Norma de Estágio - Ciência da Computação (Antigo)",
+    "tipo_documento": "norma_estagio",
+    "curso_alvo": ["Ciência da Computação"],
+    "perfil_curricular": "anterior",
+    "vigencia": true
+  },
+  {
+    "arquivo": "norma_estagio_cc_novo_2024.pdf",
+    "titulo": "Norma de Estágio - Ciência da Computação (Novo)",
+    "tipo_documento": "norma_estagio",
+    "curso_alvo": ["Ciência da Computação"],
+    "perfil_curricular": "novo",
+    "vigencia": true
+  },
+  {
+    "arquivo": "norma_estagio_ec_anterior_2023.pdf",
+    "titulo": "Norma de Estágio - Engenharia da Computação (Antigo)",
+    "tipo_documento": "norma_estagio",
+    "curso_alvo": ["Engenharia da Computação"],
+    "perfil_curricular": "anterior",
+    "vigencia": true
+  },
+  {
+    "arquivo": "norma_estagio_ec_novo_2024.pdf",
+    "titulo" : "Norma de Estágio - Engenharia da Computação (Novo)",
+    "tipo_documento" : "norma_estagio",
+    "curso_alvo" : ["Engenharia da Computação"],
+    "perfil_curricular" : "novo",
+    "vigencia" : true
+  },
+  {
+    "arquivo": "norma_estagio_si_anterior_2022.pdf",
+    "titulo": "Norma de Estágio - Sistemas de Informação (Antigo)",
+    "tipo_documento": "norma_estagio",
+    "curso_alvo": ["Sistemas de Informações"],
+    "perfil_curricular": "anterior",
+    "vigencia": true
+  },
+  {
+    "arquivo": "norma_estagio_si_novo_2024.pdf",
+    "titulo": "Norma de Estágio - Sistemas de Informação (Novo)",
+    "tipo_documento": "norma_estagio",
+    "curso_alvo": ["Sistemas de Informação"],
+    "perfil_curricular": "novo",
+    "vigencia": true
+  },
+  {
+    "arquivo": "norma_estagio_ia_novo_2024.pdf",
+    "titulo": "Norma de Estágio - Inteligência Artificial (Novo)",
+    "tipo_documento": "norma_estagio",
+    "curso_alvo": ["Inteligência Artificial"],
+    "perfil_curricular": "novo",
+    "vigencia": true
+  },
+  {
+  "arquivo": "regras_requerimentos.txt",
+  "titulo": "Regras e Prazos para Segunda Chamada e Dispensa",
+  "tipo_documento": "regra_site",
+  "curso_alvo": ["Ciência da Computação", "Engenharia da Computação", "Sistemas de Informação"],
+  "perfil_curricular": "ambos",
+  "vigencia": true
+}
+
+]

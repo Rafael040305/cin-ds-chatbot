@@ -1,50 +1,152 @@
-import chromadb
+from src.config import CHROMA_PATH, COLLECTION_NAME
+from src.metadata_utils import construir_filtro
+import math
 
-CHROMA_PATH = "./chroma_db"
-client = chromadb.PersistentClient(path=CHROMA_PATH)
-collection = client.get_or_create_collection(name="secgrad_knowledge_base")
 
-def buscar_contexto(pergunta: str, curso: str = "Geral", perfil: str = "Todos", top_k: int = 3) -> dict:
+class InvalidSearchResult(RuntimeError):
+    """A coleção retornou dados que não podem fundamentar uma resposta."""
+
+
+def obter_collection():
     """
-    Recupera trechos relevantes do ChromaDB com filtros de metadados.
-    Retorna o contexto formatado, lista de fontes auditáveis e distância.
+    Abre a coleção do ChromaDB somente quando ela for necessária.
+    Isso permite testar a busca sem depender do banco real.
     """
-    filtros = []
-    if curso and curso != "Geral":
-        filtros.append({"curso": {"$in": [curso, "Geral"]}})
-    if perfil and perfil != "Todos":
-        filtros.append({"perfil": {"$in": [perfil, "Todos"]}})
+    import chromadb
 
-    where_filter = None
-    if len(filtros) == 1:
-        where_filter = filtros[0]
-    elif len(filtros) > 1:
-        where_filter = {"$and": filtros}
-
-    resultados = collection.query(
-        query_texts=[pergunta],
-        n_results=top_k,
-        where=where_filter
+    client = chromadb.PersistentClient(
+        path=str(CHROMA_PATH)
     )
 
-    documentos = resultados["documents"][0] if resultados["documents"] else []
-    metadados = resultados["metadatas"][0] if resultados["metadatas"] else []
-    distancias = resultados["distances"][0] if "distances" in resultados and resultados["distances"] else []
+    return client.get_or_create_collection(
+        name=COLLECTION_NAME
+    )
+
+
+def buscar_contexto(
+    pergunta: str,
+    curso: str = "Geral",
+    perfil: str = "Todos",
+    top_k: int = 3,
+    collection=None,
+) -> dict:
+    """
+    Recupera trechos relevantes do ChromaDB.
+
+    Retorna:
+    - contexto formatado;
+    - fontes utilizadas;
+    - menor distância encontrada.
+    """
+
+    if not pergunta or not pergunta.strip():
+        raise ValueError(
+            "A pergunta não pode estar vazia."
+        )
+
+    if (
+        not isinstance(top_k, int)
+        or isinstance(top_k, bool)
+        or top_k < 1
+    ):
+        raise ValueError(
+            "top_k deve ser um número inteiro positivo."
+        )
+
+    if collection is None:
+        collection = obter_collection()
+
+    where_filter = construir_filtro(
+        curso=curso,
+        perfil=perfil,
+    )
+
+    parametros = {
+        "query_texts": [pergunta.strip()],
+        "n_results": top_k,
+    }
+
+    if where_filter:
+        parametros["where"] = where_filter
+
+    resultados = collection.query(**parametros)
+
+    documentos = (
+        resultados["documents"][0]
+        if resultados.get("documents")
+        else []
+    )
+
+    metadados = (
+        resultados["metadatas"][0]
+        if resultados.get("metadatas")
+        else []
+    )
+
+    distancias = (
+        resultados["distances"][0]
+        if resultados.get("distances")
+        else []
+    )
+
+    if not (len(documentos) == len(metadados) == len(distancias)):
+        raise InvalidSearchResult("Resultado documental inconsistente.")
+    for distancia in distancias:
+        if type(distancia) not in (int, float) or not math.isfinite(distancia):
+            raise InvalidSearchResult("Distância inválida na origem.")
 
     contexto_formatado = []
     fontes = []
 
-    for doc, meta in zip(documentos, metadados):
-        tag = f"[Documento: {meta['source']} | Pág. {meta['page']} | Curso: {meta.get('curso', 'Geral')}]"
-        contexto_formatado.append(f"{tag}\n{doc}")
+    for documento, metadata in zip(
+        documentos,
+        metadados,
+    ):
+        nome_documento = metadata.get(
+            "documento",
+            metadata.get(
+                "source",
+                "Documento Oficial",
+            ),
+        )
+
+        numero_pagina = metadata.get(
+            "pagina",
+            metadata.get("page", 1),
+        )
+
+        curso_documento = metadata.get(
+            "curso_alvo",
+            metadata.get("curso", "Geral"),
+        )
+
+        if type(numero_pagina) is not int or numero_pagina < 1:
+            raise InvalidSearchResult("Página inválida na origem.")
+
+        identificacao = (
+            f"[Documento: {nome_documento} | "
+            f"Pág. {numero_pagina} | "
+            f"Curso: {curso_documento}]"
+        )
+
+        contexto_formatado.append(
+            f"{identificacao}\n{documento}"
+        )
+
         fontes.append({
-            "arquivo": meta["source"],
-            "pagina": meta["page"],
-            "curso": meta.get("curso", "Geral")
+            "arquivo": nome_documento,
+            "pagina": numero_pagina,
+            "curso": curso_documento,
         })
 
     return {
-        "contexto": "\n\n---\n\n".join(contexto_formatado),
+        "contexto": "\n\n---\n\n".join(
+            contexto_formatado
+        ),
         "fontes": fontes,
-        "distancia_minima": distancias[0] if distancias else 1.0
+        "distancia_minima": (
+            distancias[0]
+            if distancias
+            else 1.0
+        ),
     }

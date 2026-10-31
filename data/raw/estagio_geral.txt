@@ -1,0 +1,256 @@
+ESTÁGIO
+Olá, estudante! 
+Nesta página você poderá obter informações para iniciar o seu estágio. Por gentileza, leia com calma e atenção, e se ainda ficar com dúvidas, poderá enviar um e-mail para secgrad@cin.ufpe.br ou ir presencialmente à Secretaria de Graduação - Sala E124.
+Consulte fluxograma que deverá ser seguido como a etapa inicial no processo de estágio - FLUXOGRAMA
+
+1. Onde encontro informações gerais sobre Estágio na Graduação - UFPE ?
+Na PROGRAD (Pró-Reitoria de Graduação), há a Divisão de Estágio de Graduação, que é o setor responsável por, dentre outras atribuições, acompanhar a celebração de convênios para concessão de estágio, dar orientação quanto às questões legais pertinentes ao estágio e gerir, em parceria com a Diretoria de Gestão de Finanças e de Infraestrutura no Ensino de Graduação, o seguro obrigatório para o estágio, quando a UFPE assumir o ônus de providenciá-lo. 
+Na página de Estágio da PROGRAD, é possível obter informações sobre as normas, os procedimentos para celebração de Convênios, modelos de documentos (Termo de Compromisso de Estágio - TCE,  Termo Aditivos, etc.), a relação das instituições concedentes conveniadas à UFPE, informações sobre Seguro do Estagiário e um FAQ sobre estágio.
+2. Onde encontro as normas específicas de estágio dos cursos do CIn?
+O aluno poderá consultar nos links abaixo a norma de estágio do seu curso. A regra aplicável é de acordo com o perfil curricular que está vinculado. 
+
+Perfil curricular anterior:
+
+- Ciência da Computação
+
+- Engenharia da Computação
+
+- Sistemas de Informação
+
+Perfil curricular novo (0001-2024.1):
+
+- Ciência da Computação
+
+- Engenharia da Computação
+
+- Sistemas de Informação
+
+- Inteligência Artificial
+
+ATENÇÃO! As alterações abaixo foram aprovadas pelo Colegiado posteriormente, todas se referem ao perfil curricular anterior: 
+
+- Ciência da Computação 
+
+Para cursar IF421 - Estágio 1, o aluno precisa ter concluído todas as disciplinas obrigatórias (1905h).
+
+Em 05/09/2024, o Colegiado do Curso autorizou a realização de Estágio Obrigatório no formato remoto para os alunos vinculados ao curso de Ciência da Computação.
+
+Definição de uma nova regra para concessão de autorização para realização de Estágio Não Obrigatório pelo aluno do curso de Ciência da Computação: 
+O aluno do curso de Ciência da Computação da UFPE está autorizado a realizar estágio não obrigatório de no máximo: 
+
+- (1) 20h semanais, caso sua carga horária de componentes obrigatórios já cursados seja maior ou igual a 750h e menor que 1515h;
+- (2) 30h semanais, caso sua carga horária de componentes obrigatórios já cursados seja maior ou igual a 1515h. 
+
+- Engenharia da Computação 
+
+Devido a atual situação de pandemia, algumas alterações temporárias foram feitas nas Normas de Estágio do Curso, para que o discente possa exercer atividades de Estágio Obrigatório ou Não Obrigatório por favor verificar as informações disponíveis na página da Coordenação. 
+
+A INSTRUÇÃO NORMATIVA PROGRAD/UFPE N. 1/2024 prevê a possibilidade estágios obrigatórios de forma remota, conforme art. 1, § 1o Para os cursos em que a realização do estágio no formato mediado por tecnologia, descrito no art. 75-B da CLT, seja possível e viável, é permitido ao Colegiado deliberar sobre a autorização desse formato nos estágios obrigatórios, à exceção dos cursos das licenciaturas considerando para a sua aplicação as Diretrizes Curriculares Nacionais do Curso e os normativos legais;
+Em 29/08/2024, o Colegiado do Curso autorizou a realização de Estágio Obrigatório no formato remoto para os alunos vinculados ao curso de Engenharia da Computação.
+
+- Sistemas de Informação -
+
+Poderá realizar estágio o aluno que atender a todos os requisitos estabelecidos pela Resolução 02/2020 –CEPE/UFPE.
+
+Em 27/09/2024, o Colegiado do Curso autorizou a realização de Estágio Obrigatório no formato remoto para os alunos vinculados ao curso de Sistemas de Informação.
+
+Nova regra para concessão de autorização para realização de Estágio Não-Obrigatório pelo aluno vinculado ao Curso de Sistemas de Informação
+Em conformidade com a Resolução 20/2015 da UFPE, permitir estágio de 4h (20h/semanais) para alunos que cumpriram a carga horária de 300h de disciplinas obrigatórias exigida pelo perfil atual do curso, a partir do terceiro semestre de curso, e que atendem ao requisito III da Resolução de Estágio da UFPE;
+
+Estágio Obrigatório
+Permitir o estágio de 6h (até 30h/semanais) para alunos que atendem ao requisito estabelecido pelo PPC do Curso de Sistemas de Informação: ter cumprido 900h da carga horária de disciplinas obrigatórias. 
+
+Obs: Para o cálculo da carga horária cumprida pelo aluno, será considerada a carga horária de disciplinas obrigatórias cursadas e a carga horária de disciplinas dispensadas por equivalência com disciplinas obrigatórias de perfil do curso). 
+
+Trechos da Resolução 20/2015 -UFPE
+ Art. 10° - Poderá realizar estágio não-obrigatório o estudante que atender aos seguintes requisitos:
+...II - tiver integralizado, no curso ao qual estiver vinculado, o número mínimo de créditos em disciplinas obrigatórias determinado no Projeto Pedagógico do curso, que não poderá ser inferior à soma dos créditos das disciplinas obrigatórias do primeiro semestre do curso em que estiver matriculado; 
+III – possuir, a partir do terceiro semestre do curso, integralização igual ou superior a 50% (cinquenta por cento) do número de créditos previstos para os anos anteriores; (Redação dada pela Resolução 02/2020 – CEPE) 
+IV – não apresentar, no período letivo imediatamente anterior àquele em que solicitar a concessão ou renovação do estágio, reprovação por falta em mais de 25% das atividades de ensino em que esteve matriculado;
+3. Qual o procedimento para assinatura de documentos de estágio na Graduação?
+A documentação de Estágio está sendo assinada EXCLUSIVAMENTE DE FORMA ELETRÔNICA. 
+- INSTRUÇÃO NORMATIVA N. 01/2023:
+Capítulo IV - PROCEDIMENTOS A SEREM ADOTADOS PARA FORMALIZAÇÃO DO ESTÁGIO
+§ 1º As assinaturas do estudante, da coordenação de estágio e do professor orientador deverão ser digitais, pelo SIPAC ou, alternativamente, podem ser utilizados os serviços de assinatura digitais certificadas, como por exemplo o gov.br
+
+PROCEDIMENTO:
+- A documentação deverá ser enviada à secgrad@cin.ufpe.br, para fins de conferência e posterior encaminhamento para assinatura da Coordenação de Estágio responsável, com no mínimo 08 dias úteis de antecedência em relação a data de início do estágio.
+
+- Os dados da Coordenação de Estágio/Curso a serem inseridos no TCE/Plano de Atividades devem ser solicitados à SecGrad;
+
+- Documentação incompleta não seguirá para assinatura;
+
+- Documentação com assinaturas pendentes não seguirá para assinatura (a Coordenação de Estágio responsável é a última a assinar)
+4. Como o aluno poderá saber se está apto para o estágio e qual modalidade (Obrigatório ou Não Obrigatório)?
+Consultando a norma especifíca do seu curso e perfil curricular. 
+
+Perfil curricular anterior:
+
+- Ciência da Computação
+
+- Engenharia da Computação
+
+- Sistemas de Informação
+
+Perfil curricular novo (0001-2024.1):
+
+- Ciência da Computação
+
+- Engenharia da Computação
+
+- Sistemas de Informação
+
+- Inteligência Artificial
+
+ATENÇÃO! algumas alterações foram aprovadas pelo Colegiado posteriormente, seguem abaixo: 
+
+- Ciência da Computação 
+
+Para cursar IF421 - Estágio 1, o aluno precisa ter concluído todas as disciplinas obrigatórias (1905h).
+
+Em 05/09/2024, o Colegiado do Curso autorizou a realização de Estágio Obrigatório no formato remoto para os alunos vinculados ao curso de Ciência da Computação.
+
+Definição de uma nova regra para concessão de autorização para realização de Estágio Não Obrigatório pelo aluno do curso de Ciência da Computação: 
+O aluno do curso de Ciência da Computação da UFPE está autorizado a realizar estágio não obrigatório de no máximo: 
+
+- (1) 20h semanais, caso sua carga horária de componentes obrigatórios já cursados seja maior ou igual a 750h e menor que 1515h;
+- (2) 30h semanais, caso sua carga horária de componentes obrigatórios já cursados seja maior ou igual a 1515h. 
+
+- Engenharia da Computação 
+
+Devido a atual situação de pandemia, algumas alterações temporárias foram feitas nas Normas de Estágio do Curso, para que o discente possa exercer atividades de Estágio Obrigatório ou Não Obrigatório por favor verificar as informações disponíveis na página da Coordenação. 
+
+A INSTRUÇÃO NORMATIVA PROGRAD/UFPE N. 1/2024 prevê a possibilidade estágios obrigatórios de forma remota, conforme art. 1, § 1o Para os cursos em que a realização do estágio no formato mediado por tecnologia, descrito no art. 75-B da CLT, seja possível e viável, é permitido ao Colegiado deliberar sobre a autorização desse formato nos estágios obrigatórios, à exceção dos cursos das licenciaturas considerando para a sua aplicação as Diretrizes Curriculares Nacionais do Curso e os normativos legais;
+Em 29/08/2024, o Colegiado do Curso autorizou a realização de Estágio Obrigatório no formato remoto para os alunos vinculados ao curso de Engenharia da Computação.
+
+- Sistemas de Informação -
+
+Poderá realizar estágio o aluno que atender a todos os requisitos estabelecidos pela Resolução 02/2020 –CEPE/UFPE.
+
+Em 27/09/2024, o Colegiado do Curso autorizou a realização de Estágio Obrigatório no formato remoto para os alunos vinculados ao curso de Sistemas de Informação.
+
+Nova regra para concessão de autorização para realização de Estágio Não-Obrigatório pelo aluno vinculado ao Curso de Sistemas de Informação
+Em conformidade com a Resolução 20/2015 da UFPE, permitir estágio de 4h (20h/semanais) para alunos que cumpriram a carga horária de 300h de disciplinas obrigatórias exigida pelo perfil atual do curso, a partir do terceiro semestre de curso, e que atendem ao requisito III da Resolução de Estágio da UFPE;
+
+Estágio Obrigatório
+Permitir o estágio de 6h (até 30h/semanais) para alunos que atendem ao requisito estabelecido pelo PPC do Curso de Sistemas de Informação: ter cumprido 900h da carga horária de disciplinas obrigatórias. 
+
+Obs: Para o cálculo da carga horária cumprida pelo aluno, será considerada a carga horária de disciplinas obrigatórias cursadas e a carga horária de disciplinas dispensadas por equivalência com disciplinas obrigatórias de perfil do curso). 
+
+Trechos da Resolução 20/2015 -UFPE
+ Art. 10° - Poderá realizar estágio não-obrigatório o estudante que atender aos seguintes requisitos:
+...II - tiver integralizado, no curso ao qual estiver vinculado, o número mínimo de créditos em disciplinas obrigatórias determinado no Projeto Pedagógico do curso, que não poderá ser inferior à soma dos créditos das disciplinas obrigatórias do primeiro semestre do curso em que estiver matriculado; 
+III – possuir, a partir do terceiro semestre do curso, integralização igual ou superior a 50% (cinquenta por cento) do número de créditos previstos para os anos anteriores; (Redação dada pela Resolução 02/2020 – CEPE) 
+IV – não apresentar, no período letivo imediatamente anterior àquele em que solicitar a concessão ou renovação do estágio, reprovação por falta em mais de 25% das atividades de ensino em que esteve matriculado;
+5. Como posso verificar se já possuo a quantidade de créditos para iniciar um estágio? 
+Os cursos de Ciência da Computação, Sistemas da Informação e Inteligência Artificial mencionam uma quantidade mínima de créditos para que o aluno possa iniciar estágio. De acordo com a Resolução 02/1971 CEPE/UFPE,  15h de carga horária teórica equivale a 1 crédito. Para a carga horária prática, cada 30 horas equivalem a 1 crédito. 
+OBS: É importante ressaltar que não há fração de crédito.
+Exemplos:
+Componente  de 45 horas, sendo 15h teórica (=1 crédito) e 30h prática (=1 crédito). Total de créditos: 2
+Componente  de 60 horas, sendo 45h teórica (=3 créditos) e 15h prática (=0 crédito). Total de créditos: 3
+Componente  de 75 horas, sendo 30h teórica (=2 créditos) e 45h prática (=1 crédito). Total de créditos: 3
+Para facilitar a contagem dos créditos, disponibilizamos esta planilha com o quantitativo de créditos das disciplinas obrigatórias dos cursos, de acordo com seus respectivos PPCs (Projeto Pedagógico de Curso)
+6. Qual é a documentação necessária para iniciar o estágio?
+Primeiramente, o aluno deverá verificar se a empresa ou o agente de integração (CIEE, IEL, Super Estágios, etc.) possui convênio com a UFPE para estágio. Essa consulta poderá ser realizada na página da PROGRAD, que mensalmente atualiza a lista de concedentes conveniadas. Caso não tenha convênio, na referida página constam as orientações para realização do convênio. 
+OBS: Esse requisito do convênio NÃO se aplica ao aluno com vínculo empregatício ou sócio administrador.
+Com o convênio regular, a documentação inicial será: Termo de Compromisso de Estágio (TCE) + Plano de Atividades. 
+- Termo de Compromisso de Estágio (TCE): O modelo do documento poderá ser o da empresa/agente de integração ou da PROGRAD.
+- Plano de Atividades: Modelo do CIn, necessariamente deverá ter esse documento no modelo disponiblizado abaixo, indepentemente de já existir algum contido no TCE. 
+Plano de atividade Obrigatório;
+Plano de atividades Não Obrigatório.
+OBSERVAÇÕES IMPORTANTES: 
+- O período de vigência na documentação de estágio não poderá ser com datas retroativas. 
+- 
+- A modalidade de estágio (Obrigatório ou Não Obrigatório) deverá constar tanto no TCE quanto no Plano de atividades;
+- Os documentos deverão ser assinados EXCLUSIVAMENTE DE FORMA ELETRÔNICA; 
+- O professor orientador poderá ser qualquer um dos professores do CIn;
+- A Coordenação de Estágio será a última a assinar os documentos. O aluno deverá enviar para secgrad@cin.ufpe.br os documentos com as demais assinaturas. 
+7. Qual a documentação necessária para aluno com vínculo empregatício ou sócio administrador aproveitar a CH para cumprir o Estágio Obrigatório?
+Aluno com vínculo empregatício ou sócio administrador não precisa apresentar o Termo de Compromisso de  Estágio - TCE e a empresa não precisa ser conveniada à UFPE, porém:
+Para o aproveitamento do Estágio Obrigatório em atividade profissional desempenhada pelo estudante será apenas em áreas correlatas a seu curso de graduação, além disso, será necessária a formalização pelo estudante funcionário ou estudante empresário, da documentação discriminada abaixo conforme o seu enquadramento no mercado de trabalho.
+
+- VÍNCULO EMPREGATÍCIO:
+
+-> Funcionário de empresa privada: Declaração da empresa na qual conste o detalhamento da atividade exercida; cópia do correspondente registro na Carteira Profissional e Plano de Atividades com dados/assinaturas do aluno, do professor orientador e do supervisor do estágio.
+
+-> Funcionário/servidor de órgão público: Declaração do órgão público na qual conste o detalhamento da atividade exercida; cópia do correspondente ato de nomeação e Plano de atividades com dados/assinaturas do aluno, do professor orientador e do supervisor do estágio. 
+
+- SÓCIO ADMINISTRADOR:
+
+Sócio administrador deve apresentar: Cópia do Contrato Social da empresa (devidamente registrado na Junta Comercial), comprovando atividade em áreas correlatas à sua habilitação e Plano de Atividades com dados/assinaturas do aluno e do professor orientador. 
+
+Para todos os casos citados acima a carga horária a ser registrada poderá ser de até 08 horas diárias. 
+8. Faço parte de um projeto interno do CIn (Samsung, Motorola, Apple Academy, LIVE, etc) ou uma Unidade do CIn (Gerência de Sistemas, CInCoders, etc.) qual a documentação necessária para o Estágio? 
+A documentação inicial será: Termo de Compromisso de Estágio (TCE) + Plano de Atividades + Declaração com detalhamento das atividades desenvolvidas no projeto (deverá ser assinada pelo Coordenador do projeto).
+- Termo de Compromisso de Estágio (TCE): O modelo do documento está na página da PROGRAD.
+- Plano de Atividades: Modelo do CIn, necessariamente deverá ter esse documento no modelo disponiblizado abaixo, indepentemente de já existir algum contido no TCE. 
+Plano de atividade Obrigatório;
+Plano de atividades Não Obrigatório.
+OBSERVAÇÕES IMPORTANTES: 
+- Caso o projeto não disponibilize seguro de vida, o aluno poderá utilizar o da UFPE para estágio Obrigatório (informações na página da PROGRAD).
+- 
+- Se o aluno for utilizar o seguro da UFPE, deverá enviar a documentação de estágio até o décimo quinto dia do mês anterior ao qual pretende iniciar o estágio (ex: início para 01/07/2025 a documentação deverá ser enviada até dia 15/06/2025). Sinalizar no e-mail para secgrad@cin.ufpe.br que está utilizando o seguro da UFPE. 
+- Se o aluno for utilizar o seguro da UFPE, recomendamos que permaneça no estágio obrigatório até concluí-lo.
+- A modalidade de estágio (Obrigatório ou Não Obrigatório) deverá constar tanto no TCE quanto no Plano de atividades;
+- Os documentos deverão ser assinados EXCLUSIVAMENTE DE FORMA ELETRÔNICA; 
+- O professor orientador poderá ser qualquer um dos professores do CIn;
+- A Coordenação de Estágio será a última a assinar os documentos. O aluno deverá enviar para secgrad@cin.ufpe.br os documentos com as demais assinaturas. 
+ATENÇÃO! Siga as orientações abaixo para o preenchimento do TCE e do Plano de Atividades e o procedimento para coleta de assinaturas.
+- Para o preenchimento do TCE e do Plano de atividades, no item referente à concedente deverá constar o nome do Projeto/Unidade do CIn e os dados do CIn (endereço e CNPJ). 
+- A concedente, nos casos de estágios em unidades do CIn (ex: Gersist), será representada pelo Diretor do Centro de Informática (nas ausências/afastamentos do Diretor, é representada pelo Vice-Diretor). Os dados do Diretor e do Vice-Diretor para o preenchimento da documentação, bem como as informações sobre ausências e afastamentos (necessário verificar para colocar os dados do representante correto para assinatura) e o procedimento para solicitação da assinatura da Diretoria na documentação estão disponibilizados na página https://diretoria.cin.ufpe.br/perguntas-frequentes#h.pugk4s5xlq2e 
+- Nos dos projetos vinculados ao CIn, o professor Coordenador do projeto poderá assinar como representante da concedente (ex: V-Lab, Apple Developer Academy, LIVE, etc)
+- A Instituição de Ensino será representada pelo Coordenador de Estágio, deverá constar o nome e o SIAPE (esses dados poderão ser solicitados à secgrad por e-mail secgrad@cin.ufpe.br).
+- Ao solicitar a assinatura da Diretoria, é importante colocar em cópia no e-mail as partes envolvidas (Ex: representante do Projeto/Unidade do CIn) e seguir o procedimento para assinaturas disponibilizado na página https://diretoria.cin.ufpe.br/perguntas-frequentes#h.pugk4s5xlq2e 
+
+9. A empresa/agente de integração já enviou o link para assinatura da Coordenação, o que o aluno deverá fazer?
+Enviar um e-mail para secgrad@cin.ufpe.br com o PDF do TCE e o Plano de atividades devidamente assinado. A secretaria realizará a conferência dos documentos e encaminhará para Coordenação de Estágio.
+10. Estou com o estágio Não Obrigatório em andamento e gostaria de mudar para o Obrigatório, o que fazer? 
+Será necessário um Termo Aditivo (modelo da empresa/agente de integração ou da PROGRAD.)  + Plano de Atividades (modelo do CIn) referente a nova modalidade. 
+Plano de atividade Obrigatório;
+Plano de atividades Não Obrigatório.
+11. Estou com o estágio Obrigatório em andamento, mas já atingi a CH necessária e gostaria de concluir a disciplina de Estágio Obrigatório, o que fazer?
+Três situações encerram o estágio obrigatório: 
+1. Decurso do tempo previsto no contrato de estágio (ex: término para 01/08/2025 atingiu a data, encerra)
+2. Termo aditivo mudando a modalidade para Não Obrigatório (ex: a partir de 01/08/2025 o estágio passou a ser Não obrigatório, assim o Obrigatório encerrou em 31/07/2025)
+3. Termo de rescisão (caso o aluno tenha saído do estágio antes da data final do contrato inicial)
+Em relação à situação 2, será necessário um Termo Aditivo (modelo da empresa/agente de integração ou da PROGRAD.)  + Plano de Atividades (modelo do CIn) referente a nova modalidade. Plano de atividades Não Obrigatório.
+Apenas quando o estágio obrigatório for encerrado o aluno poderá enviar a documentação final para conclusão da disciplina. 
+12. Como obter aprovação na disciplina de Estágio Obrigatório?
+Após encerrar o Estágio Obrigatório, o aluno deverá enviar para secgrad@cin.ufpe.br a documentação final de estágio com as assinaturas e as notas (do orientador e supervisor), para fins de conferência e encaminhamento à Coordenação de Estágio responsável.
+
+1. Modelo de Relatório Final (com assinatura do aluno ao final)
+2. Modelo de Avaliação pelo Professor Orientador (com assinatura/nota)
+3. Modelo de Avaliação pelo Supervisor (com assinatura/nota)
+
+OBSERVAÇÕES IMPORTANTES DO PREENCHIMENTO: 
+- Assinaturas EXCLUSIVAMENTE DE FORMA ELETRÔNICA. 
+- A data de ínicio deverá ser a mesma que consta na documentação inicial (ou da alteração da modalidade para obrigatório quando for caso)
+- A data de término deverá ser a mesma que consta na documentação inicial do estágio obrigatório (ou do termo de rescisão, ou do aditivo que alterou de obrigatório para não obrigatório).
+13. Como posso utilizar a carga horária cumprida no Estágio Não Obrigatório?
+Para solicitar a dispensa de Atividade Complementar, com a carga horária cumprida em Estágio Não Obrigatório, o aluno deverá realizar a solicitação via SIGAA (aba Ensino ---> Registro de atividades autônomas) 
+OBS: Fazer um PDF único com a documentação listada abaixo e submeter via SIGAA. 
+- TCE + Plano de Atividades, que foram assinados para iniciar o estágio não obrigatório.
+- Relatório final (com assinatura do aluno ao final);
+- Avaliação do supervisor (com assinatura/nota);
+- Avaliação do professor orientador (com assinatura/nota).
+
+OBSERVAÇÕES IMPORTANTES DO PREENCHIMENTO: 
+- Assinaturas EXCLUSIVAMENTE DE FORMA ELETRÔNICA. 
+- A data de ínicio deverá ser a mesma que consta na documentação inicial (ou da alteração da modalidade para obrigatório quando for caso)
+- A data de término deverá ser a mesma que consta na documentação inicial do estágio obrigatório (ou do termo de rescisão, ou do aditivo que alterou de obrigatório para não obrigatório).
+14. Documentação final para estágio Não Obrigatório e Obrigatório
+Após concluir o período de Estágio, o aluno deverá enviar para secgrad@cin.ufpe.br a documentação final de estágio com as assinaturas e as notas (do orientador e supervisor), para fins de conferência e encaminhamento à Coordenação de Estágio responsável. 
+Atenção para o prazo de envio da documentação final (até o final do semestre letivo em que cumpriu o plano de atividades, conforme o art 8°, Resolução nº 20/2015 do CEPE)
+
+1. Modelo de Relatório Final (com assinatura do aluno ao final)
+2. Modelo de Avaliação pelo Professor Orientador (com assinatura/nota)
+3. Modelo de Avaliação pelo Supervisor (com assinatura/nota)
+
+OBSERVAÇÕES IMPORTANTES DO PREENCHIMENTO: 
+- Assinaturas EXCLUSIVAMENTE DE FORMA ELETRÔNICA. 
+- A data de ínicio deverá ser a mesma que consta na documentação inicial (ou da alteração da modalidade para obrigatório quando for caso)
+- A data de término deverá ser a mesma que consta na documentação inicial do estágio obrigatório (ou do termo de rescisão, ou do aditivo que alterou de obrigatório para não obrigatório).
+
+- Art. 8º O estudante encaminhará à Coordenação de Estágio do seu curso,
+ até o final do semestre letivo em que cumpriu o plano de atividades, relatório de estágio, consoante modelo específico de cada Curso, aprovado pelo supervisor e pelo professor orientador, objetivando o acompanhamento e avaliação das atividades desenvolvidas, ao qual deverá ser atribuída uma nota em escala de 0 (zero) a 10 (dez) pontos. 
+(fonte: Resolução nº 20/2015 do CEPE -  alterada pelas Resoluções nº 09/2016, 09/2018, 02/2020)

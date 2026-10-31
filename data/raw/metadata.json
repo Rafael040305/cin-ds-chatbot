@@ -1,0 +1,163 @@
+[
+  {
+    "arquivo": "norma_estagio_cc_anterior_2016-2.pdf",
+    "titulo": "Norma de Estágio - Ciência da Computação (Antigo)",
+    "tipo_documento": "norma_estagio",
+    "curso_alvo": [
+      "Ciência da Computação"
+    ],
+    "perfil_curricular": "anterior",
+    "vigencia": true
+  },
+  {
+    "arquivo": "norma_estagio_cc_novo_2024.pdf",
+    "titulo": "Norma de Estágio - Ciência da Computação (Novo)",
+    "tipo_documento": "norma_estagio",
+    "curso_alvo": [
+      "Ciência da Computação"
+    ],
+    "perfil_curricular": "novo",
+    "vigencia": true
+  },
+  {
+    "arquivo": "norma_estagio_ec_anterior_2023.pdf",
+    "titulo": "Norma de Estágio - Engenharia da Computação (Antigo)",
+    "tipo_documento": "norma_estagio",
+    "curso_alvo": [
+      "Engenharia da Computação"
+    ],
+    "perfil_curricular": "anterior",
+    "vigencia": true
+  },
+  {
+    "arquivo": "norma_estagio_ec_novo_2024.pdf",
+    "titulo": "Norma de Estágio - Engenharia da Computação (Novo)",
+    "tipo_documento": "norma_estagio",
+    "curso_alvo": [
+      "Engenharia da Computação"
+    ],
+    "perfil_curricular": "novo",
+    "vigencia": true
+  },
+  {
+    "arquivo": "norma_estagio_si_anterior_2022.pdf",
+    "titulo": "Norma de Estágio - Sistemas de Informação (Antigo)",
+    "tipo_documento": "norma_estagio",
+    "curso_alvo": [
+      "Sistemas de Informação"
+    ],
+    "perfil_curricular": "anterior",
+    "vigencia": true
+  },
+  {
+    "arquivo": "norma_estagio_si_novo_2024.pdf",
+    "titulo": "Norma de Estágio - Sistemas de Informação (Novo)",
+    "tipo_documento": "norma_estagio",
+    "curso_alvo": [
+      "Sistemas de Informação"
+    ],
+    "perfil_curricular": "novo",
+    "vigencia": true
+  },
+  {
+    "arquivo": "norma_estagio_ia_novo_2024.pdf",
+    "titulo": "Norma de Estágio - Inteligência Artificial (Novo)",
+    "tipo_documento": "norma_estagio",
+    "curso_alvo": [
+      "Inteligência Artificial"
+    ],
+    "perfil_curricular": "novo",
+    "vigencia": true
+  },
+  {
+    "arquivo": "regras_requerimentos.txt",
+    "titulo": "Regras e Prazos para Segunda Chamada e Dispensa",
+    "tipo_documento": "regra_site",
+    "curso_alvo": [
+      "Ciência da Computação",
+      "Engenharia da Computação",
+      "Sistemas de Informação",
+      "Inteligência Artificial"
+    ],
+    "perfil_curricular": "ambos",
+    "vigencia": true
+  },
+  {
+    "arquivo": "regulamento_tg.txt",
+    "titulo": "Diretrizes e Regulamento de Trabalho de Graduação (TG)",
+    "tipo_documento": "trabalho_graduacao",
+    "curso_alvo": [
+      "Ciência da Computação",
+      "Engenharia da Computação",
+      "Sistemas de Informação",
+      "Inteligência Artificial"
+    ],
+    "perfil_curricular": "todos",
+    "vigencia": true,
+    "ano_atualizacao": 2017
+  },
+  {
+    "arquivo": "diretrizes_extensao.txt",
+    "titulo": "Diretrizes e Regras de Ações de Extensão da UFPE/CIn",
+    "tipo_documento": "extensao",
+    "curso_alvo": [
+      "Ciência da Computação",
+      "Engenharia da Computação",
+      "Sistemas de Informação",
+      "Inteligência Artificial"
+    ],
+    "perfil_curricular": "todos",
+    "vigencia": true
+  },
+  {
+    "arquivo": "migracao_perfis.txt",
+    "titulo": "Regras e Orientações para Migração de Perfis Curriculares",
+    "tipo_documento": "regra_site",
+    "curso_alvo": [
+      "Ciência da Computação",
+      "Engenharia da Computação",
+      "Sistemas de Informação"
+    ],
+    "perfil_curricular": "ambos",
+    "vigencia": true
+  },
+  {
+    "arquivo": "estagio_geral.txt",
+    "titulo": "Orientações Gerais, Procedimentos e Normas de Estágio do CIn",
+    "tipo_documento": "norma_estagio",
+    "curso_alvo": [
+      "Ciência da Computação",
+      "Engenharia da Computação",
+      "Sistemas de Informação",
+      "Inteligência Artificial"
+    ],
+    "perfil_curricular": "todos",
+    "vigencia": true
+  },
+  {
+    "arquivo": "extensao_cin_faq.txt",
+    "titulo": "FAQ e Orientações de Extensão e Cultura do CIn",
+    "tipo_documento": "extensao",
+    "curso_alvo": [
+      "Ciência da Computação",
+      "Engenharia da Computação",
+      "Sistemas de Informação",
+      "Inteligência Artificial"
+    ],
+    "perfil_curricular": "todos",
+    "vigencia": true
+  },
+  {
+    "arquivo": "pesquisa_faq.txt",
+    "titulo": "FAQ e Orientações da Coordenação de Pesquisa do CIn",
+    "tipo_documento": "pesquisa",
+    "curso_alvo": [
+      "Ciência da Computação",
+      "Engenharia da Computação",
+      "Sistemas de Informação",
+      "Inteligência Artificial"
+    ],
+    "perfil_curricular": "todos",
+    "vigencia": true
+  }
+]
